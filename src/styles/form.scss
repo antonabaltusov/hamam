@@ -1,0 +1,197 @@
+@import "./variables";
+
+.form {
+  width: 100%;
+  max-width: 334px;
+  margin: 0 auto;
+  margin-top: 30px;
+  &-success {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: $dark;
+    &__title {
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 38px;
+    }
+    &__answer {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      margin-top: 1.25em;
+    }
+  }
+  &-soc {
+    margin-top: 40px;
+    &__buttons {
+      display: flex;
+      margin-top: 20px;
+      & .btn {
+        opacity: 0.4;
+        &:hover {
+          opacity: 1;
+          background-color: transparent;
+        }
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+        & svg {
+          margin-right: 13px;
+        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-color: $dark;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 22px;
+        color: $dark;
+      }
+    }
+  }
+  & form {
+    & .input,
+    & button {
+      width: 100%;
+      height: 55px;
+      font-size: 16px;
+      line-height: 1.25em;
+    }
+    & .error-mes {
+      text-align: left;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 140%;
+      color: $red;
+      max-height: 0;
+      overflow: hidden;
+      transition-duration: 0.3s;
+      transition-property: all;
+    }
+    & .input {
+      border: 1px solid rgba($color: $dark, $alpha: 0.4);
+      font-weight: 300;
+      color: $grey;
+      margin-bottom: 10px;
+      padding: 0 20px;
+      outline: none;
+      &::placeholder {
+        opacity: 0.7;
+      }
+      &.error {
+        border-color: $red;
+        & + .error-mes {
+          max-height: 30px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+    & .checkbox {
+      position: relative;
+      margin-top: 22px;
+      & input {
+        opacity: 0;
+        position: absolute;
+        inset: 0;
+        &.error:not(:checked) {
+          & + label {
+            color: $red;
+            &::before {
+              border-color: $red;
+            }
+          }
+        }
+        &:hover {
+          & + label {
+            color: $dark;
+            &::before {
+              border-color: $dark;
+            }
+          }
+        }
+        &:checked {
+          & + label {
+            &::before {
+              background-image: url(../assets/images/icons/done.svg);
+              background-size: contain;
+              background-position: center;
+              background-repeat: no-repeat;
+            }
+          }
+        }
+      }
+      & label {
+        padding-left: 27px;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        color: #777777;
+        position: relative;
+        & a {
+          text-decoration: underline;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          border: 2px solid #bdbdbd;
+          border-radius: 4px;
+          height: 18px;
+          width: 18px;
+        }
+      }
+    }
+  }
+  &-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.4em;
+    color: $dark;
+    @include tablet {
+      padding: 36px 15px;
+    }
+    & .radios {
+      border-radius: 15px;
+    }
+    &.success {
+      & .form-success {
+        display: flex;
+      }
+      & .form-main {
+        display: none;
+      }
+    }
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: math.div(38, 30);
+    margin-bottom: 10px;
+    @include tablet {
+      font-size: 25px;
+    }
+    @include mobile {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    &-sub {
+      margin-bottom: -15px;
+      @include mobile {
+        font-size: 12px;
+        line-height: 140%;
+      }
+    }
+  }
+}

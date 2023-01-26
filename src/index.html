@@ -1,0 +1,3337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?033a4a31-e0f3-424a-84b5-e6789505979d&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-desctop">
+        <div class="header-top">
+          <a href="/" class="logo">
+            <img src="./assets/images/logo.png" alt="logo" />
+            <div><span class="grn">steam</span> group</div>
+          </a>
+          <div class="header-top__nuv">
+            <a href="mailto:info@sg-sauna.ru">info@sg-sauna.ru</a>
+            <a href="tel:+74597661281">+7 (495) 766 12 81</a>
+            <button class="btn btn--green">Обратный звонок</button>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="header-bottom__nuv">
+            <a href="#">Портфолио</a>
+            <a href="#">Этапы работы</a>
+            <a href="#">Цены</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Контакты</a>
+          </div>
+          <a class="get" href="#">Получить смету</a>
+        </div>
+      </div>
+      <div class="container header-mobile">
+        <button class="open-menu">
+          <svg
+            class="open-menu__open"
+            width="18"
+            height="14"
+            viewBox="0 0 18 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.75 13C0.75 12.8011 0.829018 12.6103 0.96967 12.4697C1.11032 12.329 1.30109 12.25 1.5 12.25H16.5C16.6989 12.25 16.8897 12.329 17.0303 12.4697C17.171 12.6103 17.25 12.8011 17.25 13C17.25 13.1989 17.171 13.3897 17.0303 13.5303C16.8897 13.671 16.6989 13.75 16.5 13.75H1.5C1.30109 13.75 1.11032 13.671 0.96967 13.5303C0.829018 13.3897 0.75 13.1989 0.75 13ZM0.75 7C0.75 6.80109 0.829018 6.61032 0.96967 6.46967C1.11032 6.32902 1.30109 6.25 1.5 6.25H16.5C16.6989 6.25 16.8897 6.32902 17.0303 6.46967C17.171 6.61032 17.25 6.80109 17.25 7C17.25 7.19891 17.171 7.38968 17.0303 7.53033C16.8897 7.67098 16.6989 7.75 16.5 7.75H1.5C1.30109 7.75 1.11032 7.67098 0.96967 7.53033C0.829018 7.38968 0.75 7.19891 0.75 7ZM0.75 1C0.75 0.801088 0.829018 0.610322 0.96967 0.46967C1.11032 0.329018 1.30109 0.25 1.5 0.25H16.5C16.6989 0.25 16.8897 0.329018 17.0303 0.46967C17.171 0.610322 17.25 0.801088 17.25 1C17.25 1.19891 17.171 1.38968 17.0303 1.53033C16.8897 1.67098 16.6989 1.75 16.5 1.75H1.5C1.30109 1.75 1.11032 1.67098 0.96967 1.53033C0.829018 1.38968 0.75 1.19891 0.75 1Z"
+              fill="white"
+            />
+          </svg>
+          <svg
+            class="open-menu__close"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M20.7819 3.21936C20.8518 3.28903 20.9072 3.3718 20.945 3.46291C20.9828 3.55403 21.0023 3.65171 21.0023 3.75036C21.0023 3.84902 20.9828 3.9467 20.945 4.03781C20.9072 4.12893 20.8518 4.2117 20.7819 4.28136L4.28195 20.7814C4.14112 20.9222 3.95011 21.0013 3.75095 21.0013C3.55178 21.0013 3.36078 20.9222 3.21995 20.7814C3.07912 20.6405 3 20.4495 3 20.2504C3 20.0512 3.07912 19.8602 3.21995 19.7194L19.7199 3.21936C19.7896 3.14952 19.8724 3.09411 19.9635 3.0563C20.0546 3.01849 20.1523 2.99902 20.2509 2.99902C20.3496 2.99902 20.4473 3.01849 20.5384 3.0563C20.6295 3.09411 20.7123 3.14952 20.7819 3.21936Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.21839 3.21936C3.14854 3.28903 3.09313 3.3718 3.05532 3.46291C3.01751 3.55403 2.99805 3.65171 2.99805 3.75036C2.99805 3.84902 3.01751 3.9467 3.05532 4.03781C3.09313 4.12893 3.14854 4.2117 3.21839 4.28136L19.7184 20.7814C19.8592 20.9222 20.0502 21.0013 20.2494 21.0013C20.4486 21.0013 20.6396 20.9222 20.7804 20.7814C20.9212 20.6405 21.0003 20.4495 21.0003 20.2504C21.0003 20.0512 20.9212 19.8602 20.7804 19.7194L4.28039 3.21936C4.21072 3.14952 4.12796 3.09411 4.03684 3.0563C3.94572 3.01849 3.84804 2.99902 3.74939 2.99902C3.65074 2.99902 3.55305 3.01849 3.46194 3.0563C3.37082 3.09411 3.28806 3.14952 3.21839 3.21936V3.21936Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+        <div class="mob-menu">
+          <div class="header-bottom__nuv">
+            <a href="#">Портфолио</a>
+            <a href="#">Этапы работы</a>
+            <a href="#">Цены</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Контакты</a>
+          </div>
+          <div class="footer__contacts">
+            <div class="footer__name">Телефон</div>
+            <div>
+              <a class="footer__bold" href="tel:+74957661281"
+                >+7 (495) 766 1281</a
+              >
+              <a class="footer__bold" href="tel:+74957661281"
+                >+7 (495) 766 1281</a
+              >
+            </div>
+            <div class="footer__name">Почта</div>
+            <div>
+              <a class="footer__bold" href="mailto:info@sg-sauna.ru"
+                >info@sg-sauna.ru</a
+              >
+            </div>
+          </div>
+          <div class="footer__time">
+            <div class="footer__name">Отвечаем и перезваниваем ежедневно</div>
+            <div class="footer__bold">09:00-21:00 <span>(мск)</span></div>
+            <button class="btn btn--green">Обратный звонок</button>
+          </div>
+          <div class="footer__links">
+            <a target="_blank" href="./privacy.html"
+              >Политика конфиденциальности</a
+            >
+            <a target="_blank" href="https://webking.pro">Сделано в WebKing</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="first-block">
+        <div class="container">
+          <h1>
+            Построим современный<br />
+            хаммам в вашем доме
+            <b
+              >всего<br />
+              за 1 месяц</b
+            >
+          </h1>
+          <div class="first-block__srok">
+            <div>
+              <b>15+</b>
+              <span>лет срок службы</span>
+            </div>
+          </div>
+          <div class="first-block__buttons">
+            <button
+              class="btn btn--green open-popup"
+              data-title="Получите <b>расчет стоимости</b><br /> строительства вашего"
+              data-descr="с погрешностью менее 5%"
+            >
+              Хочу также
+            </button>
+            <button class="btn">Задать вопрос</button>
+          </div>
+          <div class="first-block__text-wrap">
+            <div class="first-block__text">
+              Создадим особый микроклимат,<br />
+              который успокоит вашу нервную<br />
+              систему и оздоровит организм
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="container">
+          <h2 class="block__title">
+            Строим бани в Москве<br />
+            и области <b>уже более 15 лет</b>
+          </h2>
+          <div class="block__descr">
+            Взгляните
+            <div class="icon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <path
+                    d="M16 8C16 8 13 2.5 8 2.5C3 2.5 0 8 0 8C0 8 3 13.5 8 13.5C13 13.5 16 8 16 8ZM1.173 8C1.65651 7.26512 2.21264 6.58069 2.833 5.957C4.12 4.668 5.88 3.5 8 3.5C10.12 3.5 11.879 4.668 13.168 5.957C13.7884 6.58069 14.3445 7.26512 14.828 8C14.77 8.087 14.706 8.183 14.633 8.288C14.298 8.768 13.803 9.408 13.168 10.043C11.879 11.332 10.119 12.5 8 12.5C5.88 12.5 4.121 11.332 2.832 10.043C2.21165 9.41931 1.65552 8.73487 1.172 8H1.173Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M8 5.5C7.33696 5.5 6.70107 5.76339 6.23223 6.23223C5.76339 6.70107 5.5 7.33696 5.5 8C5.5 8.66304 5.76339 9.29893 6.23223 9.76777C6.70107 10.2366 7.33696 10.5 8 10.5C8.66304 10.5 9.29893 10.2366 9.76777 9.76777C10.2366 9.29893 10.5 8.66304 10.5 8C10.5 7.33696 10.2366 6.70107 9.76777 6.23223C9.29893 5.76339 8.66304 5.5 8 5.5ZM4.5 8C4.5 7.07174 4.86875 6.1815 5.52513 5.52513C6.1815 4.86875 7.07174 4.5 8 4.5C8.92826 4.5 9.8185 4.86875 10.4749 5.52513C11.1313 6.1815 11.5 7.07174 11.5 8C11.5 8.92826 11.1313 9.8185 10.4749 10.4749C9.8185 11.1313 8.92826 11.5 8 11.5C7.07174 11.5 6.1815 11.1313 5.52513 10.4749C4.86875 9.8185 4.5 8.92826 4.5 8Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </div>
+            на хаммамы, построенные нашей командой
+          </div>
+          <div class="dbl-slider block__content">
+            <div class="dbl-slider__img-wrap only-tablet-hidden">
+              <div class="dbl-slider__img swiper radios">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="dbl-slider__inside swiper radios">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dbl-slider__inside swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dbl-slider__inside swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dbl-slider__inside swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dbl-slider__inside swiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dbl-slider__text-wrap radios">
+              <div class="dbl-slider__text swiper">
+                <div class="swiper__nuv">
+                  <div class="swiper-button-prev">
+                    <svg
+                      width="22"
+                      height="14"
+                      viewBox="0 0 22 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M21.5 7.00003C21.5 7.19894 21.421 7.38971 21.2803 7.53036C21.1397 7.67101 20.9489 7.75003 20.75 7.75003L3.0605 7.75003L7.781 12.469C7.92183 12.6099 8.00095 12.8009 8.00095 13C8.00095 13.1992 7.92183 13.3902 7.781 13.531C7.64017 13.6719 7.44916 13.751 7.25 13.751C7.05084 13.751 6.85983 13.6719 6.719 13.531L0.718999 7.53103C0.649154 7.46136 0.59374 7.3786 0.555931 7.28748C0.518121 7.19636 0.498659 7.09868 0.498659 7.00003C0.498659 6.90138 0.518121 6.8037 0.55593 6.71258C0.59374 6.62146 0.649154 6.5387 0.718999 6.46903L6.719 0.469031C6.85983 0.328201 7.05084 0.249084 7.25 0.249084C7.44916 0.249084 7.64017 0.328201 7.781 0.469031C7.92183 0.609861 8.00095 0.800867 8.00095 1.00003C8.00095 1.19919 7.92183 1.3902 7.781 1.53103L3.0605 6.25003L20.75 6.25003C20.9489 6.25003 21.1397 6.32905 21.2803 6.4697C21.421 6.61035 21.5 6.80112 21.5 7.00003Z"
+                        fill="#1B1D21"
+                      />
+                    </svg>
+                  </div>
+                  <div class="swiper-button-next">
+                    <svg
+                      width="22"
+                      height="14"
+                      viewBox="0 0 22 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.5 6.99997C0.5 6.80106 0.579018 6.61029 0.71967 6.46964C0.860322 6.32899 1.05109 6.24997 1.25 6.24997H18.9395L14.219 1.53097C14.0782 1.39014 13.9991 1.19913 13.9991 0.999971C13.9991 0.800807 14.0782 0.609801 14.219 0.468971C14.3598 0.328141 14.5508 0.249023 14.75 0.249023C14.9492 0.249023 15.1402 0.328141 15.281 0.468971L21.281 6.46897C21.3508 6.53864 21.4063 6.6214 21.4441 6.71252C21.4819 6.80364 21.5013 6.90132 21.5013 6.99997C21.5013 7.09862 21.4819 7.1963 21.4441 7.28742C21.4063 7.37854 21.3508 7.4613 21.281 7.53097L15.281 13.531C15.1402 13.6718 14.9492 13.7509 14.75 13.7509C14.5508 13.7509 14.3598 13.6718 14.219 13.531C14.0782 13.3901 13.9991 13.1991 13.9991 13C13.9991 12.8008 14.0782 12.6098 14.219 12.469L18.9395 7.74997H1.25C1.05109 7.74997 0.860322 7.67095 0.71967 7.5303C0.579018 7.38965 0.5 7.19888 0.5 6.99997Z"
+                        fill="#1B1D21"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <h3>
+                      Хаммам с можжевеловой<br />
+                      сауной в каркасном домe
+                    </h3>
+                    <p>
+                      Задача — сделать небольшую уютную сауну<br />
+                      в строящемся каркасном доме.
+                    </p>
+
+                    <p>
+                      Заказчик хотел довольно простую, но симпатичную<br />
+                      сауну с брутальными хвойными ароматами в своем<br />
+                      строящемся доме.
+                    </p>
+
+                    <p>
+                      Обязательное условие — светлые тона в отделке,<br />
+                      по возмоности широкие элементы в обшивке<br />
+                      сауной в каркасном доме
+                    </p>
+                    <div
+                      class="dbl-slider__inside swiper radios only-tablet-visible"
+                    >
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="buttons">
+                      <button class="btn btn--green">Хочу также</button>
+                      <a href="./article.html" class="btn"
+                        >Подробнее о проекте</a
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <h3>
+                      Хаммам с можжевеловой<br />
+                      сауной в каркасном домe
+                    </h3>
+                    <p>
+                      Задача — сделать небольшую уютную сауну<br />
+                      в строящемся каркасном доме.
+                    </p>
+
+                    <p>
+                      Заказчик хотел довольно простую, но симпатичную<br />
+                      сауну с брутальными хвойными ароматами в своем<br />
+                      строящемся доме.
+                    </p>
+
+                    <p>
+                      Обязательное условие — светлые тона в отделке,<br />
+                      по возмоности широкие элементы в обшивке<br />
+                      сауной в каркасном доме
+                    </p>
+                    <div
+                      class="dbl-slider__inside swiper radios only-tablet-visible"
+                    >
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="buttons">
+                      <button class="btn btn--green">Хочу также</button>
+                      <a href="./article.html" class="btn"
+                        >Подробнее о проекте</a
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <h3>
+                      Хаммам с можжевеловой<br />
+                      сауной в каркасном домe
+                    </h3>
+                    <p>
+                      Задача — сделать небольшую уютную сауну<br />
+                      в строящемся каркасном доме.
+                    </p>
+
+                    <p>
+                      Заказчик хотел довольно простую, но симпатичную<br />
+                      сауну с брутальными хвойными ароматами в своем<br />
+                      строящемся доме.
+                    </p>
+
+                    <p>
+                      Обязательное условие — светлые тона в отделке,<br />
+                      по возмоности широкие элементы в обшивке<br />
+                      сауной в каркасном доме
+                    </p>
+                    <div
+                      class="dbl-slider__inside swiper radios only-tablet-visible"
+                    >
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="buttons">
+                      <button class="btn btn--green">Хочу также</button>
+                      <a href="./article.html" class="btn"
+                        >Подробнее о проекте</a
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <h3>
+                      Хаммам с можжевеловой<br />
+                      сауной в каркасном домe
+                    </h3>
+                    <p>
+                      Задача — сделать небольшую уютную сауну<br />
+                      в строящемся каркасном доме.
+                    </p>
+
+                    <p>
+                      Заказчик хотел довольно простую, но симпатичную<br />
+                      сауну с брутальными хвойными ароматами в своем<br />
+                      строящемся доме.
+                    </p>
+
+                    <p>
+                      Обязательное условие — светлые тона в отделке,<br />
+                      по возмоности широкие элементы в обшивке<br />
+                      сауной в каркасном доме
+                    </p>
+                    <div
+                      class="dbl-slider__inside swiper radios only-tablet-visible"
+                    >
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="buttons">
+                      <button class="btn btn--green">Хочу также</button>
+                      <a href="./article.html" class="btn"
+                        >Подробнее о проекте</a
+                      >
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <h3>
+                      Хаммам с можжевеловой<br />
+                      сауной в каркасном домe
+                    </h3>
+                    <p>
+                      Задача — сделать небольшую уютную сауну<br />
+                      в строящемся каркасном доме.
+                    </p>
+
+                    <p>
+                      Заказчик хотел довольно простую, но симпатичную<br />
+                      сауну с брутальными хвойными ароматами в своем<br />
+                      строящемся доме.
+                    </p>
+
+                    <p>
+                      Обязательное условие — светлые тона в отделке,<br />
+                      по возмоности широкие элементы в обшивке<br />
+                      сауной в каркасном доме
+                    </p>
+                    <div
+                      class="dbl-slider__inside swiper radios only-tablet-visible"
+                    >
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/15years/1.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="buttons">
+                      <button class="btn btn--green">Хочу также</button>
+                      <a href="./article.html" class="btn"
+                        >Подробнее о проекте</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="container">
+          <h2 class="block__title">
+            Совершите <b>онлайн-экскурсию</b><br />
+            по готовым объектам
+          </h2>
+          <div class="block__descr">
+            С возможностью рассмотреть
+            <div class="icon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7" clip-path="url(#clip0_117_374)">
+                  <path
+                    d="M8.186 1.1134C8.06662 1.06555 7.93338 1.06555 7.814 1.1134L1.846 3.5004L8 5.9614L14.154 3.5004L8.186 1.1134ZM15 4.2394L8.5 6.8394V14.7614L15 12.1614V4.2404V4.2394ZM7.5 14.7624V6.8384L1 4.2394V12.1624L7.5 14.7624ZM7.443 0.184399C7.80057 0.0413982 8.19943 0.0413982 8.557 0.184399L15.686 3.0364C15.7787 3.07354 15.8581 3.13759 15.9141 3.22029C15.9701 3.30299 16 3.40055 16 3.5004V12.1624C15.9999 12.3622 15.9399 12.5574 15.8278 12.7228C15.7157 12.8882 15.5566 13.0163 15.371 13.0904L8.186 15.9644C8.06662 16.0122 7.93338 16.0122 7.814 15.9644L0.63 13.0904C0.444251 13.0164 0.284942 12.8885 0.172642 12.723C0.0603417 12.5576 0.000206329 12.3623 0 12.1624L0 3.5004C2.32399e-05 3.40055 0.0299437 3.30299 0.085907 3.22029C0.14187 3.13759 0.221313 3.07354 0.314 3.0364L7.443 0.184399Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_117_374">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            на хаммамы, построенные нашей командой
+          </div>
+          <div class="block__content">
+            <div class="grid grid--2 only-desctop">
+              <a href="#" class="online-eks">
+                <div class="online-eks__img img-block bg-white radios">
+                  <div class="img-wrapper">
+                    <img src="./assets/images/online-eks.png" alt="" />
+                  </div>
+                </div>
+                <div class="online-eks__title">Название проекта</div>
+              </a>
+              <a href="#" class="online-eks">
+                <div class="online-eks__img img-block bg-grey radios">
+                  <div class="img-wrapper">
+                    <img src="./assets/images/online-eks.png" alt="" />
+                  </div>
+                </div>
+                <div class="online-eks__title">Название проекта</div>
+              </a>
+            </div>
+            <div class="mob-slider swiper only-mobile">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide online-eks">
+                  <a href="#">
+                    <div class="online-eks__img img-block bg-white radios">
+                      <div class="img-wrapper">
+                        <img src="./assets/images/online-eks.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="online-eks__title">Название проекта</div>
+                  </a>
+                </div>
+                <div class="swiper-slide online-eks">
+                  <a href="#">
+                    <div class="online-eks__img img-block bg-grey radios">
+                      <div class="img-wrapper">
+                        <img src="./assets/images/online-eks.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="online-eks__title">Название проекта</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="container">
+          <h2 class="block__title">
+            Настоящая турецкая баня —<br />
+            это <b>не просто помещение</b>
+          </h2>
+          <div class="block__descr">
+            Это микроклимат,
+            <div class="icon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.21 0.8C7.69 0.295 8 0 8 0C8.109 0.363 8.234 0.708 8.371 1.038C9.183 2.984 10.444 4.388 11.568 5.638C12.878 7.096 14 8.345 14 10C14 11.5913 13.3679 13.1174 12.2426 14.2426C11.1174 15.3679 9.5913 16 8 16C6.4087 16 4.88258 15.3679 3.75736 14.2426C2.63214 13.1174 2 11.5913 2 10C2 6.668 5.58 2.517 7.21 0.8ZM7.623 1.821C6.98081 2.51594 6.37051 3.23968 5.794 3.99C5.068 4.94 4.358 5.998 3.834 7.06C3.304 8.133 3 9.138 3 10C3 11.3261 3.52678 12.5979 4.46447 13.5355C5.40215 14.4732 6.67392 15 8 15C9.32608 15 10.5979 14.4732 11.5355 13.5355C12.4732 12.5979 13 11.3261 13 10C13 8.799 12.204 7.843 10.819 6.3L10.789 6.268C9.75 5.11 8.5 3.72 7.623 1.82V1.821Z"
+                    fill="white"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.55273 7.776C5.37273 6.135 6.26973 5.023 6.64573 4.646L7.35373 5.354C7.06373 5.644 6.22573 6.665 5.44673 8.224L4.55273 7.776Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </div>
+            который в нем создается
+          </div>
+          <div class="block__content ne-prosto-banya">
+            <div class="grid grid--3">
+              <div class="ne-prosto-banya__big radios">
+                <div class="icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.3949 9.882L9.95993 10.3125L9.83693 10.8825L10.5119 11.007C10.9529 11.112 11.0399 11.271 10.9439 11.7105L9.83693 16.9125C9.54593 18.258 9.99443 18.891 11.0489 18.891C11.8664 18.891 12.8159 18.513 13.2464 17.994L13.3784 17.37C13.0784 17.634 12.6404 17.739 12.3494 17.739C11.9369 17.739 11.7869 17.4495 11.8934 16.9395L13.3949 9.882ZM13.4999 6.75C13.4999 7.14782 13.3419 7.52936 13.0606 7.81066C12.7793 8.09196 12.3978 8.25 11.9999 8.25C11.6021 8.25 11.2206 8.09196 10.9393 7.81066C10.658 7.52936 10.4999 7.14782 10.4999 6.75C10.4999 6.35218 10.658 5.97064 10.9393 5.68934C11.2206 5.40804 11.6021 5.25 11.9999 5.25C12.3978 5.25 12.7793 5.40804 13.0606 5.68934C13.3419 5.97064 13.4999 6.35218 13.4999 6.75Z"
+                      fill="#34373C"
+                    />
+                  </svg>
+                </div>
+                <p>
+                  Отличие хаммама от других видов бань (сауны или парной)<br />
+                  заключается в особом сочетании температурыи влажности.
+                </p>
+                <p>
+                  Именно они создают уникальный микроклимат,<br />
+                  оздаравливающий весь организм
+                </p>
+              </div>
+              <div class="ne-prosto-banya__img img-block--cover radios">
+                <div class="img-wrapper">
+                  <img src="./assets/images/ne-prosto.png" alt="" />
+                </div>
+              </div>
+              <div class="ne-prosto-banya__item bg-green radios only-desctop">
+                <div>
+                  <div class="icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.7">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.21 0.8C7.69 0.295 8 0 8 0C8.109 0.363 8.234 0.708 8.371 1.038C9.183 2.984 10.444 4.388 11.568 5.638C12.878 7.096 14 8.345 14 10C14 11.5913 13.3679 13.1174 12.2426 14.2426C11.1174 15.3679 9.5913 16 8 16C6.4087 16 4.88258 15.3679 3.75736 14.2426C2.63214 13.1174 2 11.5913 2 10C2 6.668 5.58 2.517 7.21 0.8ZM7.623 1.821C6.98081 2.51594 6.37051 3.23968 5.794 3.99C5.068 4.94 4.358 5.998 3.834 7.06C3.304 8.133 3 9.138 3 10C3 11.3261 3.52678 12.5979 4.46447 13.5355C5.40215 14.4732 6.67392 15 8 15C9.32608 15 10.5979 14.4732 11.5355 13.5355C12.4732 12.5979 13 11.3261 13 10C13 8.799 12.204 7.843 10.819 6.3L10.789 6.268C9.75 5.11 8.5 3.72 7.623 1.82V1.821Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M4.55273 7.776C5.37273 6.135 6.26973 5.023 6.64573 4.646L7.35373 5.354C7.06373 5.644 6.22573 6.665 5.44673 8.224L4.55273 7.776Z"
+                          fill="white"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <h3>
+                    Прогревает<br />
+                    и расслабляет<br />
+                    мышцы
+                  </h3>
+                </div>
+                <p>
+                  благодаря комфортной<br />
+                  температуре 30-50 Со, всегда поддерживаемой в бане
+                </p>
+              </div>
+              <div class="ne-prosto-banya__item bg-white radios only-desctop">
+                <div>
+                  <div class="icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.7">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.21 0.8C7.69 0.295 8 0 8 0C8.109 0.363 8.234 0.708 8.371 1.038C9.183 2.984 10.444 4.388 11.568 5.638C12.878 7.096 14 8.345 14 10C14 11.5913 13.3679 13.1174 12.2426 14.2426C11.1174 15.3679 9.5913 16 8 16C6.4087 16 4.88258 15.3679 3.75736 14.2426C2.63214 13.1174 2 11.5913 2 10C2 6.668 5.58 2.517 7.21 0.8ZM7.623 1.821C6.98081 2.51594 6.37051 3.23968 5.794 3.99C5.068 4.94 4.358 5.998 3.834 7.06C3.304 8.133 3 9.138 3 10C3 11.3261 3.52678 12.5979 4.46447 13.5355C5.40215 14.4732 6.67392 15 8 15C9.32608 15 10.5979 14.4732 11.5355 13.5355C12.4732 12.5979 13 11.3261 13 10C13 8.799 12.204 7.843 10.819 6.3L10.789 6.268C9.75 5.11 8.5 3.72 7.623 1.82V1.821Z"
+                          fill="#1B1D21"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M4.55273 7.776C5.37273 6.135 6.26973 5.023 6.64573 4.646L7.35373 5.354C7.06373 5.644 6.22573 6.665 5.44673 8.224L4.55273 7.776Z"
+                          fill="#1B1D21"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <h3>
+                    Насыщает клетки<br />
+                    организма влагой
+                  </h3>
+                </div>
+                <p>
+                  благодаря 100% влажности, создающейся с помощью густого
+                  водяного тумана
+                </p>
+              </div>
+              <div class="ne-prosto-banya__item bg-grey radios only-desctop">
+                <div>
+                  <div class="icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.7">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.21 0.8C7.69 0.295 8 0 8 0C8.109 0.363 8.234 0.708 8.371 1.038C9.183 2.984 10.444 4.388 11.568 5.638C12.878 7.096 14 8.345 14 10C14 11.5913 13.3679 13.1174 12.2426 14.2426C11.1174 15.3679 9.5913 16 8 16C6.4087 16 4.88258 15.3679 3.75736 14.2426C2.63214 13.1174 2 11.5913 2 10C2 6.668 5.58 2.517 7.21 0.8ZM7.623 1.821C6.98081 2.51594 6.37051 3.23968 5.794 3.99C5.068 4.94 4.358 5.998 3.834 7.06C3.304 8.133 3 9.138 3 10C3 11.3261 3.52678 12.5979 4.46447 13.5355C5.40215 14.4732 6.67392 15 8 15C9.32608 15 10.5979 14.4732 11.5355 13.5355C12.4732 12.5979 13 11.3261 13 10C13 8.799 12.204 7.843 10.819 6.3L10.789 6.268C9.75 5.11 8.5 3.72 7.623 1.82V1.821Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M4.55273 7.776C5.37273 6.135 6.26973 5.023 6.64573 4.646L7.35373 5.354C7.06373 5.644 6.22573 6.665 5.44673 8.224L4.55273 7.776Z"
+                          fill="white"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <h3>
+                    Успокаивает<br />
+                    нервную систему
+                  </h3>
+                </div>
+                <p>
+                  благодаря комфортной<br />
+                  температуре 30-50 Со, постоянно поддерживаемой в бане
+                </p>
+              </div>
+            </div>
+            <div class="mob-slider swiper only-mobile">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide ne-prosto-banya__item bg-green radios">
+                  <div>
+                    <div class="icon">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g opacity="0.7">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M7.21 0.8C7.69 0.295 8 0 8 0C8.109 0.363 8.234 0.708 8.371 1.038C9.183 2.984 10.444 4.388 11.568 5.638C12.878 7.096 14 8.345 14 10C14 11.5913 13.3679 13.1174 12.2426 14.2426C11.1174 15.3679 9.5913 16 8 16C6.4087 16 4.88258 15.3679 3.75736 14.2426C2.63214 13.1174 2 11.5913 2 10C2 6.668 5.58 2.517 7.21 0.8ZM7.623 1.821C6.98081 2.51594 6.37051 3.23968 5.794 3.99C5.068 4.94 4.358 5.998 3.834 7.06C3.304 8.133 3 9.138 3 10C3 11.3261 3.52678 12.5979 4.46447 13.5355C5.40215 14.4732 6.67392 15 8 15C9.32608 15 10.5979 14.4732 11.5355 13.5355C12.4732 12.5979 13 11.3261 13 10C13 8.799 12.204 7.843 10.819 6.3L10.789 6.268C9.75 5.11 8.5 3.72 7.623 1.82V1.821Z"
+                            fill="white"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M4.55273 7.776C5.37273 6.135 6.26973 5.023 6.64573 4.646L7.35373 5.354C7.06373 5.644 6.22573 6.665 5.44673 8.224L4.55273 7.776Z"
+                            fill="white"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <h3>
+                      Прогревает<br />
+                      и расслабляет<br />
+                      мышцы
+                    </h3>
+                  </div>
+                  <p>
+                    благодаря комфортной<br />
+                    температуре 30-50 Со, всегда поддерживаемой в бане
+                  </p>
+                </div>
+                <div class="swiper-slide ne-prosto-banya__item bg-white radios">
+                  <div>
+                    <div class="icon">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g opacity="0.7">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M7.21 0.8C7.69 0.295 8 0 8 0C8.109 0.363 8.234 0.708 8.371 1.038C9.183 2.984 10.444 4.388 11.568 5.638C12.878 7.096 14 8.345 14 10C14 11.5913 13.3679 13.1174 12.2426 14.2426C11.1174 15.3679 9.5913 16 8 16C6.4087 16 4.88258 15.3679 3.75736 14.2426C2.63214 13.1174 2 11.5913 2 10C2 6.668 5.58 2.517 7.21 0.8ZM7.623 1.821C6.98081 2.51594 6.37051 3.23968 5.794 3.99C5.068 4.94 4.358 5.998 3.834 7.06C3.304 8.133 3 9.138 3 10C3 11.3261 3.52678 12.5979 4.46447 13.5355C5.40215 14.4732 6.67392 15 8 15C9.32608 15 10.5979 14.4732 11.5355 13.5355C12.4732 12.5979 13 11.3261 13 10C13 8.799 12.204 7.843 10.819 6.3L10.789 6.268C9.75 5.11 8.5 3.72 7.623 1.82V1.821Z"
+                            fill="#1B1D21"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M4.55273 7.776C5.37273 6.135 6.26973 5.023 6.64573 4.646L7.35373 5.354C7.06373 5.644 6.22573 6.665 5.44673 8.224L4.55273 7.776Z"
+                            fill="#1B1D21"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <h3>
+                      Насыщает клетки<br />
+                      организма влагой
+                    </h3>
+                  </div>
+                  <p>
+                    благодаря 100% влажности, создающейся с помощью густого
+                    водяного тумана
+                  </p>
+                </div>
+                <div class="swiper-slide ne-prosto-banya__item bg-grey radios">
+                  <div>
+                    <div class="icon">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g opacity="0.7">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M7.21 0.8C7.69 0.295 8 0 8 0C8.109 0.363 8.234 0.708 8.371 1.038C9.183 2.984 10.444 4.388 11.568 5.638C12.878 7.096 14 8.345 14 10C14 11.5913 13.3679 13.1174 12.2426 14.2426C11.1174 15.3679 9.5913 16 8 16C6.4087 16 4.88258 15.3679 3.75736 14.2426C2.63214 13.1174 2 11.5913 2 10C2 6.668 5.58 2.517 7.21 0.8ZM7.623 1.821C6.98081 2.51594 6.37051 3.23968 5.794 3.99C5.068 4.94 4.358 5.998 3.834 7.06C3.304 8.133 3 9.138 3 10C3 11.3261 3.52678 12.5979 4.46447 13.5355C5.40215 14.4732 6.67392 15 8 15C9.32608 15 10.5979 14.4732 11.5355 13.5355C12.4732 12.5979 13 11.3261 13 10C13 8.799 12.204 7.843 10.819 6.3L10.789 6.268C9.75 5.11 8.5 3.72 7.623 1.82V1.821Z"
+                            fill="white"
+                          />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M4.55273 7.776C5.37273 6.135 6.26973 5.023 6.64573 4.646L7.35373 5.354C7.06373 5.644 6.22573 6.665 5.44673 8.224L4.55273 7.776Z"
+                            fill="white"
+                          />
+                        </g>
+                      </svg>
+                    </div>
+                    <h3>
+                      Успокаивает<br />
+                      нервную систему
+                    </h3>
+                  </div>
+                  <p>
+                    благодаря комфортной<br />
+                    температуре 30-50 Со, постоянно поддерживаемой в бане
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block__descr">
+            Достаточно всего одного сеанса, чтобы полностью перезагрузиться<br />
+            и наполниться энергией на целый месяц
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="container">
+          <h2 class="block__title">
+            Узнайте, <b>сколько будет стоить</b><br />
+            ваш собственный хаммам
+          </h2>
+          <div class="block__descr">
+            Получите точную смету
+            <div class="icon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <path
+                    d="M14 4.5V14C14 14.5304 13.7893 15.0391 13.4142 15.4142C13.0391 15.7893 12.5304 16 12 16H4C3.46957 16 2.96086 15.7893 2.58579 15.4142C2.21071 15.0391 2 14.5304 2 14V2C2 1.46957 2.21071 0.960859 2.58579 0.585786C2.96086 0.210714 3.46957 0 4 0L9.5 0L14 4.5ZM11 4.5C10.6022 4.5 10.2206 4.34196 9.93934 4.06066C9.65804 3.77936 9.5 3.39782 9.5 3V1H4C3.73478 1 3.48043 1.10536 3.29289 1.29289C3.10536 1.48043 3 1.73478 3 2V14C3 14.2652 3.10536 14.5196 3.29289 14.7071C3.48043 14.8946 3.73478 15 4 15H12C12.2652 15 12.5196 14.8946 12.7071 14.7071C12.8946 14.5196 13 14.2652 13 14V4.5H11Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </div>
+            с погрешностью менее 5%
+          </div>
+          <div class="block__content grid grid--2 how-mach">
+            <div class="img-block radios bg-grey">
+              <div class="img-wrapper">
+                <img src="./assets/images/dogovor.png" alt="dogovor" />
+              </div>
+            </div>
+            <div class="radios bg-white form-wrap">
+              <div class="form-main">
+                <div class="form__title">Укажите свои контакты</div>
+                <div class="form__title-sub">
+                  Мы уточним у вас нужные детали<br />
+                  и сделаем точный расчет в течение часа
+                </div>
+                <div class="form">
+                  <form novalidate>
+                    <input
+                      class="input radios"
+                      name="tel"
+                      required=""
+                      type="tel"
+                      placeholder="Введите контактный телефон"
+                    />
+                    <div class="error-mes">
+                      <span>Поле обязательно для заполнения</span>
+                    </div>
+                    <button class="btn btn--green radios" type="submit">
+                      Получить смету
+                    </button>
+                    <div class="form-soc">
+                      Или напишите в мессенджер
+                      <div class="form-soc__buttons">
+                        <button class="btn radios">
+                          <svg
+                            width="29"
+                            height="29"
+                            viewBox="0 0 29 29"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M24.65 4.16875C21.9313 1.45 18.3062 0 14.5 0C6.525 0 0 6.525 0 14.5C0 17.0375 0.725011 19.575 1.99376 21.75L0 29L7.61252 27.0062C9.78752 28.0938 12.1438 28.8187 14.5 28.8187C22.475 28.8187 29 22.2937 29 14.3187C29 10.5125 27.3688 6.8875 24.65 4.16875ZM14.5 26.4625C12.325 26.4625 10.15 25.9188 8.33751 24.8313L7.97499 24.65L3.44374 25.9187L4.71251 21.5687L4.34999 21.025C3.08124 19.0312 2.53749 16.8563 2.53749 14.6813C2.53749 8.15625 7.975 2.71875 14.5 2.71875C17.7625 2.71875 20.6625 3.9875 23.0188 6.1625C25.375 8.51875 26.4625 11.4188 26.4625 14.6813C26.4625 21.025 21.2062 26.4625 14.5 26.4625ZM21.025 17.4C20.6625 17.2188 18.85 16.3125 18.4875 16.3125C18.125 16.1313 17.9437 16.1313 17.7625 16.4938C17.5812 16.8563 16.8563 17.5812 16.675 17.9437C16.4938 18.125 16.3125 18.125 15.95 18.125C15.5875 17.9438 14.5 17.5812 13.05 16.3125C11.9625 15.4062 11.2375 14.1375 11.0563 13.775C10.875 13.4125 11.0563 13.2312 11.2375 13.05C11.4188 12.8687 11.6 12.6875 11.7812 12.5062C11.9625 12.325 11.9625 12.1438 12.1438 11.9625C12.325 11.7813 12.1438 11.6 12.1438 11.4188C12.1438 11.2375 11.4188 9.425 11.0563 8.7C10.875 8.15625 10.5125 8.15625 10.3313 8.15625C10.15 8.15625 9.96873 8.15625 9.60623 8.15625C9.42498 8.15625 9.06248 8.15625 8.69998 8.51875C8.33748 8.88125 7.43126 9.7875 7.43126 11.6C7.43126 13.4125 8.69999 15.0437 8.88124 15.4062C9.06249 15.5875 11.4187 19.3937 15.0437 20.8438C18.125 22.1125 18.6688 21.75 19.3938 21.75C20.1188 21.75 21.5688 20.8438 21.75 20.1188C22.1125 19.2125 22.1125 18.4875 21.9313 18.4875C21.75 17.5813 21.3875 17.5813 21.025 17.4Z"
+                              fill="#1B1D21"
+                            />
+                          </svg>
+                          <span>What’sApp</span>
+                        </button>
+                        <button class="btn radios">
+                          <svg
+                            width="28"
+                            height="23"
+                            viewBox="0 0 28 23"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1.89048 9.81113C9.27244 6.59493 14.1949 4.47461 16.6579 3.45018C23.6901 0.525216 25.1514 0.0171192 26.1038 0.000162655C26.3133 -0.00334852 26.7816 0.0485654 27.085 0.294747C27.3412 0.502618 27.4117 0.783422 27.4454 0.980506C27.4792 1.17759 27.5212 1.62655 27.4878 1.97736C27.1067 5.98141 25.4578 15.6982 24.6189 20.1828C24.2639 22.0804 23.565 22.7167 22.8883 22.7789C21.4178 22.9142 20.3012 21.8071 18.8769 20.8735C16.6482 19.4125 15.3892 18.5031 13.2258 17.0775C10.7257 15.43 12.3464 14.5245 13.7712 13.0446C14.1441 12.6573 20.6232 6.76407 20.7486 6.22946C20.7643 6.1626 20.7789 5.91337 20.6308 5.78177C20.4827 5.65016 20.2642 5.69517 20.1065 5.73096C19.883 5.78169 16.3226 8.13496 9.42544 12.7908C8.41484 13.4847 7.49947 13.8228 6.67934 13.8051C5.7752 13.7856 4.036 13.2939 2.74309 12.8736C1.15728 12.3581 -0.103088 12.0856 0.00666213 11.2102C0.0638267 10.7542 0.691767 10.2878 1.89048 9.81113Z"
+                              fill="#1B1D21"
+                            />
+                          </svg>
+                          <span>Telegram</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="checkbox">
+                      <input required="" type="checkbox" id="agreement" />
+                      <label for="agreement" target="_blank"
+                        >Согласие на обработку
+                        <a href="#" target="_blank"
+                          >персональных данных</a
+                        ></label
+                      >
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="form-success">
+                <div class="form-success__title">Спасибо!</div>
+                <div class="form-success__answer">
+                  Мы свяжемся с вами в ближайшее время<br />
+                  и ответим на все ваши вопросы
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="container">
+          <h2 class="block__title">
+            Как строится работа<br />
+            <b>от идеи до реализации</b> проекта
+          </h2>
+          <div class="block__content grid grid--2 ot-idei">
+            <div class="img-block--cover radios">
+              <div class="img-wrapper">
+                <img src="./assets/images/ot-idei.png" alt="" />
+              </div>
+            </div>
+            <div class="ot-idei__info radios">
+              <h3>
+                <b
+                  >Продумываем<br />
+                  каждую деталь</b
+                >
+              </h3>
+              <h4>
+                от формы сидений<br />
+                до количества светильников
+              </h4>
+              <p>
+                Задача — сделать небольшую уютную сауну<br />
+                в строящемся каркасном доме.
+              </p>
+
+              <p>
+                Заказчик хотел довольно простую, но симпатичную<br />
+                сауну с брутальными хвойными ароматами в своем<br />
+                строящемся доме.
+              </p>
+
+              <p>
+                Обязательное условие — светлые тона в отделке,<br />
+                по возмоности широкие элементы в обшивке<br />
+                сауной в каркасном доме
+              </p>
+            </div>
+            <div class="ot-idei__info radios">
+              <h3>
+                <b
+                  >Проектируем<br />
+                  инженерные системы</b
+                >
+              </h3>
+              <h4>и ставим оборудование</h4>
+              <p>
+                Монтируем водоснабжение, отопление,<br />
+                электрику, канализацию и вентиляцию.
+              </p>
+              <p>
+                Делаем тщательную гидроизоляцию,<br />
+                чтобы предотвратить разрушение хаммама<br />
+                из-за образования плесени
+              </p>
+              <a class="link" href="#">
+                <div class="icon">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g opacity="0.7">
+                      <path
+                        d="M14 4.5V14C14 14.5304 13.7893 15.0391 13.4142 15.4142C13.0391 15.7893 12.5304 16 12 16H4C3.46957 16 2.96086 15.7893 2.58579 15.4142C2.21071 15.0391 2 14.5304 2 14V2C2 1.46957 2.21071 0.960859 2.58579 0.585786C2.96086 0.210714 3.46957 0 4 0L9.5 0L14 4.5ZM11 4.5C10.6022 4.5 10.2206 4.34196 9.93934 4.06066C9.65804 3.77936 9.5 3.39782 9.5 3V1H4C3.73478 1 3.48043 1.10536 3.29289 1.29289C3.10536 1.48043 3 1.73478 3 2V14C3 14.2652 3.10536 14.5196 3.29289 14.7071C3.48043 14.8946 3.73478 15 4 15H12C12.2652 15 12.5196 14.8946 12.7071 14.7071C12.8946 14.5196 13 14.2652 13 14V4.5H11Z"
+                        fill="white"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                Пример рабочего проекта
+              </a>
+            </div>
+            <div class="img-block bg-grey radios">
+              <div class="img-wrapper">
+                <img src="./assets/images/shema.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="container">
+          <h2 class="block__title">Создаем <b>красивый</b> интерьер</h2>
+          <div class="block__descr">
+            в традиционном
+            <div class="icon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <path
+                    d="M0 3C0 2.46957 0.210714 1.96086 0.585786 1.58579C0.960859 1.21071 1.46957 1 2 1H14C14.5304 1 15.0391 1.21071 15.4142 1.58579C15.7893 1.96086 16 2.46957 16 3V13C16 13.5304 15.7893 14.0391 15.4142 14.4142C15.0391 14.7893 14.5304 15 14 15H2C1.46957 15 0.960859 14.7893 0.585786 14.4142C0.210714 14.0391 0 13.5304 0 13V3ZM8.5 2V14H14C14.2652 14 14.5196 13.8946 14.7071 13.7071C14.8946 13.5196 15 13.2652 15 13V3C15 2.73478 14.8946 2.48043 14.7071 2.29289C14.5196 2.10536 14.2652 2 14 2H8.5ZM7.5 2H2C1.73478 2 1.48043 2.10536 1.29289 2.29289C1.10536 2.48043 1 2.73478 1 3V13C1 13.2652 1.10536 13.5196 1.29289 13.7071C1.48043 13.8946 1.73478 14 2 14H7.5V2Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </div>
+            или современном стиле
+          </div>
+          <div class="block__content materials">
+            <ul class="materials__nuv">
+              <li>Мозайка<span>Мозайка</span></li>
+              <li>Мрамор<span>Мрамор</span></li>
+              <li class="active">
+                Натуральный камень<span>Натуральный камень</span>
+              </li>
+              <li>Керамическая плитка<span>Керамическая плитка</span></li>
+              <li>Керамогранит<span>Керамогранит</span></li>
+              <li>Другие<span>Другие</span></li>
+            </ul>
+            <div class="dbl-slider materials__slider">
+              <div class="dbl-slider__img-wrap">
+                <div class="dbl-slider__img swiper radios">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="dbl-slider__inside swiper radios">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="dbl-slider__inside swiper radios">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="dbl-slider__inside swiper radios">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="dbl-slider__inside swiper radios">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="dbl-slider__inside swiper radios">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="dbl-slider__inside swiper radios">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dbl-slider__text-wrap radios">
+                <div class="dbl-slider__text swiper">
+                  <div class="swiper__nuv">
+                    <div class="swiper-button-prev">
+                      <svg
+                        width="22"
+                        height="14"
+                        viewBox="0 0 22 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M21.5 7.00003C21.5 7.19894 21.421 7.38971 21.2803 7.53036C21.1397 7.67101 20.9489 7.75003 20.75 7.75003L3.0605 7.75003L7.781 12.469C7.92183 12.6099 8.00095 12.8009 8.00095 13C8.00095 13.1992 7.92183 13.3902 7.781 13.531C7.64017 13.6719 7.44916 13.751 7.25 13.751C7.05084 13.751 6.85983 13.6719 6.719 13.531L0.718999 7.53103C0.649154 7.46136 0.59374 7.3786 0.555931 7.28748C0.518121 7.19636 0.498659 7.09868 0.498659 7.00003C0.498659 6.90138 0.518121 6.8037 0.55593 6.71258C0.59374 6.62146 0.649154 6.5387 0.718999 6.46903L6.719 0.469031C6.85983 0.328201 7.05084 0.249084 7.25 0.249084C7.44916 0.249084 7.64017 0.328201 7.781 0.469031C7.92183 0.609861 8.00095 0.800867 8.00095 1.00003C8.00095 1.19919 7.92183 1.3902 7.781 1.53103L3.0605 6.25003L20.75 6.25003C20.9489 6.25003 21.1397 6.32905 21.2803 6.4697C21.421 6.61035 21.5 6.80112 21.5 7.00003Z"
+                          fill="#1B1D21"
+                        />
+                      </svg>
+                    </div>
+                    <div class="swiper-button-next">
+                      <svg
+                        width="22"
+                        height="14"
+                        viewBox="0 0 22 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M0.5 6.99997C0.5 6.80106 0.579018 6.61029 0.71967 6.46964C0.860322 6.32899 1.05109 6.24997 1.25 6.24997H18.9395L14.219 1.53097C14.0782 1.39014 13.9991 1.19913 13.9991 0.999971C13.9991 0.800807 14.0782 0.609801 14.219 0.468971C14.3598 0.328141 14.5508 0.249023 14.75 0.249023C14.9492 0.249023 15.1402 0.328141 15.281 0.468971L21.281 6.46897C21.3508 6.53864 21.4063 6.6214 21.4441 6.71252C21.4819 6.80364 21.5013 6.90132 21.5013 6.99997C21.5013 7.09862 21.4819 7.1963 21.4441 7.28742C21.4063 7.37854 21.3508 7.4613 21.281 7.53097L15.281 13.531C15.1402 13.6718 14.9492 13.7509 14.75 13.7509C14.5508 13.7509 14.3598 13.6718 14.219 13.531C14.0782 13.3901 13.9991 13.1991 13.9991 13C13.9991 12.8008 14.0782 12.6098 14.219 12.469L18.9395 7.74997H1.25C1.05109 7.74997 0.860322 7.67095 0.71967 7.5303C0.579018 7.38965 0.5 7.19888 0.5 6.99997Z"
+                          fill="#1B1D21"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <h3>Натуральный камень</h3>
+
+                      <p>Один из самых популярных материалов.</p>
+
+                      <p>
+                        Обладает очень высокой прочностью —<br />
+                        в два раза выше, чем у мрамора. А также<br />
+                        усточивостью к перепадам температуры,<br />
+                        воздействию бытовой химии, влажности
+                      </p>
+
+                      <p>
+                        — Сверхпрочная и долговечная порода<br />
+                        — Выдерживает высокие температуры<br />
+                        — Имеет множество уникальных расцветок
+                      </p>
+                    </div>
+                    <div class="swiper-slide">
+                      <h3>
+                        Хаммам с можжевеловой<br />
+                        сауной в каркасном домe
+                      </h3>
+                      <p>
+                        Задача — сделать небольшую уютную сауну<br />
+                        в строящемся каркасном доме.
+                      </p>
+
+                      <p>
+                        Заказчик хотел довольно простую, но симпатичную<br />
+                        сауну с брутальными хвойными ароматами в своем<br />
+                        строящемся доме.
+                      </p>
+
+                      <p>
+                        Обязательное условие — светлые тона в отделке,<br />
+                        по возмоности широкие элементы в обшивке<br />
+                        сауной в каркасном доме
+                      </p>
+                    </div>
+                    <div class="swiper-slide">
+                      <h3>
+                        Хаммам с можжевеловой<br />
+                        сауной в каркасном домe
+                      </h3>
+                      <p>
+                        Задача — сделать небольшую уютную сауну<br />
+                        в строящемся каркасном доме.
+                      </p>
+
+                      <p>
+                        Заказчик хотел довольно простую, но симпатичную<br />
+                        сауну с брутальными хвойными ароматами в своем<br />
+                        строящемся доме.
+                      </p>
+
+                      <p>
+                        Обязательное условие — светлые тона в отделке,<br />
+                        по возмоности широкие элементы в обшивке<br />
+                        сауной в каркасном доме
+                      </p>
+                    </div>
+                    <div class="swiper-slide">
+                      <h3>
+                        Хаммам с можжевеловой<br />
+                        сауной в каркасном домe
+                      </h3>
+                      <p>
+                        Задача — сделать небольшую уютную сауну<br />
+                        в строящемся каркасном доме.
+                      </p>
+
+                      <p>
+                        Заказчик хотел довольно простую, но симпатичную<br />
+                        сауну с брутальными хвойными ароматами в своем<br />
+                        строящемся доме.
+                      </p>
+
+                      <p>
+                        Обязательное условие — светлые тона в отделке,<br />
+                        по возмоности широкие элементы в обшивке<br />
+                        сауной в каркасном доме
+                      </p>
+                    </div>
+                    <div class="swiper-slide">
+                      <h3>
+                        Хаммам с можжевеловой<br />
+                        сауной в каркасном домe
+                      </h3>
+                      <p>
+                        Задача — сделать небольшую уютную сауну<br />
+                        в строящемся каркасном доме.
+                      </p>
+
+                      <p>
+                        Заказчик хотел довольно простую, но симпатичную<br />
+                        сауну с брутальными хвойными ароматами в своем<br />
+                        строящемся доме.
+                      </p>
+
+                      <p>
+                        Обязательное условие — светлые тона в отделке,<br />
+                        по возмоности широкие элементы в обшивке<br />
+                        сауной в каркасном доме
+                      </p>
+                    </div>
+                    <div class="swiper-slide">
+                      <h3>
+                        Хаммам с можжевеловой<br />
+                        сауной в каркасном домe
+                      </h3>
+                      <p>
+                        Задача — сделать небольшую уютную сауну<br />
+                        в строящемся каркасном доме.
+                      </p>
+
+                      <p>
+                        Заказчик хотел довольно простую, но симпатичную<br />
+                        сауну с брутальными хвойными ароматами в своем<br />
+                        строящемся доме.
+                      </p>
+
+                      <p>
+                        Обязательное условие — светлые тона в отделке,<br />
+                        по возмоности широкие элементы в обшивке<br />
+                        сауной в каркасном доме
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="container">
+          <h2 class="block__title">Делаем пространство <b>удобным</b></h2>
+          <div class="block__descr">
+            с помощью
+            <div class="icon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7" clip-path="url(#clip0_117_621)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.04069 0.302756C5.07927 0.212756 5.14342 0.136066 5.2252 0.0822009C5.30697 0.0283364 5.40277 -0.000331033 5.50069 -0.000243943H10.5007C10.7007 -0.000243943 10.8807 0.119756 10.9607 0.302756L13.9607 7.30276C13.9899 7.37123 14.0035 7.44538 14.0005 7.51978C13.9974 7.59418 13.9778 7.66696 13.943 7.7328C13.9082 7.79864 13.8591 7.85588 13.7994 7.90033C13.7397 7.94479 13.6707 7.97534 13.5977 7.98976H13.5957C13.4457 8.01976 13.2957 8.04576 13.1457 8.07076C11.6094 8.32271 10.0572 8.46473 8.50069 8.49576V13.4998C8.50069 13.6324 8.44801 13.7595 8.35424 13.8533C8.26047 13.9471 8.13329 13.9998 8.00069 13.9998C7.86808 13.9998 7.7409 13.9471 7.64713 13.8533C7.55336 13.7595 7.50069 13.6324 7.50069 13.4998V8.49476C5.94422 8.46366 4.39195 8.32163 2.85569 8.06976C2.70569 8.04476 2.55569 8.01976 2.40569 7.98976H2.40269C2.32959 7.97525 2.26066 7.94459 2.20094 7.90002C2.14122 7.85545 2.09221 7.79809 2.05751 7.73214C2.02281 7.66619 2.00329 7.59332 2.00038 7.51885C1.99747 7.44439 2.01124 7.37021 2.04069 7.30176L5.04069 0.301756V0.302756ZM3.21069 7.11576C4.79514 7.36643 6.39653 7.49481 8.00069 7.49976C9.60517 7.49486 11.2069 7.36648 12.7917 7.11576L10.1717 0.999756H5.83069L3.20969 7.11576H3.21069Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M6.493 12.5738C6.51469 12.7045 6.48358 12.8385 6.40651 12.9464C6.32944 13.0542 6.21272 13.127 6.082 13.1488C5.37 13.2668 4.802 13.4438 4.427 13.6418C4.28924 13.708 4.16405 13.7977 4.057 13.9068C4.03596 13.929 4.01842 13.9543 4.005 13.9818L4.004 13.9858L4 13.9958V13.9998L4.002 14.0078C4.00593 14.0194 4.01131 14.0305 4.018 14.0408C4.05751 14.0986 4.10654 14.1493 4.163 14.1908C4.328 14.3208 4.598 14.4608 4.976 14.5858C5.727 14.8358 6.796 14.9998 8 14.9998C9.204 14.9998 10.273 14.8368 11.024 14.5858C11.402 14.4598 11.672 14.3208 11.837 14.1908C11.8938 14.1494 11.9432 14.0987 11.983 14.0408C11.9893 14.0304 11.9944 14.0194 11.998 14.0078L12 13.9998V13.9958C11.9865 13.9626 11.9672 13.9322 11.943 13.9058C11.8359 13.797 11.7107 13.7077 11.573 13.6418C11.197 13.4438 10.63 13.2668 9.918 13.1488C9.85168 13.1398 9.78783 13.1176 9.73025 13.0835C9.67267 13.0494 9.62253 13.004 9.58279 12.9502C9.54306 12.8963 9.51454 12.835 9.49893 12.7699C9.48332 12.7049 9.48093 12.6373 9.49191 12.5713C9.5029 12.5053 9.52702 12.4421 9.56286 12.3856C9.5987 12.3291 9.64552 12.2803 9.70055 12.2422C9.75558 12.2041 9.81769 12.1775 9.88322 12.1638C9.94874 12.1502 10.0163 12.1498 10.082 12.1628C10.852 12.2898 11.534 12.4908 12.039 12.7568C12.5 12.9998 13 13.3998 13 13.9998C13 14.4258 12.74 14.7518 12.456 14.9768C12.166 15.2048 11.776 15.3898 11.34 15.5348C10.462 15.8278 9.281 15.9998 8 15.9998C6.719 15.9998 5.538 15.8278 4.66 15.5348C4.224 15.3898 3.834 15.2048 3.544 14.9768C3.26 14.7518 3 14.4258 3 13.9998C3 13.4008 3.5 12.9998 3.961 12.7568C4.466 12.4908 5.148 12.2898 5.918 12.1628C6.04874 12.1411 6.18275 12.1722 6.29057 12.2493C6.39838 12.3263 6.4712 12.4431 6.493 12.5738Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_117_621">
+                    <rect
+                      width="16"
+                      height="16"
+                      fill="white"
+                      transform="translate(0 -0.000244141)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            декоративных элементов
+          </div>
+          <div class="block__content grid grid--3 decor">
+            <div class="decor__item">
+              <div class="img-block--cover radios">
+                <div class="img-wrapper">
+                  <img src="./assets/images/decor/1.png" alt="" />
+                </div>
+              </div>
+              <h3>Анатомический лежак</h3>
+              <p>помогает лечь и максимально расслабиться</p>
+            </div>
+            <div class="decor__item">
+              <div class="img-block--cover radios">
+                <div class="img-wrapper">
+                  <img src="./assets/images/decor/2.png" alt="" />
+                </div>
+              </div>
+              <h3>Массажный стол</h3>
+              <p>дает возможность проведения дополнительных процедур</p>
+            </div>
+            <div class="decor__item">
+              <div class="img-block--cover radios">
+                <div class="img-wrapper">
+                  <img src="./assets/images/decor/3.png" alt="" />
+                </div>
+              </div>
+              <h3>Курна (раковина)</h3>
+              <p>позволяет освежиться во время похода в хаммам</p>
+            </div>
+            <div class="decor__item">
+              <div class="img-block--cover radios">
+                <div class="img-wrapper">
+                  <img src="./assets/images/decor/4.png" alt="" />
+                </div>
+              </div>
+              <h3>Купол</h3>
+              <p>собирает и выводит конденсат из помещения</p>
+            </div>
+            <div class="decor__item">
+              <div class="img-block--cover radios">
+                <div class="img-wrapper">
+                  <img src="./assets/images/decor/5.png" alt="" />
+                </div>
+              </div>
+              <h3>Звездное небо</h3>
+              <p>дарит особое эстетическое удовольствие</p>
+            </div>
+            <div class="decor__item">
+              <div class="img-block--cover radios bg-grey">
+                <h3>Еще больше декоративных элементов</h3>
+                <p>
+                  Оставьте заявку и получите каталог с расширенным перечнем
+                  декора
+                </p>
+              </div>
+              <button class="btn btn--green">Получить каталог</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="container">
+          <h2 class="block__title">
+            Полностью
+            <b
+              >автоматизируем<br />
+              управление</b
+            >
+            вашим хаммамом
+          </h2>
+          <div class="block__content grid grid--2 automatic">
+            <div class="img-block bg-grey radios">
+              <div class="img-wrapper">
+                <img src="./assets/images/display.png" alt="" />
+              </div>
+            </div>
+            <div class="block_transparent radios">
+              <h3>
+                Устанавливаем оборудование, которое
+                <b>будет руководить всеми системами:</b> от отопления до
+                вентиляции.
+              </h3>
+              <p>Просто нажмите на кнопку, и через час ваш хаммам готов</p>
+              <div class="buttons">
+                <button class="btn">Узнать подробнее</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="container">
+          <h2 class="block__title">
+            Узнайте, какие
+            <b
+              >подготовительные<br />
+              работы</b
+            >
+            вам нужно сделать
+          </h2>
+          <div class="block__descr">
+            до начала
+            <div class="icon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7" clip-path="url(#clip0_117_621)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.04069 0.302756C5.07927 0.212756 5.14342 0.136066 5.2252 0.0822009C5.30697 0.0283364 5.40277 -0.000331033 5.50069 -0.000243943H10.5007C10.7007 -0.000243943 10.8807 0.119756 10.9607 0.302756L13.9607 7.30276C13.9899 7.37123 14.0035 7.44538 14.0005 7.51978C13.9974 7.59418 13.9778 7.66696 13.943 7.7328C13.9082 7.79864 13.8591 7.85588 13.7994 7.90033C13.7397 7.94479 13.6707 7.97534 13.5977 7.98976H13.5957C13.4457 8.01976 13.2957 8.04576 13.1457 8.07076C11.6094 8.32271 10.0572 8.46473 8.50069 8.49576V13.4998C8.50069 13.6324 8.44801 13.7595 8.35424 13.8533C8.26047 13.9471 8.13329 13.9998 8.00069 13.9998C7.86808 13.9998 7.7409 13.9471 7.64713 13.8533C7.55336 13.7595 7.50069 13.6324 7.50069 13.4998V8.49476C5.94422 8.46366 4.39195 8.32163 2.85569 8.06976C2.70569 8.04476 2.55569 8.01976 2.40569 7.98976H2.40269C2.32959 7.97525 2.26066 7.94459 2.20094 7.90002C2.14122 7.85545 2.09221 7.79809 2.05751 7.73214C2.02281 7.66619 2.00329 7.59332 2.00038 7.51885C1.99747 7.44439 2.01124 7.37021 2.04069 7.30176L5.04069 0.301756V0.302756ZM3.21069 7.11576C4.79514 7.36643 6.39653 7.49481 8.00069 7.49976C9.60517 7.49486 11.2069 7.36648 12.7917 7.11576L10.1717 0.999756H5.83069L3.20969 7.11576H3.21069Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M6.493 12.5738C6.51469 12.7045 6.48358 12.8385 6.40651 12.9464C6.32944 13.0542 6.21272 13.127 6.082 13.1488C5.37 13.2668 4.802 13.4438 4.427 13.6418C4.28924 13.708 4.16405 13.7977 4.057 13.9068C4.03596 13.929 4.01842 13.9543 4.005 13.9818L4.004 13.9858L4 13.9958V13.9998L4.002 14.0078C4.00593 14.0194 4.01131 14.0305 4.018 14.0408C4.05751 14.0986 4.10654 14.1493 4.163 14.1908C4.328 14.3208 4.598 14.4608 4.976 14.5858C5.727 14.8358 6.796 14.9998 8 14.9998C9.204 14.9998 10.273 14.8368 11.024 14.5858C11.402 14.4598 11.672 14.3208 11.837 14.1908C11.8938 14.1494 11.9432 14.0987 11.983 14.0408C11.9893 14.0304 11.9944 14.0194 11.998 14.0078L12 13.9998V13.9958C11.9865 13.9626 11.9672 13.9322 11.943 13.9058C11.8359 13.797 11.7107 13.7077 11.573 13.6418C11.197 13.4438 10.63 13.2668 9.918 13.1488C9.85168 13.1398 9.78783 13.1176 9.73025 13.0835C9.67267 13.0494 9.62253 13.004 9.58279 12.9502C9.54306 12.8963 9.51454 12.835 9.49893 12.7699C9.48332 12.7049 9.48093 12.6373 9.49191 12.5713C9.5029 12.5053 9.52702 12.4421 9.56286 12.3856C9.5987 12.3291 9.64552 12.2803 9.70055 12.2422C9.75558 12.2041 9.81769 12.1775 9.88322 12.1638C9.94874 12.1502 10.0163 12.1498 10.082 12.1628C10.852 12.2898 11.534 12.4908 12.039 12.7568C12.5 12.9998 13 13.3998 13 13.9998C13 14.4258 12.74 14.7518 12.456 14.9768C12.166 15.2048 11.776 15.3898 11.34 15.5348C10.462 15.8278 9.281 15.9998 8 15.9998C6.719 15.9998 5.538 15.8278 4.66 15.5348C4.224 15.3898 3.834 15.2048 3.544 14.9768C3.26 14.7518 3 14.4258 3 13.9998C3 13.4008 3.5 12.9998 3.961 12.7568C4.466 12.4908 5.148 12.2898 5.918 12.1628C6.04874 12.1411 6.18275 12.1722 6.29057 12.2493C6.39838 12.3263 6.4712 12.4431 6.493 12.5738Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_117_621">
+                    <rect
+                      width="16"
+                      height="16"
+                      fill="white"
+                      transform="translate(0 -0.000244141)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            строительства хаммама
+          </div>
+          <div class="block__content grid grid--2 call-inzh">
+            <div class="img-block radios bg-grey">
+              <div class="img-wrapper">
+                <img src="./assets/images/shema.png" alt="" />
+              </div>
+            </div>
+            <div class="block_transparent radios">
+              <h3>
+                Оставьте заявку <b>на&nbsp;бесплатный выезд нашего инженера</b
+                ><br />
+                на ваш объект:
+              </h3>
+              <p>
+                — Сделаем замер вашего помещения<br />
+                — Спроектируем подведение канализации,<br />
+                вентиляции и электрики<br />
+                — Рассчитаем необходимый уровень полов<br />
+                — Определим место прокладки труб отопления<br />
+                — И многое другое
+              </p>
+
+              <p>
+                На следующий день после встречи бесплатно подготовим инженерный
+                чертеж и тех. задание на прокладку коммуникаций для подготовки
+                вашего помещения
+              </p>
+              <div class="buttons">
+                <button class="btn">Пригласить инженера</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="container">
+          <h2 class="block__title">
+            Работаем <b>по всей московской</b><br />
+            и соседним областям
+          </h2>
+          <div class="block__descr">
+            Построили более 500 бань
+            <div class="icon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7" clip-path="url(#clip0_117_660)">
+                  <path
+                    d="M8.186 1.11297C8.06662 1.06513 7.93338 1.06513 7.814 1.11297L1.846 3.49997L8 5.96097L14.154 3.49997L8.186 1.11297ZM15 4.23897L8.5 6.83897V14.761L15 12.161V4.23997V4.23897ZM7.5 14.762V6.83797L1 4.23897V12.162L7.5 14.762ZM7.443 0.183972C7.80057 0.040971 8.19943 0.040971 8.557 0.183972L15.686 3.03597C15.7787 3.07312 15.8581 3.13716 15.9141 3.21986C15.9701 3.30256 16 3.40012 16 3.49997V12.162C15.9999 12.3618 15.9399 12.557 15.8278 12.7224C15.7157 12.8878 15.5566 13.0158 15.371 13.09L8.186 15.964C8.06662 16.0118 7.93338 16.0118 7.814 15.964L0.63 13.09C0.444251 13.016 0.284942 12.888 0.172642 12.7226C0.0603417 12.5572 0.000206329 12.3619 0 12.162L0 3.49997C2.32399e-05 3.40012 0.0299437 3.30256 0.085907 3.21986C0.14187 3.13716 0.221313 3.07312 0.314 3.03597L7.443 0.183972Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_117_660">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            от эконом до премиум класса
+          </div>
+          <div class="block__content map-objects">
+            <div
+              id="map"
+              class="radios"
+              data-objects="[{'name':'название','link':'./article.html','coord': [55.751951029260795,37.58092567340576],'imgLink':'./assets/images/decor/1.png'}, {'name':'название','link':'./article.html','coord': [55.78079066398572,37.52736732379637],'imgLink':'./assets/images/decor/1.png'}]"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="container">
+          <h2 class="block__title">Выполняем все работы <b>«под ключ»</b></h2>
+          <div class="block__descr">
+            не отвлекая вас
+            <div class="icon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.21 0.8C7.69 0.295 8 0 8 0C8.109 0.363 8.234 0.708 8.371 1.038C9.183 2.984 10.444 4.388 11.568 5.638C12.878 7.096 14 8.345 14 10C14 11.5913 13.3679 13.1174 12.2426 14.2426C11.1174 15.3679 9.5913 16 8 16C6.4087 16 4.88258 15.3679 3.75736 14.2426C2.63214 13.1174 2 11.5913 2 10C2 6.668 5.58 2.517 7.21 0.8ZM7.623 1.821C6.98081 2.51594 6.37051 3.23968 5.794 3.99C5.068 4.94 4.358 5.998 3.834 7.06C3.304 8.133 3 9.138 3 10C3 11.3261 3.52678 12.5979 4.46447 13.5355C5.40215 14.4732 6.67392 15 8 15C9.32608 15 10.5979 14.4732 11.5355 13.5355C12.4732 12.5979 13 11.3261 13 10C13 8.799 12.204 7.843 10.819 6.3L10.789 6.268C9.75 5.11 8.5 3.72 7.623 1.82V1.821Z"
+                    fill="white"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.55273 7.776C5.37273 6.135 6.26973 5.023 6.64573 4.646L7.35373 5.354C7.06373 5.644 6.22573 6.665 5.44673 8.224L4.55273 7.776Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </div>
+            по мелочам
+          </div>
+          <div class="block__content grid pod-kluch">
+            <div class="img-block--cover radios">
+              <div class="img-wrapper">
+                <img src="./assets/images/pod-obed.png" alt="" />
+              </div>
+            </div>
+            <div class="grid">
+              <div class="pod-kluch__item radios bg-green">
+                <div class="icon">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g opacity="0.7">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.21 0.8C7.69 0.295 8 0 8 0C8.109 0.363 8.234 0.708 8.371 1.038C9.183 2.984 10.444 4.388 11.568 5.638C12.878 7.096 14 8.345 14 10C14 11.5913 13.3679 13.1174 12.2426 14.2426C11.1174 15.3679 9.5913 16 8 16C6.4087 16 4.88258 15.3679 3.75736 14.2426C2.63214 13.1174 2 11.5913 2 10C2 6.668 5.58 2.517 7.21 0.8ZM7.623 1.821C6.98081 2.51594 6.37051 3.23968 5.794 3.99C5.068 4.94 4.358 5.998 3.834 7.06C3.304 8.133 3 9.138 3 10C3 11.3261 3.52678 12.5979 4.46447 13.5355C5.40215 14.4732 6.67392 15 8 15C9.32608 15 10.5979 14.4732 11.5355 13.5355C12.4732 12.5979 13 11.3261 13 10C13 8.799 12.204 7.843 10.819 6.3L10.789 6.268C9.75 5.11 8.5 3.72 7.623 1.82V1.821Z"
+                        fill="white"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4.55273 7.776C5.37273 6.135 6.26973 5.023 6.64573 4.646L7.35373 5.354C7.06373 5.644 6.22573 6.665 5.44673 8.224L4.55273 7.776Z"
+                        fill="white"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <h3>
+                  Закупим<br />
+                  необходимые<br />
+                  материалы
+                </h3>
+                <p>организуем доставку и сами разгрузим их на вашем объекте</p>
+              </div>
+              <div class="pod-kluch__item radios bg-white">
+                <div class="icon">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g opacity="0.7">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.21 0.8C7.69 0.295 8 0 8 0C8.109 0.363 8.234 0.708 8.371 1.038C9.183 2.984 10.444 4.388 11.568 5.638C12.878 7.096 14 8.345 14 10C14 11.5913 13.3679 13.1174 12.2426 14.2426C11.1174 15.3679 9.5913 16 8 16C6.4087 16 4.88258 15.3679 3.75736 14.2426C2.63214 13.1174 2 11.5913 2 10C2 6.668 5.58 2.517 7.21 0.8ZM7.623 1.821C6.98081 2.51594 6.37051 3.23968 5.794 3.99C5.068 4.94 4.358 5.998 3.834 7.06C3.304 8.133 3 9.138 3 10C3 11.3261 3.52678 12.5979 4.46447 13.5355C5.40215 14.4732 6.67392 15 8 15C9.32608 15 10.5979 14.4732 11.5355 13.5355C12.4732 12.5979 13 11.3261 13 10C13 8.799 12.204 7.843 10.819 6.3L10.789 6.268C9.75 5.11 8.5 3.72 7.623 1.82V1.821Z"
+                        fill="white"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4.55273 7.776C5.37273 6.135 6.26973 5.023 6.64573 4.646L7.35373 5.354C7.06373 5.644 6.22573 6.665 5.44673 8.224L4.55273 7.776Z"
+                        fill="white"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <h3>
+                  Организуем<br />
+                  рабочий процесс
+                </h3>
+                <p>
+                  благодаря 100% влажности, создающейся с помощью густого
+                  водяного тумана
+                </p>
+              </div>
+              <div class="pod-kluch__item radios bg-grey">
+                <div class="icon">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g opacity="0.7">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.21 0.8C7.69 0.295 8 0 8 0C8.109 0.363 8.234 0.708 8.371 1.038C9.183 2.984 10.444 4.388 11.568 5.638C12.878 7.096 14 8.345 14 10C14 11.5913 13.3679 13.1174 12.2426 14.2426C11.1174 15.3679 9.5913 16 8 16C6.4087 16 4.88258 15.3679 3.75736 14.2426C2.63214 13.1174 2 11.5913 2 10C2 6.668 5.58 2.517 7.21 0.8ZM7.623 1.821C6.98081 2.51594 6.37051 3.23968 5.794 3.99C5.068 4.94 4.358 5.998 3.834 7.06C3.304 8.133 3 9.138 3 10C3 11.3261 3.52678 12.5979 4.46447 13.5355C5.40215 14.4732 6.67392 15 8 15C9.32608 15 10.5979 14.4732 11.5355 13.5355C12.4732 12.5979 13 11.3261 13 10C13 8.799 12.204 7.843 10.819 6.3L10.789 6.268C9.75 5.11 8.5 3.72 7.623 1.82V1.821Z"
+                        fill="white"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4.55273 7.776C5.37273 6.135 6.26973 5.023 6.64573 4.646L7.35373 5.354C7.06373 5.644 6.22573 6.665 5.44673 8.224L4.55273 7.776Z"
+                        fill="white"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <h3>
+                  Приведем в порядок<br />
+                  территорию
+                </h3>
+                <p>
+                  приберем весь строительный<br />
+                  мусор и оставим после себя<br />
+                  чистое помещение
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="container">
+          <h2 class="block__title">Предлагаем <b>честные</b> цены</h2>
+          <div class="block__descr">
+            и удобную
+            <div class="icon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <path
+                    d="M4 10.781C4.148 12.448 5.513 13.631 7.591 13.784V15H8.634V13.784C10.904 13.605 12.312 12.346 12.312 10.484C12.312 8.894 11.365 7.974 9.356 7.456L8.634 7.269V3.467C9.756 3.577 10.513 4.181 10.704 5.083H12.174C12.008 3.483 10.634 2.335 8.634 2.208V1H7.591V2.233C5.652 2.463 4.321 3.705 4.321 5.389C4.321 6.843 5.287 7.872 6.982 8.306L7.592 8.468V12.499C6.443 12.329 5.652 11.699 5.461 10.781H4ZM7.391 6.945C6.348 6.682 5.791 6.12 5.791 5.329C5.791 4.385 6.495 3.688 7.591 3.501V6.996L7.391 6.946V6.945ZM8.982 8.817C10.269 9.14 10.834 9.676 10.834 10.586C10.834 11.683 10.008 12.414 8.634 12.525V8.73L8.982 8.816V8.817Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </div>
+            схему оплаты
+          </div>
+          <div class="block__content grid pay">
+            <div class="grid">
+              <div class="pay__info radios bg-grey">
+                <div>
+                  <h3>Хаммам под отделку</h3>
+                  <p>
+                    от 110 000 ₽/м2<br />
+                    от 21 дня
+                  </p>
+                  <h3>Чистовая отделка</h3>
+                  <p>Оценивается индивидуально</p>
+                </div>
+              </div>
+              <button class="btn btn--green">Получить точный расчет</button>
+            </div>
+            <div class="pay-shema radios bg-white">
+              <div class="pay-shema__titles">
+                <div class="pay-shema__title">Материалы</div>
+                <div class="pay-shema__title">Работа</div>
+              </div>
+              <div class="pay-shema__diagramm">
+                <div class="pay-shema__item">
+                  <div class="pay-shema__proc">50%</div>
+                  <div
+                    class="pay-shema__visual pay-shema__visual--materials"
+                  ></div>
+                  <div class="pay-shema__name">
+                    При заключении<br />
+                    договора
+                  </div>
+                </div>
+                <div class="pay-shema__item">
+                  <div class="pay-shema__proc">50%</div>
+                  <div
+                    class="pay-shema__visual pay-shema__visual--materials"
+                  ></div>
+                  <div class="pay-shema__name">
+                    После доставки<br />
+                    материалов
+                  </div>
+                </div>
+                <div class="pay-shema__item">
+                  <div class="pay-shema__proc">50%</div>
+                  <div class="pay-shema__visual pay-shema__visual--work"></div>
+                  <div class="pay-shema__name">
+                    Перед началом<br />
+                    работ
+                  </div>
+                </div>
+                <div class="pay-shema__item">
+                  <div class="pay-shema__proc">50%</div>
+                  <div class="pay-shema__visual pay-shema__visual--work"></div>
+                  <div class="pay-shema__name">
+                    После сдачи<br />
+                    объекта
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="container">
+          <h2 class="block__title">
+            Закрепляем <b>гарантию</b><br />
+            в договоре
+          </h2>
+          <div class="block__content grid grid--2">
+            <div class="radios bg-grey img-block">
+              <div class="img-wrapper">
+                <img src="./assets/images/garant.png" alt="" />
+              </div>
+            </div>
+            <div class="radios block_transparent garant">
+              <h3>
+                В случае возникновения неполадок,
+                <b>любые неисправности будут устранены</b> в кратчайшие сроки за
+                наш счет
+              </h3>
+              <p>Закреплено п.1.5 Договора</p>
+              <a class="link" href="">
+                <div class="icon">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g opacity="0.7">
+                      <path
+                        d="M14 4.5V14C14 14.5304 13.7893 15.0391 13.4142 15.4142C13.0391 15.7893 12.5304 16 12 16H4C3.46957 16 2.96086 15.7893 2.58579 15.4142C2.21071 15.0391 2 14.5304 2 14V2C2 1.46957 2.21071 0.960859 2.58579 0.585786C2.96086 0.210714 3.46957 0 4 0L9.5 0L14 4.5ZM11 4.5C10.6022 4.5 10.2206 4.34196 9.93934 4.06066C9.65804 3.77936 9.5 3.39782 9.5 3V1H4C3.73478 1 3.48043 1.10536 3.29289 1.29289C3.10536 1.48043 3 1.73478 3 2V14C3 14.2652 3.10536 14.5196 3.29289 14.7071C3.48043 14.8946 3.73478 15 4 15H12C12.2652 15 12.5196 14.8946 12.7071 14.7071C12.8946 14.5196 13 14.2652 13 14V4.5H11Z"
+                        fill="white"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                Смотреть договор
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="container">
+          <h2 class="block__title">Сдаем объект <b>точно в срок</b></h2>
+          <div class="block__descr">
+            благодаря опыту,
+            <div class="icon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7" clip-path="url(#clip0_117_935)">
+                  <path
+                    d="M3.5 0C3.63261 0 3.75979 0.0526784 3.85355 0.146447C3.94732 0.240215 4 0.367392 4 0.5V1H12V0.5C12 0.367392 12.0527 0.240215 12.1464 0.146447C12.2402 0.0526784 12.3674 0 12.5 0C12.6326 0 12.7598 0.0526784 12.8536 0.146447C12.9473 0.240215 13 0.367392 13 0.5V1H14C14.5304 1 15.0391 1.21071 15.4142 1.58579C15.7893 1.96086 16 2.46957 16 3V14C16 14.5304 15.7893 15.0391 15.4142 15.4142C15.0391 15.7893 14.5304 16 14 16H2C1.46957 16 0.960859 15.7893 0.585786 15.4142C0.210714 15.0391 0 14.5304 0 14V3C0 2.46957 0.210714 1.96086 0.585786 1.58579C0.960859 1.21071 1.46957 1 2 1H3V0.5C3 0.367392 3.05268 0.240215 3.14645 0.146447C3.24021 0.0526784 3.36739 0 3.5 0V0ZM2 2C1.73478 2 1.48043 2.10536 1.29289 2.29289C1.10536 2.48043 1 2.73478 1 3V4H15V3C15 2.73478 14.8946 2.48043 14.7071 2.29289C14.5196 2.10536 14.2652 2 14 2H2ZM15 5H1V14C1 14.2652 1.10536 14.5196 1.29289 14.7071C1.48043 14.8946 1.73478 15 2 15H14C14.2652 15 14.5196 14.8946 14.7071 14.7071C14.8946 14.5196 15 14.2652 15 14V5Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_117_935">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            накопленному за 15 лет
+          </div>
+          <div class="block__content grid grid--2 srok">
+            <div class="bg-green radios srok__info">
+              <h3>
+                Оставьте заявку<br />
+                и узнайте подробнее<br />
+                о всех условиях<br />
+                нашей работы
+              </h3>
+              <button class="btn bg-white">Оставить заявку</button>
+            </div>
+            <div class="img-block--cover radios">
+              <div class="img-wrapper">
+                <img src="./assets/images/srok.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="container">
+          <h2 class="block__title">
+            Стараемся <b>превзойти </b><br />
+            ваши ожидания
+          </h2>
+          <div class="block__descr">
+            и воплотить мечту
+            <div class="icon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7" clip-path="url(#clip0_117_807)">
+                  <path
+                    d="M3.1 0.7C3.14657 0.637902 3.20697 0.5875 3.27639 0.552786C3.34582 0.518073 3.42238 0.5 3.5 0.5H12.5C12.5776 0.5 12.6542 0.518073 12.7236 0.552786C12.793 0.5875 12.8534 0.637902 12.9 0.7L15.876 4.674C16.025 4.859 16.032 5.124 15.886 5.318L8.4 15.3C8.35343 15.3621 8.29304 15.4125 8.22361 15.4472C8.15418 15.4819 8.07762 15.5 8 15.5C7.92238 15.5 7.84582 15.4819 7.77639 15.4472C7.70697 15.4125 7.64657 15.3621 7.6 15.3L0.1 5.3C0.0350889 5.21345 0 5.10819 0 5C0 4.89181 0.0350889 4.78655 0.1 4.7L3.1 0.7ZM14.486 4.485L12.68 2.075L11.904 4.488L14.486 4.485ZM10.853 4.489L11.814 1.5H4.186L5.149 4.495L10.853 4.489ZM5.47 5.495L8 13.366L10.532 5.49L5.47 5.495ZM4.099 4.496L3.319 2.074L1.501 4.499L4.099 4.496ZM1.499 5.5L6.612 12.317L4.42 5.497L1.5 5.5H1.499ZM9.388 12.317L14.511 5.487L11.583 5.489L9.388 12.317Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_117_807">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            в реальность
+          </div>
+          <div class="dbl-slider block__content">
+            <div class="dbl-slider__img-wrap">
+              <div class="dbl-slider__img swiper radios">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="img-wrapper">
+                      <img
+                        class="swiper-lazy"
+                        data-src="./assets/images/logo.png"
+                        data-srcset="./assets/images/15years/1.png"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-wrapper">
+                      <img
+                        class="swiper-lazy"
+                        data-src="./assets/images/logo.png"
+                        data-srcset="./assets/images/15years/1.png"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-wrapper">
+                      <img
+                        class="swiper-lazy"
+                        data-src="./assets/images/logo.png"
+                        data-srcset="./assets/images/15years/1.png"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-wrapper">
+                      <img
+                        class="swiper-lazy"
+                        data-src="./assets/images/logo.png"
+                        data-srcset="./assets/images/15years/1.png"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img-wrapper">
+                      <img
+                        class="swiper-lazy"
+                        data-src="./assets/images/logo.png"
+                        data-srcset="./assets/images/15years/1.png"
+                      />
+                      <div class="swiper-lazy-preloader"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+            <div class="dbl-slider__text-wrap radios">
+              <div class="dbl-slider__text swiper quote">
+                <div class="swiper__nuv">
+                  <div class="swiper-button-prev">
+                    <svg
+                      width="22"
+                      height="14"
+                      viewBox="0 0 22 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M21.5 7.00003C21.5 7.19894 21.421 7.38971 21.2803 7.53036C21.1397 7.67101 20.9489 7.75003 20.75 7.75003L3.0605 7.75003L7.781 12.469C7.92183 12.6099 8.00095 12.8009 8.00095 13C8.00095 13.1992 7.92183 13.3902 7.781 13.531C7.64017 13.6719 7.44916 13.751 7.25 13.751C7.05084 13.751 6.85983 13.6719 6.719 13.531L0.718999 7.53103C0.649154 7.46136 0.59374 7.3786 0.555931 7.28748C0.518121 7.19636 0.498659 7.09868 0.498659 7.00003C0.498659 6.90138 0.518121 6.8037 0.55593 6.71258C0.59374 6.62146 0.649154 6.5387 0.718999 6.46903L6.719 0.469031C6.85983 0.328201 7.05084 0.249084 7.25 0.249084C7.44916 0.249084 7.64017 0.328201 7.781 0.469031C7.92183 0.609861 8.00095 0.800867 8.00095 1.00003C8.00095 1.19919 7.92183 1.3902 7.781 1.53103L3.0605 6.25003L20.75 6.25003C20.9489 6.25003 21.1397 6.32905 21.2803 6.4697C21.421 6.61035 21.5 6.80112 21.5 7.00003Z"
+                        fill="#1B1D21"
+                      />
+                    </svg>
+                  </div>
+                  <div class="swiper-button-next">
+                    <svg
+                      width="22"
+                      height="14"
+                      viewBox="0 0 22 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.5 6.99997C0.5 6.80106 0.579018 6.61029 0.71967 6.46964C0.860322 6.32899 1.05109 6.24997 1.25 6.24997H18.9395L14.219 1.53097C14.0782 1.39014 13.9991 1.19913 13.9991 0.999971C13.9991 0.800807 14.0782 0.609801 14.219 0.468971C14.3598 0.328141 14.5508 0.249023 14.75 0.249023C14.9492 0.249023 15.1402 0.328141 15.281 0.468971L21.281 6.46897C21.3508 6.53864 21.4063 6.6214 21.4441 6.71252C21.4819 6.80364 21.5013 6.90132 21.5013 6.99997C21.5013 7.09862 21.4819 7.1963 21.4441 7.28742C21.4063 7.37854 21.3508 7.4613 21.281 7.53097L15.281 13.531C15.1402 13.6718 14.9492 13.7509 14.75 13.7509C14.5508 13.7509 14.3598 13.6718 14.219 13.531C14.0782 13.3901 13.9991 13.1991 13.9991 13C13.9991 12.8008 14.0782 12.6098 14.219 12.469L18.9395 7.74997H1.25C1.05109 7.74997 0.860322 7.67095 0.71967 7.5303C0.579018 7.38965 0.5 7.19888 0.5 6.99997Z"
+                        fill="#1B1D21"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <h3>
+                      Сделали быстро,<br />
+                      даже немного раньше срока
+                    </h3>
+                    <p>
+                      Сделали быстро,<br />
+                      даже немного раньше срока
+                    </p>
+
+                    <p>
+                      Хотели сделать сауну в деревянном доме.<br />
+                      При поиске подрядчиков обращали внимание на опыт<br />
+                      компании, соотношение цена-качество и технологии,<br />
+                      по которым работает фирма.
+                    </p>
+
+                    <p>
+                      Понравился принцип работы: инженер Алексей выехал,<br />
+                      ответил на все вопросы, смог предложить такие<br />
+                      решения, которые другие компании не предлагали.<br />
+                      Быстро составили сметы, завезли материалы и начали<br />
+                      работу. Сотрудники были на связи постоянно,<br />
+                      все моменты согласовывались — мне присылали<br />
+                      ежедневные фотоотчеты.
+                    </p>
+
+                    <p>
+                      Сделали быстро, даже немного раньше заявленного<br />
+                      срока. Качество превзошло все ожидания. Очень<br />
+                      довольны выбором компании!
+                    </p>
+
+                    <p>
+                      <b
+                        >Виктория<br />
+                        Заказала сауну в апреле 2018</b
+                      >
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <h3>
+                      Хаммам с можжевеловой<br />
+                      сауной в каркасном домe
+                    </h3>
+                    <p>
+                      Задача — сделать небольшую уютную сауну<br />
+                      в строящемся каркасном доме.
+                    </p>
+
+                    <p>
+                      Заказчик хотел довольно простую, но симпатичную<br />
+                      сауну с брутальными хвойными ароматами в своем<br />
+                      строящемся доме.
+                    </p>
+
+                    <p>
+                      Обязательное условие — светлые тона в отделке,<br />
+                      по возмоности широкие элементы в обшивке<br />
+                      сауной в каркасном доме
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <h3>
+                      Хаммам с можжевеловой<br />
+                      сауной в каркасном домe
+                    </h3>
+                    <p>
+                      Задача — сделать небольшую уютную сауну<br />
+                      в строящемся каркасном доме.
+                    </p>
+
+                    <p>
+                      Заказчик хотел довольно простую, но симпатичную<br />
+                      сауну с брутальными хвойными ароматами в своем<br />
+                      строящемся доме.
+                    </p>
+
+                    <p>
+                      Обязательное условие — светлые тона в отделке,<br />
+                      по возмоности широкие элементы в обшивке<br />
+                      сауной в каркасном доме
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <h3>
+                      Хаммам с можжевеловой<br />
+                      сауной в каркасном домe
+                    </h3>
+                    <p>
+                      Задача — сделать небольшую уютную сауну<br />
+                      в строящемся каркасном доме.
+                    </p>
+
+                    <p>
+                      Заказчик хотел довольно простую, но симпатичную<br />
+                      сауну с брутальными хвойными ароматами в своем<br />
+                      строящемся доме.
+                    </p>
+
+                    <p>
+                      Обязательное условие — светлые тона в отделке,<br />
+                      по возмоности широкие элементы в обшивке<br />
+                      сауной в каркасном доме
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <h3>
+                      Хаммам с можжевеловой<br />
+                      сауной в каркасном домe
+                    </h3>
+                    <p>
+                      Задача — сделать небольшую уютную сауну<br />
+                      в строящемся каркасном доме.
+                    </p>
+
+                    <p>
+                      Заказчик хотел довольно простую, но симпатичную<br />
+                      сауну с брутальными хвойными ароматами в своем<br />
+                      строящемся доме.
+                    </p>
+
+                    <p>
+                      Обязательное условие — светлые тона в отделке,<br />
+                      по возмоности широкие элементы в обшивке<br />
+                      сауной в каркасном доме
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="container block__content">
+          <div class="grid grid--2 keys">
+            <div class="keys__info bg-green radios">
+              <div>
+                <h3>
+                  Хотите сауну или парную<br />
+                  вместе с хаммамом?
+                </h3>
+                <h4>Построим оба проекта «под ключ»</h4>
+                <p>Оставьте заявку, чтобы обсудить условия</p>
+                <div class="buttons">
+                  <button class="btn bg-white">Оставить заявку</button>
+                  <button class="btn bg-white block_transparent">
+                    Посмотреть работы
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="img-block--cover radios">
+              <div class="img-wrapper">
+                <img src="./assets/images/keys.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="container">
+          <h2 class="block__title">
+            Над каждым проектом<br />
+            работает <b>большая команда</b>
+          </h2>
+          <div class="block__descr">
+            узконаправленных
+            <div class="icon">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <path
+                    d="M15 14C15 14 16 14 16 13C16 12 15 9 11 9C7 9 6 12 6 13C6 14 7 14 7 14H15ZM7.022 13C7.01461 12.999 7.00727 12.9976 7 12.996C7.001 12.732 7.167 11.966 7.76 11.276C8.312 10.629 9.282 10 11 10C12.717 10 13.687 10.63 14.24 11.276C14.833 11.966 14.998 12.733 15 12.996L14.992 12.998C14.9874 12.9988 14.9827 12.9995 14.978 13H7.022ZM11 7C11.5304 7 12.0391 6.78929 12.4142 6.41421C12.7893 6.03914 13 5.53043 13 5C13 4.46957 12.7893 3.96086 12.4142 3.58579C12.0391 3.21071 11.5304 3 11 3C10.4696 3 9.96086 3.21071 9.58579 3.58579C9.21071 3.96086 9 4.46957 9 5C9 5.53043 9.21071 6.03914 9.58579 6.41421C9.96086 6.78929 10.4696 7 11 7ZM14 5C14 5.39397 13.9224 5.78407 13.7716 6.14805C13.6209 6.51203 13.3999 6.84274 13.1213 7.12132C12.8427 7.3999 12.512 7.62087 12.1481 7.77164C11.7841 7.9224 11.394 8 11 8C10.606 8 10.2159 7.9224 9.85195 7.77164C9.48797 7.62087 9.15726 7.3999 8.87868 7.12132C8.6001 6.84274 8.37913 6.51203 8.22836 6.14805C8.0776 5.78407 8 5.39397 8 5C8 4.20435 8.31607 3.44129 8.87868 2.87868C9.44129 2.31607 10.2044 2 11 2C11.7956 2 12.5587 2.31607 13.1213 2.87868C13.6839 3.44129 14 4.20435 14 5ZM6.936 9.28C6.53598 9.15404 6.12364 9.07123 5.706 9.033C5.47133 9.01068 5.23573 8.99967 5 9C1 9 0 12 0 13C0 13.667 0.333 14 1 14H5.216C5.06776 13.6878 4.99382 13.3455 5 13C5 11.99 5.377 10.958 6.09 10.096C6.333 9.802 6.616 9.527 6.936 9.28ZM4.92 10C4.32815 10.8893 4.00844 11.9318 4 13H1C1 12.74 1.164 11.97 1.76 11.276C2.305 10.64 3.252 10.02 4.92 10.001V10ZM1.5 5.5C1.5 4.70435 1.81607 3.94129 2.37868 3.37868C2.94129 2.81607 3.70435 2.5 4.5 2.5C5.29565 2.5 6.05871 2.81607 6.62132 3.37868C7.18393 3.94129 7.5 4.70435 7.5 5.5C7.5 6.29565 7.18393 7.05871 6.62132 7.62132C6.05871 8.18393 5.29565 8.5 4.5 8.5C3.70435 8.5 2.94129 8.18393 2.37868 7.62132C1.81607 7.05871 1.5 6.29565 1.5 5.5ZM4.5 3.5C3.96957 3.5 3.46086 3.71071 3.08579 4.08579C2.71071 4.46086 2.5 4.96957 2.5 5.5C2.5 6.03043 2.71071 6.53914 3.08579 6.91421C3.46086 7.28929 3.96957 7.5 4.5 7.5C5.03043 7.5 5.53914 7.28929 5.91421 6.91421C6.28929 6.53914 6.5 6.03043 6.5 5.5C6.5 4.96957 6.28929 4.46086 5.91421 4.08579C5.53914 3.71071 5.03043 3.5 4.5 3.5Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+            </div>
+            специалистов
+          </div>
+          <div class="block__content people grid">
+            <div class="people__item">
+              <div class="img-block--cover radios">
+                <div class="img-wrapper">
+                  <img src="./assets/images/people/ivan.png" alt="" />
+                </div>
+              </div>
+              <h3>Иван</h3>
+              <h4>Технический директор</h4>
+              <p>
+                Руководит компанией. Делает сложные финансовые расчеты,
+                распреде­ляет бригады по объектам, контролирует монтаж.
+                Разрабатывает новые технические решения
+              </p>
+            </div>
+            <div class="people__item">
+              <div class="img-block--cover radios">
+                <div class="img-wrapper">
+                  <img src="./assets/images/people/denis.png" alt="" />
+                </div>
+              </div>
+              <h3>Денис</h3>
+              <h4>Координатор проектов</h4>
+              <p>
+                Центр общения. Принимает заявки и выявляет потребности клиентов,
+                со­ставляет предварительные сметы, распределяет и контролирует
+                выезды, следит за сроками
+              </p>
+            </div>
+            <div class="people__item">
+              <div class="img-block--cover radios">
+                <div class="img-wrapper">
+                  <img src="./assets/images/people/aleksandr.png" alt="" />
+                </div>
+              </div>
+              <h3>Алексей</h3>
+              <h4>Инженер</h4>
+              <p>
+                Редко сидит на месте: ездит на объек­ты, завозит материал,
+                контролирует монтажников, чертит эскизы, составля­ет сметы
+              </p>
+            </div>
+            <div class="people__item">
+              <div class="img-block--cover radios">
+                <div class="img-wrapper">
+                  <img src="./assets/images/people/galina.png" alt="" />
+                </div>
+              </div>
+              <h3>Галина</h3>
+              <h4>Проектировщик</h4>
+              <p>
+                Мастер карандаша и ватмана. По эскизам инженера готовит
+                подробные проекты: планировки, развертки стен, разрезы,
+                техзадания, узлы
+              </p>
+            </div>
+            <div class="people__item">
+              <div class="img-block--cover radios">
+                <div class="img-wrapper">
+                  <img src="./assets/images/people/olga.png" alt="" />
+                </div>
+              </div>
+              <h3>Ольга</h3>
+              <h4>Исполнительный директор</h4>
+              <p>
+                Считает деньги, платит налоги и ведет отчетность. Планирует
+                затраты на материалы и зарплаты, готовит дого­воры, контролирует
+                расходы
+              </p>
+            </div>
+            <div class="people__item">
+              <div class="img-block--cover radios">
+                <div class="img-wrapper">
+                  <img src="./assets/images/people/sergey.png" alt="" />
+                </div>
+              </div>
+              <h3>Сергей</h3>
+              <h4>Специалист по монтажу</h4>
+              <p>
+                Кладет плитку, выполняет черновую отделку. Сильная сторона —
+                умение работать с камнем: выкладывать инте­рьерные стены и
+                панно, облицовывать печи
+              </p>
+            </div>
+            <div class="people__item">
+              <div class="img-block--cover radios">
+                <div class="img-wrapper">
+                  <img
+                    src="./assets/images/people/aleksey-montage.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <h3>Алексей</h3>
+              <h4>Специалист по монтажу</h4>
+              <p>
+                Универсальный мастер. Одинаково качественно работает и с камнем,
+                и с деревом. Неторопливо и грамотно выполняет задачу с минимумом
+                исправлений
+              </p>
+            </div>
+            <div class="people__item">
+              <div class="img-block--cover radios">
+                <div class="img-wrapper">
+                  <img src="./assets/images/people/aleksandr.png" alt="" />
+                </div>
+              </div>
+              <h3>Александр</h3>
+              <h4>Специалист по монтажу</h4>
+              <p>
+                Знает всё о древесине: разбирается в ее видах и свойствах,
+                тонкостях работы. Еще один конек — навыки делать панно из
+                гималайской соли
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="container">
+          <h2 class="block__title">Приходите в гости <b>в наш офис</b></h2>
+          <div class="block__descr">в Москве или Зеленограде</div>
+          <div class="block__content welcome">
+            <div class="grid grid--3">
+              <div class="welcome__info radios bg-green">
+                <h3>
+                  Рассчитаем стоимость<br />
+                  и сроки работы
+                </h3>
+              </div>
+              <div class="welcome__info radios bg-white">
+                <h3>
+                  Составим смету<br />
+                  и план строительства
+                </h3>
+              </div>
+              <div class="welcome__info radios bg-grey">
+                <h3>
+                  Дадим рекомендации<br />
+                  по материалам
+                </h3>
+              </div>
+            </div>
+            <div
+              class="radios"
+              id="map"
+              data-adres="[{'city':'Москва','coord':[55.74456659115346,37.59029051930568],'adres':'3-й Хорошевский проезд,<br> дом 1, стр.1, офис 331'},{'city':'Москва','coord':[55.9756874082173,37.24917940302562],'adres':'3-й Хорошевский проезд,<br> дом 1, стр.1, офис 331'}]"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="container">
+          <h2 class="block__title">Давайте <b>обсудим</b> ваш проект?</h2>
+          <div class="block__descr" style="line-height: 150%">
+            Оставьте заявку и получите точную стоимость строительства<br />
+            вашего хаммама с погрешностью менее 5%
+          </div>
+          <div class="block__content grid grid--2">
+            <div class="img-block radios bg-grey">
+              <div class="img-wrapper">
+                <img src="./assets/images/smeta.png" alt="" />
+              </div>
+            </div>
+            <div class="radios bg-white form-wrap">
+              <div class="form-main">
+                <div class="form__title">Укажите свои контакты</div>
+                <div class="form__title-sub">
+                  Мы уточним у вас нужные детали<br />
+                  и сделаем точный расчет в течение часа
+                </div>
+                <div class="form">
+                  <form novalidate>
+                    <input
+                      class="input radios"
+                      name="tel"
+                      required=""
+                      type="tel"
+                      placeholder="Введите контактный телефон"
+                      pattern="^(\s*)?(\+)?([- _():=+]?\d[- _()+]?){1,50}(\s*)?$"
+                    />
+                    <button class="btn btn--green radios" type="submit">
+                      Получить смету
+                    </button>
+                    <div class="form-soc">
+                      Или напишите в мессенджер
+                      <div class="form-soc__buttons">
+                        <button class="btn radios">
+                          <svg
+                            width="29"
+                            height="29"
+                            viewBox="0 0 29 29"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M24.65 4.16875C21.9313 1.45 18.3062 0 14.5 0C6.525 0 0 6.525 0 14.5C0 17.0375 0.725011 19.575 1.99376 21.75L0 29L7.61252 27.0062C9.78752 28.0938 12.1438 28.8187 14.5 28.8187C22.475 28.8187 29 22.2937 29 14.3187C29 10.5125 27.3688 6.8875 24.65 4.16875ZM14.5 26.4625C12.325 26.4625 10.15 25.9188 8.33751 24.8313L7.97499 24.65L3.44374 25.9187L4.71251 21.5687L4.34999 21.025C3.08124 19.0312 2.53749 16.8563 2.53749 14.6813C2.53749 8.15625 7.975 2.71875 14.5 2.71875C17.7625 2.71875 20.6625 3.9875 23.0188 6.1625C25.375 8.51875 26.4625 11.4188 26.4625 14.6813C26.4625 21.025 21.2062 26.4625 14.5 26.4625ZM21.025 17.4C20.6625 17.2188 18.85 16.3125 18.4875 16.3125C18.125 16.1313 17.9437 16.1313 17.7625 16.4938C17.5812 16.8563 16.8563 17.5812 16.675 17.9437C16.4938 18.125 16.3125 18.125 15.95 18.125C15.5875 17.9438 14.5 17.5812 13.05 16.3125C11.9625 15.4062 11.2375 14.1375 11.0563 13.775C10.875 13.4125 11.0563 13.2312 11.2375 13.05C11.4188 12.8687 11.6 12.6875 11.7812 12.5062C11.9625 12.325 11.9625 12.1438 12.1438 11.9625C12.325 11.7813 12.1438 11.6 12.1438 11.4188C12.1438 11.2375 11.4188 9.425 11.0563 8.7C10.875 8.15625 10.5125 8.15625 10.3313 8.15625C10.15 8.15625 9.96873 8.15625 9.60623 8.15625C9.42498 8.15625 9.06248 8.15625 8.69998 8.51875C8.33748 8.88125 7.43126 9.7875 7.43126 11.6C7.43126 13.4125 8.69999 15.0437 8.88124 15.4062C9.06249 15.5875 11.4187 19.3937 15.0437 20.8438C18.125 22.1125 18.6688 21.75 19.3938 21.75C20.1188 21.75 21.5688 20.8438 21.75 20.1188C22.1125 19.2125 22.1125 18.4875 21.9313 18.4875C21.75 17.5813 21.3875 17.5813 21.025 17.4Z"
+                              fill="#1B1D21"
+                            />
+                          </svg>
+                          <span>What’sApp</span>
+                        </button>
+                        <button class="btn radios">
+                          <svg
+                            width="28"
+                            height="23"
+                            viewBox="0 0 28 23"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1.89048 9.81113C9.27244 6.59493 14.1949 4.47461 16.6579 3.45018C23.6901 0.525216 25.1514 0.0171192 26.1038 0.000162655C26.3133 -0.00334852 26.7816 0.0485654 27.085 0.294747C27.3412 0.502618 27.4117 0.783422 27.4454 0.980506C27.4792 1.17759 27.5212 1.62655 27.4878 1.97736C27.1067 5.98141 25.4578 15.6982 24.6189 20.1828C24.2639 22.0804 23.565 22.7167 22.8883 22.7789C21.4178 22.9142 20.3012 21.8071 18.8769 20.8735C16.6482 19.4125 15.3892 18.5031 13.2258 17.0775C10.7257 15.43 12.3464 14.5245 13.7712 13.0446C14.1441 12.6573 20.6232 6.76407 20.7486 6.22946C20.7643 6.1626 20.7789 5.91337 20.6308 5.78177C20.4827 5.65016 20.2642 5.69517 20.1065 5.73096C19.883 5.78169 16.3226 8.13496 9.42544 12.7908C8.41484 13.4847 7.49947 13.8228 6.67934 13.8051C5.7752 13.7856 4.036 13.2939 2.74309 12.8736C1.15728 12.3581 -0.103088 12.0856 0.00666213 11.2102C0.0638267 10.7542 0.691767 10.2878 1.89048 9.81113Z"
+                              fill="#1B1D21"
+                            />
+                          </svg>
+                          <span>Telegram</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="checkbox">
+                      <input required="" type="checkbox" id="agreement-2" />
+                      <label for="agreement-2" target="_blank"
+                        >Согласие на обработку
+                        <a href="" target="_blank"
+                          >персональных данных</a
+                        ></label
+                      >
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="form-success">
+                <div class="form-success__title">Спасибо!</div>
+                <div class="form-success__answer">
+                  Мы свяжемся с вами в ближайшее время<br />
+                  и ответим на все ваши вопросы
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer container">
+      <div class="footer__main">
+        <div class="footer-inn">
+          <div class="logo">
+            <img src="./assets/images/logo-footer.png" alt="logo" />
+            <div><span class="grn">steam</span> group</div>
+          </div>
+          <div>
+            <div class="footer__ooo">ООО «СТИМГРУПП»</div>
+            <div class="footer__doc">ИНН: 7735183219</div>
+            <div class="footer__doc">ОГРН: 1197746280203</div>
+          </div>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__name">Телефон</div>
+          <div>
+            <a class="footer__bold" href="tel:+74957661281"
+              >+7 (495) 766 1281</a
+            >
+            <a class="footer__bold" href="tel:+74957661281"
+              >+7 (495) 766 1281</a
+            >
+          </div>
+          <div class="footer__name">Почта</div>
+          <div>
+            <a class="footer__bold" href="mailto:info@sg-sauna.ru"
+              >info@sg-sauna.ru</a
+            >
+          </div>
+        </div>
+        <div class="footer__time">
+          <div class="footer__name">Отвечаем и перезваниваем ежедневно</div>
+          <div class="footer__bold">09:00-21:00 <span>(мск)</span></div>
+          <button class="btn btn--green">Обратный звонок</button>
+        </div>
+      </div>
+      <div class="footer__links">
+        <a target="_blank" href="./privacy.html">Политика конфиденциальности</a>
+        <a target="_blank" href="https://webking.pro">Сделано в WebKing</a>
+      </div>
+    </footer>
+    <div class="popup">
+      <div class="popup-overlay"></div>
+      <div class="popup-main">
+        <button class="popup-close">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M20.7819 3.21936C20.8518 3.28903 20.9072 3.3718 20.945 3.46291C20.9828 3.55403 21.0023 3.65171 21.0023 3.75036C21.0023 3.84902 20.9828 3.9467 20.945 4.03781C20.9072 4.12893 20.8518 4.2117 20.7819 4.28136L4.28195 20.7814C4.14112 20.9222 3.95011 21.0013 3.75095 21.0013C3.55178 21.0013 3.36078 20.9222 3.21995 20.7814C3.07912 20.6405 3 20.4495 3 20.2504C3 20.0512 3.07912 19.8602 3.21995 19.7194L19.7199 3.21936C19.7896 3.14952 19.8724 3.09411 19.9635 3.0563C20.0546 3.01849 20.1523 2.99902 20.2509 2.99902C20.3496 2.99902 20.4473 3.01849 20.5384 3.0563C20.6295 3.09411 20.7123 3.14952 20.7819 3.21936Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M3.21839 3.21936C3.14854 3.28903 3.09313 3.3718 3.05532 3.46291C3.01751 3.55403 2.99805 3.65171 2.99805 3.75036C2.99805 3.84902 3.01751 3.9467 3.05532 4.03781C3.09313 4.12893 3.14854 4.2117 3.21839 4.28136L19.7184 20.7814C19.8592 20.9222 20.0502 21.0013 20.2494 21.0013C20.4486 21.0013 20.6396 20.9222 20.7804 20.7814C20.9212 20.6405 21.0003 20.4495 21.0003 20.2504C21.0003 20.0512 20.9212 19.8602 20.7804 19.7194L4.28039 3.21936C4.21072 3.14952 4.12796 3.09411 4.03684 3.0563C3.94572 3.01849 3.84804 2.99902 3.74939 2.99902C3.65074 2.99902 3.55305 3.01849 3.46194 3.0563C3.37082 3.09411 3.28806 3.14952 3.21839 3.21936Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+        <div class="radios bg-white form-wrap">
+          <div class="form-main">
+            <div class="form__title">Укажите свои контакты</div>
+            <div class="form__title-sub">
+              Мы уточним у вас нужные детали<br />
+              и сделаем точный расчет в течение часа
+            </div>
+            <div class="form">
+              <form novalidate>
+                <input
+                  class="input radios"
+                  name="tel"
+                  required=""
+                  type="tel"
+                  placeholder="Введите контактный телефон"
+                  pattern="^(\s*)?(\+)?([- _():=+]?\d[- _()+]?){1,50}(\s*)?$"
+                />
+                <button class="btn btn--green radios" type="submit">
+                  Получить смету
+                </button>
+                <div class="form-soc">
+                  Или напишите в мессенджер
+                  <div class="form-soc__buttons">
+                    <button class="btn radios">
+                      <svg
+                        width="29"
+                        height="29"
+                        viewBox="0 0 29 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M24.65 4.16875C21.9313 1.45 18.3062 0 14.5 0C6.525 0 0 6.525 0 14.5C0 17.0375 0.725011 19.575 1.99376 21.75L0 29L7.61252 27.0062C9.78752 28.0938 12.1438 28.8187 14.5 28.8187C22.475 28.8187 29 22.2937 29 14.3187C29 10.5125 27.3688 6.8875 24.65 4.16875ZM14.5 26.4625C12.325 26.4625 10.15 25.9188 8.33751 24.8313L7.97499 24.65L3.44374 25.9187L4.71251 21.5687L4.34999 21.025C3.08124 19.0312 2.53749 16.8563 2.53749 14.6813C2.53749 8.15625 7.975 2.71875 14.5 2.71875C17.7625 2.71875 20.6625 3.9875 23.0188 6.1625C25.375 8.51875 26.4625 11.4188 26.4625 14.6813C26.4625 21.025 21.2062 26.4625 14.5 26.4625ZM21.025 17.4C20.6625 17.2188 18.85 16.3125 18.4875 16.3125C18.125 16.1313 17.9437 16.1313 17.7625 16.4938C17.5812 16.8563 16.8563 17.5812 16.675 17.9437C16.4938 18.125 16.3125 18.125 15.95 18.125C15.5875 17.9438 14.5 17.5812 13.05 16.3125C11.9625 15.4062 11.2375 14.1375 11.0563 13.775C10.875 13.4125 11.0563 13.2312 11.2375 13.05C11.4188 12.8687 11.6 12.6875 11.7812 12.5062C11.9625 12.325 11.9625 12.1438 12.1438 11.9625C12.325 11.7813 12.1438 11.6 12.1438 11.4188C12.1438 11.2375 11.4188 9.425 11.0563 8.7C10.875 8.15625 10.5125 8.15625 10.3313 8.15625C10.15 8.15625 9.96873 8.15625 9.60623 8.15625C9.42498 8.15625 9.06248 8.15625 8.69998 8.51875C8.33748 8.88125 7.43126 9.7875 7.43126 11.6C7.43126 13.4125 8.69999 15.0437 8.88124 15.4062C9.06249 15.5875 11.4187 19.3937 15.0437 20.8438C18.125 22.1125 18.6688 21.75 19.3938 21.75C20.1188 21.75 21.5688 20.8438 21.75 20.1188C22.1125 19.2125 22.1125 18.4875 21.9313 18.4875C21.75 17.5813 21.3875 17.5813 21.025 17.4Z"
+                          fill="#1B1D21"
+                        />
+                      </svg>
+                      <span>What’sApp</span>
+                    </button>
+                    <button class="btn radios">
+                      <svg
+                        width="28"
+                        height="23"
+                        viewBox="0 0 28 23"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.89048 9.81113C9.27244 6.59493 14.1949 4.47461 16.6579 3.45018C23.6901 0.525216 25.1514 0.0171192 26.1038 0.000162655C26.3133 -0.00334852 26.7816 0.0485654 27.085 0.294747C27.3412 0.502618 27.4117 0.783422 27.4454 0.980506C27.4792 1.17759 27.5212 1.62655 27.4878 1.97736C27.1067 5.98141 25.4578 15.6982 24.6189 20.1828C24.2639 22.0804 23.565 22.7167 22.8883 22.7789C21.4178 22.9142 20.3012 21.8071 18.8769 20.8735C16.6482 19.4125 15.3892 18.5031 13.2258 17.0775C10.7257 15.43 12.3464 14.5245 13.7712 13.0446C14.1441 12.6573 20.6232 6.76407 20.7486 6.22946C20.7643 6.1626 20.7789 5.91337 20.6308 5.78177C20.4827 5.65016 20.2642 5.69517 20.1065 5.73096C19.883 5.78169 16.3226 8.13496 9.42544 12.7908C8.41484 13.4847 7.49947 13.8228 6.67934 13.8051C5.7752 13.7856 4.036 13.2939 2.74309 12.8736C1.15728 12.3581 -0.103088 12.0856 0.00666213 11.2102C0.0638267 10.7542 0.691767 10.2878 1.89048 9.81113Z"
+                          fill="#1B1D21"
+                        />
+                      </svg>
+                      <span>Telegram</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="checkbox">
+                  <input required="" type="checkbox" id="agreement-3" />
+                  <label for="agreement-3" target="_blank"
+                    >Согласие на обработку
+                    <a href="#" target="_blank">персональных данных</a></label
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="form-success">
+            <div class="form-success__title">Спасибо!</div>
+            <div class="form-success__answer">
+              Мы свяжемся с вами в ближайшее время<br />
+              и ответим на все ваши вопросы
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
