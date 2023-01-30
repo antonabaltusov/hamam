@@ -25,18 +25,34 @@
           <div class="header-top__nuv">
             <a href="mailto:info@sg-sauna.ru">info@sg-sauna.ru</a>
             <a href="tel:+74597661281">+7 (495) 766 12 81</a>
-            <button class="btn btn--green">Обратный звонок</button>
+            <button
+              class="btn btn--green open-popup"
+              data-title="Укажите свои контакты"
+              data-descr="Мы перезвоним вам и ответим на все<br />
+              ваши вопросы"
+              data-success="Мы свяжемся с вами в ближайшее время<br />
+              и ответим на все ваши вопросы"
+            >
+              Обратный звонок
+            </button>
           </div>
         </div>
         <div class="header-bottom">
           <div class="header-bottom__nuv">
-            <a href="#">Портфолио</a>
-            <a href="#">Этапы работы</a>
-            <a href="#">Цены</a>
-            <a href="#">Отзывы</a>
-            <a href="#">Контакты</a>
+            <a href="/#portfolio">Портфолио</a>
+            <a href="/#stamps">Этапы работы</a>
+            <a href="/#price">Цены</a>
+            <a href="/#review">Отзывы</a>
+            <a href="/#contacts">Контакты</a>
           </div>
-          <a class="get" href="#">Получить смету</a>
+          <a
+            class="get open-popup"
+            data-title="Получите <b>расчет стоимости</b><br /> строительства вашего"
+            data-descr="с погрешностью менее 5%"
+            data-success="Мы свяжемся с вами в ближайшее время<br />
+              для уточнения деталей"
+            >Получить смету</a
+          >
         </div>
       </div>
       <div class="container header-mobile">
@@ -80,11 +96,11 @@
         </button>
         <div class="mob-menu">
           <div class="header-bottom__nuv">
-            <a href="#">Портфолио</a>
-            <a href="#">Этапы работы</a>
-            <a href="#">Цены</a>
-            <a href="#">Отзывы</a>
-            <a href="#">Контакты</a>
+            <a href="/#portfolio">Портфолио</a>
+            <a href="/#stamps">Этапы работы</a>
+            <a href="/#price">Цены</a>
+            <a href="/#review">Отзывы</a>
+            <a href="/#contacts">Контакты</a>
           </div>
           <div class="footer__contacts">
             <div class="footer__name">Телефон</div>
@@ -106,7 +122,16 @@
           <div class="footer__time">
             <div class="footer__name">Отвечаем и перезваниваем ежедневно</div>
             <div class="footer__bold">09:00-21:00 <span>(мск)</span></div>
-            <button class="btn btn--green">Обратный звонок</button>
+            <button
+              class="btn btn--green open-popup"
+              data-title="Укажите свои контакты"
+              data-descr="Мы перезвоним вам и ответим на все<br />
+              ваши вопросы"
+              data-success="Мы свяжемся с вами в ближайшее время<br />
+              и ответим на все ваши вопросы"
+            >
+              Обратный звонок
+            </button>
           </div>
           <div class="footer__links">
             <a target="_blank" href="./privacy.html"
@@ -139,10 +164,21 @@
               class="btn btn--green open-popup"
               data-title="Получите <b>расчет стоимости</b><br /> строительства вашего"
               data-descr="с погрешностью менее 5%"
+              data-success="Мы свяжемся с вами в ближайшее время<br />
+              для уточнения деталей"
             >
               Хочу также
             </button>
-            <button class="btn">Задать вопрос</button>
+            <button
+              class="btn open-popup"
+              data-title="Укажите свои контакты"
+              data-descr="Мы перезвоним вам и ответим на все<br />
+              ваши вопросы"
+              data-success="Мы свяжемся с вами в ближайшее время<br />
+              и ответим на все ваши вопросы"
+            >
+              Задать вопрос
+            </button>
           </div>
           <div class="first-block__text-wrap">
             <div class="first-block__text">
@@ -153,7 +189,7 @@
           </div>
         </div>
       </div>
-      <div class="block">
+      <div class="block" id="portfolio">
         <div class="container">
           <h2 class="block__title">
             Строим бани в Москве<br />
@@ -591,7 +627,15 @@
                       <div class="swiper-pagination"></div>
                     </div>
                     <div class="buttons">
-                      <button class="btn btn--green">Хочу также</button>
+                      <button
+                        class="btn btn--green open-popup"
+                        data-title="Получите <b>расчет стоимости</b><br /> строительства вашего"
+                        data-descr="с погрешностью менее 5%"
+                        data-success="Мы свяжемся с вами в ближайшее время<br />
+              для уточнения деталей"
+                      >
+                        Хочу также
+                      </button>
                       <a href="./article.html" class="btn"
                         >Подробнее о проекте</a
                       >
@@ -1429,86 +1473,171 @@
           </div>
         </div>
       </div>
-      <div class="block">
+      <div class="block" id="stamps">
         <div class="container">
           <h2 class="block__title">
             Как строится работа<br />
             <b>от идеи до реализации</b> проекта
           </h2>
-          <div class="block__content grid grid--2 ot-idei">
-            <div class="img-block--cover radios">
-              <div class="img-wrapper">
-                <img src="./assets/images/ot-idei.png" alt="" />
+          <div class="block__content ot-idei">
+            <div class="grid grid--2 only-tablet-hidden">
+              <div class="img-block--cover radios">
+                <div class="img-wrapper">
+                  <img src="./assets/images/ot-idei.png" alt="" />
+                </div>
+              </div>
+              <div class="ot-idei__info radios">
+                <h3>
+                  <b
+                    >Продумываем<br />
+                    каждую деталь</b
+                  >
+                </h3>
+                <h4>
+                  от формы сидений<br />
+                  до количества светильников
+                </h4>
+                <p>
+                  Задача — сделать небольшую уютную сауну<br />
+                  в строящемся каркасном доме.
+                </p>
+
+                <p>
+                  Заказчик хотел довольно простую, но симпатичную<br />
+                  сауну с брутальными хвойными ароматами в своем<br />
+                  строящемся доме.
+                </p>
+
+                <p>
+                  Обязательное условие — светлые тона в отделке,<br />
+                  по возмоности широкие элементы в обшивке<br />
+                  сауной в каркасном доме
+                </p>
+              </div>
+              <div class="ot-idei__info radios">
+                <h3>
+                  <b
+                    >Проектируем<br />
+                    инженерные системы</b
+                  >
+                </h3>
+                <h4>и ставим оборудование</h4>
+                <p>
+                  Монтируем водоснабжение, отопление,<br />
+                  электрику, канализацию и вентиляцию.
+                </p>
+                <p>
+                  Делаем тщательную гидроизоляцию,<br />
+                  чтобы предотвратить разрушение хаммама<br />
+                  из-за образования плесени
+                </p>
+                <a class="link" href="#">
+                  <div class="icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.7">
+                        <path
+                          d="M14 4.5V14C14 14.5304 13.7893 15.0391 13.4142 15.4142C13.0391 15.7893 12.5304 16 12 16H4C3.46957 16 2.96086 15.7893 2.58579 15.4142C2.21071 15.0391 2 14.5304 2 14V2C2 1.46957 2.21071 0.960859 2.58579 0.585786C2.96086 0.210714 3.46957 0 4 0L9.5 0L14 4.5ZM11 4.5C10.6022 4.5 10.2206 4.34196 9.93934 4.06066C9.65804 3.77936 9.5 3.39782 9.5 3V1H4C3.73478 1 3.48043 1.10536 3.29289 1.29289C3.10536 1.48043 3 1.73478 3 2V14C3 14.2652 3.10536 14.5196 3.29289 14.7071C3.48043 14.8946 3.73478 15 4 15H12C12.2652 15 12.5196 14.8946 12.7071 14.7071C12.8946 14.5196 13 14.2652 13 14V4.5H11Z"
+                          fill="white"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  Пример рабочего проекта
+                </a>
+              </div>
+              <div class="img-block bg-grey radios">
+                <div class="img-wrapper">
+                  <img src="./assets/images/shema.png" alt="" />
+                </div>
               </div>
             </div>
-            <div class="ot-idei__info radios">
-              <h3>
-                <b
-                  >Продумываем<br />
-                  каждую деталь</b
-                >
-              </h3>
-              <h4>
-                от формы сидений<br />
-                до количества светильников
-              </h4>
-              <p>
-                Задача — сделать небольшую уютную сауну<br />
-                в строящемся каркасном доме.
-              </p>
+            <div class="mob-slider swiper only-tablet-visible">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="ot-idei__info radios">
+                    <h3>
+                      <b
+                        >Продумываем<br />
+                        каждую деталь</b
+                      >
+                    </h3>
+                    <h4>
+                      от формы сидений<br />
+                      до количества светильников
+                    </h4>
+                    <p>
+                      Задача — сделать небольшую уютную сауну<br />
+                      в строящемся каркасном доме.
+                    </p>
 
-              <p>
-                Заказчик хотел довольно простую, но симпатичную<br />
-                сауну с брутальными хвойными ароматами в своем<br />
-                строящемся доме.
-              </p>
+                    <p>
+                      Заказчик хотел довольно простую, но симпатичную<br />
+                      сауну с брутальными хвойными ароматами в своем<br />
+                      строящемся доме.
+                    </p>
 
-              <p>
-                Обязательное условие — светлые тона в отделке,<br />
-                по возмоности широкие элементы в обшивке<br />
-                сауной в каркасном доме
-              </p>
-            </div>
-            <div class="ot-idei__info radios">
-              <h3>
-                <b
-                  >Проектируем<br />
-                  инженерные системы</b
-                >
-              </h3>
-              <h4>и ставим оборудование</h4>
-              <p>
-                Монтируем водоснабжение, отопление,<br />
-                электрику, канализацию и вентиляцию.
-              </p>
-              <p>
-                Делаем тщательную гидроизоляцию,<br />
-                чтобы предотвратить разрушение хаммама<br />
-                из-за образования плесени
-              </p>
-              <a class="link" href="#">
-                <div class="icon">
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g opacity="0.7">
-                      <path
-                        d="M14 4.5V14C14 14.5304 13.7893 15.0391 13.4142 15.4142C13.0391 15.7893 12.5304 16 12 16H4C3.46957 16 2.96086 15.7893 2.58579 15.4142C2.21071 15.0391 2 14.5304 2 14V2C2 1.46957 2.21071 0.960859 2.58579 0.585786C2.96086 0.210714 3.46957 0 4 0L9.5 0L14 4.5ZM11 4.5C10.6022 4.5 10.2206 4.34196 9.93934 4.06066C9.65804 3.77936 9.5 3.39782 9.5 3V1H4C3.73478 1 3.48043 1.10536 3.29289 1.29289C3.10536 1.48043 3 1.73478 3 2V14C3 14.2652 3.10536 14.5196 3.29289 14.7071C3.48043 14.8946 3.73478 15 4 15H12C12.2652 15 12.5196 14.8946 12.7071 14.7071C12.8946 14.5196 13 14.2652 13 14V4.5H11Z"
-                        fill="white"
-                      />
-                    </g>
-                  </svg>
+                    <p>
+                      Обязательное условие — светлые тона в отделке,<br />
+                      по возмоности широкие элементы в обшивке<br />
+                      сауной в каркасном доме
+                    </p>
+                  </div>
+                  <div class="img-block--cover radios">
+                    <div class="img-wrapper">
+                      <img src="./assets/images/ot-idei.png" alt="" />
+                    </div>
+                  </div>
                 </div>
-                Пример рабочего проекта
-              </a>
-            </div>
-            <div class="img-block bg-grey radios">
-              <div class="img-wrapper">
-                <img src="./assets/images/shema.png" alt="" />
+                <div class="swiper-slide">
+                  <div class="ot-idei__info radios">
+                    <h3>
+                      <b
+                        >Проектируем<br />
+                        инженерные системы</b
+                      >
+                    </h3>
+                    <h4>и ставим оборудование</h4>
+                    <p>
+                      Монтируем водоснабжение, отопление,<br />
+                      электрику, канализацию и вентиляцию.
+                    </p>
+                    <p>
+                      Делаем тщательную гидроизоляцию,<br />
+                      чтобы предотвратить разрушение хаммама<br />
+                      из-за образования плесени
+                    </p>
+                    <a class="link" href="#">
+                      <div class="icon">
+                        <svg
+                          width="16"
+                          height="16"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g opacity="0.7">
+                            <path
+                              d="M14 4.5V14C14 14.5304 13.7893 15.0391 13.4142 15.4142C13.0391 15.7893 12.5304 16 12 16H4C3.46957 16 2.96086 15.7893 2.58579 15.4142C2.21071 15.0391 2 14.5304 2 14V2C2 1.46957 2.21071 0.960859 2.58579 0.585786C2.96086 0.210714 3.46957 0 4 0L9.5 0L14 4.5ZM11 4.5C10.6022 4.5 10.2206 4.34196 9.93934 4.06066C9.65804 3.77936 9.5 3.39782 9.5 3V1H4C3.73478 1 3.48043 1.10536 3.29289 1.29289C3.10536 1.48043 3 1.73478 3 2V14C3 14.2652 3.10536 14.5196 3.29289 14.7071C3.48043 14.8946 3.73478 15 4 15H12C12.2652 15 12.5196 14.8946 12.7071 14.7071C12.8946 14.5196 13 14.2652 13 14V4.5H11Z"
+                              fill="white"
+                            />
+                          </g>
+                        </svg>
+                      </div>
+                      Пример рабочего проекта
+                    </a>
+                  </div>
+                  <div class="img-block bg-grey radios">
+                    <div class="img-wrapper">
+                      <img src="./assets/images/shema.png" alt="" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -1538,18 +1667,20 @@
             или современном стиле
           </div>
           <div class="block__content materials">
-            <ul class="materials__nuv">
-              <li>Мозайка<span>Мозайка</span></li>
-              <li>Мрамор<span>Мрамор</span></li>
-              <li class="active">
-                Натуральный камень<span>Натуральный камень</span>
-              </li>
-              <li>Керамическая плитка<span>Керамическая плитка</span></li>
-              <li>Керамогранит<span>Керамогранит</span></li>
-              <li>Другие<span>Другие</span></li>
-            </ul>
+            <div class="materials__nuv">
+              <ul>
+                <li>Мозайка<span>Мозайка</span></li>
+                <li>Мрамор<span>Мрамор</span></li>
+                <li class="active">
+                  Натуральный камень<span>Натуральный камень</span>
+                </li>
+                <li>Керамическая плитка<span>Керамическая плитка</span></li>
+                <li>Керамогранит<span>Керамогранит</span></li>
+                <li>Другие<span>Другие</span></li>
+              </ul>
+            </div>
             <div class="dbl-slider materials__slider">
-              <div class="dbl-slider__img-wrap">
+              <div class="dbl-slider__img-wrap only-tablet-hidden">
                 <div class="dbl-slider__img swiper radios">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -1951,6 +2082,63 @@
                         — Выдерживает высокие температуры<br />
                         — Имеет множество уникальных расцветок
                       </p>
+                      <div
+                        class="dbl-slider__inside swiper radios only-tablet-visible"
+                      >
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
                     </div>
                     <div class="swiper-slide">
                       <h3>
@@ -1973,6 +2161,63 @@
                         по возмоности широкие элементы в обшивке<br />
                         сауной в каркасном доме
                       </p>
+                      <div
+                        class="dbl-slider__inside swiper radios only-tablet-visible"
+                      >
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
                     </div>
                     <div class="swiper-slide">
                       <h3>
@@ -1995,6 +2240,63 @@
                         по возмоности широкие элементы в обшивке<br />
                         сауной в каркасном доме
                       </p>
+                      <div
+                        class="dbl-slider__inside swiper radios only-tablet-visible"
+                      >
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
                     </div>
                     <div class="swiper-slide">
                       <h3>
@@ -2017,6 +2319,63 @@
                         по возмоности широкие элементы в обшивке<br />
                         сауной в каркасном доме
                       </p>
+                      <div
+                        class="dbl-slider__inside swiper radios only-tablet-visible"
+                      >
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
                     </div>
                     <div class="swiper-slide">
                       <h3>
@@ -2039,6 +2398,63 @@
                         по возмоности широкие элементы в обшивке<br />
                         сауной в каркасном доме
                       </p>
+                      <div
+                        class="dbl-slider__inside swiper radios only-tablet-visible"
+                      >
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
                     </div>
                     <div class="swiper-slide">
                       <h3>
@@ -2061,6 +2477,74 @@
                         по возмоности широкие элементы в обшивке<br />
                         сауной в каркасном доме
                       </p>
+                      <div class="buttons">
+                        <button
+                          class="btn btn--green open-popup"
+                          data-title="Получите <b>расчет стоимости</b><br /> строительства вашего"
+                          data-descr="с погрешностью менее 5%"
+                          data-success="Мы свяжемся с вами в ближайшее время<br />
+              для уточнения деталей"
+                        >
+                          Получить расчет
+                        </button>
+                      </div>
+                      <div
+                        class="dbl-slider__inside swiper radios only-tablet-visible"
+                      >
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img-wrapper">
+                              <img
+                                class="swiper-lazy"
+                                data-src="./assets/images/logo.png"
+                                data-srcset="./assets/images/materials.png"
+                              />
+                              <div class="swiper-lazy-preloader"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -2108,61 +2592,131 @@
             </div>
             декоративных элементов
           </div>
-          <div class="block__content grid grid--3 decor">
-            <div class="decor__item">
-              <div class="img-block--cover radios">
-                <div class="img-wrapper">
-                  <img src="./assets/images/decor/1.png" alt="" />
+          <div class="block__content decor">
+            <div class="grid grid--3 only-tablet-hidden">
+              <div class="decor__item">
+                <div class="img-block--cover radios">
+                  <div class="img-wrapper">
+                    <img src="./assets/images/decor/1.png" alt="" />
+                  </div>
+                </div>
+                <h3>Анатомический лежак</h3>
+                <p>помогает лечь и максимально расслабиться</p>
+              </div>
+              <div class="decor__item">
+                <div class="img-block--cover radios">
+                  <div class="img-wrapper">
+                    <img src="./assets/images/decor/2.png" alt="" />
+                  </div>
+                </div>
+                <h3>Массажный стол</h3>
+                <p>дает возможность проведения дополнительных процедур</p>
+              </div>
+              <div class="decor__item">
+                <div class="img-block--cover radios">
+                  <div class="img-wrapper">
+                    <img src="./assets/images/decor/3.png" alt="" />
+                  </div>
+                </div>
+                <h3>Курна (раковина)</h3>
+                <p>позволяет освежиться во время похода в хаммам</p>
+              </div>
+              <div class="decor__item">
+                <div class="img-block--cover radios">
+                  <div class="img-wrapper">
+                    <img src="./assets/images/decor/4.png" alt="" />
+                  </div>
+                </div>
+                <h3>Купол</h3>
+                <p>собирает и выводит конденсат из помещения</p>
+              </div>
+              <div class="decor__item">
+                <div class="img-block--cover radios">
+                  <div class="img-wrapper">
+                    <img src="./assets/images/decor/5.png" alt="" />
+                  </div>
+                </div>
+                <h3>Звездное небо</h3>
+                <p>дарит особое эстетическое удовольствие</p>
+              </div>
+              <div class="decor__item">
+                <div class="img-block--cover radios bg-grey">
+                  <h3>Еще больше декоративных элементов</h3>
+                  <p>
+                    Оставьте заявку и получите каталог с расширенным перечнем
+                    декора
+                  </p>
+                </div>
+                <button
+                  class="btn btn--green open-popup"
+                  data-title="Получите <b>каталог</b><br />
+с элементами декора хаммама"
+                  data-descr=" "
+                  data-success="Мы свяжемся с вами в ближайшее время<br />
+и пришлем каталог на вашу почту"
+                >
+                  Получить каталог
+                </button>
+              </div>
+            </div>
+            <div class="mob-slider swiper only-tablet-visible">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide decor__item">
+                  <div class="img-block--cover radios">
+                    <div class="img-wrapper">
+                      <img src="./assets/images/decor/1.png" alt="" />
+                    </div>
+                  </div>
+                  <h3>Анатомический лежак</h3>
+                  <p>помогает лечь и максимально расслабиться</p>
+                </div>
+                <div class="swiper-slide decor__item">
+                  <div class="img-block--cover radios">
+                    <div class="img-wrapper">
+                      <img src="./assets/images/decor/2.png" alt="" />
+                    </div>
+                  </div>
+                  <h3>Массажный стол</h3>
+                  <p>дает возможность проведения дополнительных процедур</p>
+                </div>
+                <div class="swiper-slide decor__item">
+                  <div class="img-block--cover radios">
+                    <div class="img-wrapper">
+                      <img src="./assets/images/decor/3.png" alt="" />
+                    </div>
+                  </div>
+                  <h3>Курна (раковина)</h3>
+                  <p>позволяет освежиться во время похода в хаммам</p>
+                </div>
+                <div class="swiper-slide decor__item">
+                  <div class="img-block--cover radios">
+                    <div class="img-wrapper">
+                      <img src="./assets/images/decor/4.png" alt="" />
+                    </div>
+                  </div>
+                  <h3>Купол</h3>
+                  <p>собирает и выводит конденсат из помещения</p>
+                </div>
+                <div class="swiper-slide decor__item">
+                  <div class="img-block--cover radios">
+                    <div class="img-wrapper">
+                      <img src="./assets/images/decor/5.png" alt="" />
+                    </div>
+                  </div>
+                  <h3>Звездное небо</h3>
+                  <p>дарит особое эстетическое удовольствие</p>
+                </div>
+                <div class="swiper-slide decor__item">
+                  <div class="img-block--cover radios bg-grey">
+                    <h3>Еще больше декоративных элементов</h3>
+                    <p>
+                      Оставьте заявку и получите каталог с расширенным перечнем
+                      декора
+                    </p>
+                  </div>
+                  <button class="btn btn--green">Получить каталог</button>
                 </div>
               </div>
-              <h3>Анатомический лежак</h3>
-              <p>помогает лечь и максимально расслабиться</p>
-            </div>
-            <div class="decor__item">
-              <div class="img-block--cover radios">
-                <div class="img-wrapper">
-                  <img src="./assets/images/decor/2.png" alt="" />
-                </div>
-              </div>
-              <h3>Массажный стол</h3>
-              <p>дает возможность проведения дополнительных процедур</p>
-            </div>
-            <div class="decor__item">
-              <div class="img-block--cover radios">
-                <div class="img-wrapper">
-                  <img src="./assets/images/decor/3.png" alt="" />
-                </div>
-              </div>
-              <h3>Курна (раковина)</h3>
-              <p>позволяет освежиться во время похода в хаммам</p>
-            </div>
-            <div class="decor__item">
-              <div class="img-block--cover radios">
-                <div class="img-wrapper">
-                  <img src="./assets/images/decor/4.png" alt="" />
-                </div>
-              </div>
-              <h3>Купол</h3>
-              <p>собирает и выводит конденсат из помещения</p>
-            </div>
-            <div class="decor__item">
-              <div class="img-block--cover radios">
-                <div class="img-wrapper">
-                  <img src="./assets/images/decor/5.png" alt="" />
-                </div>
-              </div>
-              <h3>Звездное небо</h3>
-              <p>дарит особое эстетическое удовольствие</p>
-            </div>
-            <div class="decor__item">
-              <div class="img-block--cover radios bg-grey">
-                <h3>Еще больше декоративных элементов</h3>
-                <p>
-                  Оставьте заявку и получите каталог с расширенным перечнем
-                  декора
-                </p>
-              </div>
-              <button class="btn btn--green">Получить каталог</button>
             </div>
           </div>
         </div>
@@ -2191,7 +2745,16 @@
               </h3>
               <p>Просто нажмите на кнопку, и через час ваш хаммам готов</p>
               <div class="buttons">
-                <button class="btn">Узнать подробнее</button>
+                <button
+                  class="btn open-popup"
+                  data-title="Узнайте больше о строительстве<br />
+                сауны, парной и хаммама"
+                  data-descr="Цены. Сроки. Этапы работы. Условия"
+                  data-success="Мы свяжемся с вами в ближайшее время,<br />
+                  и подробно обо всем расскажем"
+                >
+                  Узнать подробнее
+                </button>
               </div>
             </div>
           </div>
@@ -2270,7 +2833,16 @@
                 вашего помещения
               </p>
               <div class="buttons">
-                <button class="btn">Пригласить инженера</button>
+                <button
+                  class="btn open-popup"
+                  data-title="Бесплатный <b>выезд инженера</b><br />
+                для замера вашего помещения"
+                  data-descr=" "
+                  data-success="Мы свяжемся с вами в ближайшее время<br />
+                  и согласуем время выезда инженера"
+                >
+                  Пригласить инженера
+                </button>
               </div>
             </div>
           </div>
@@ -2353,7 +2925,7 @@
                 <img src="./assets/images/pod-obed.png" alt="" />
               </div>
             </div>
-            <div class="grid">
+            <div class="grid only-desctop">
               <div class="pod-kluch__item radios bg-green">
                 <div class="icon">
                   <svg
@@ -2456,10 +3028,117 @@
                 </p>
               </div>
             </div>
+            <div class="mob-slider swiper only-mobile">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide pod-kluch__item radios bg-green">
+                  <div class="icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.7">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.21 0.8C7.69 0.295 8 0 8 0C8.109 0.363 8.234 0.708 8.371 1.038C9.183 2.984 10.444 4.388 11.568 5.638C12.878 7.096 14 8.345 14 10C14 11.5913 13.3679 13.1174 12.2426 14.2426C11.1174 15.3679 9.5913 16 8 16C6.4087 16 4.88258 15.3679 3.75736 14.2426C2.63214 13.1174 2 11.5913 2 10C2 6.668 5.58 2.517 7.21 0.8ZM7.623 1.821C6.98081 2.51594 6.37051 3.23968 5.794 3.99C5.068 4.94 4.358 5.998 3.834 7.06C3.304 8.133 3 9.138 3 10C3 11.3261 3.52678 12.5979 4.46447 13.5355C5.40215 14.4732 6.67392 15 8 15C9.32608 15 10.5979 14.4732 11.5355 13.5355C12.4732 12.5979 13 11.3261 13 10C13 8.799 12.204 7.843 10.819 6.3L10.789 6.268C9.75 5.11 8.5 3.72 7.623 1.82V1.821Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M4.55273 7.776C5.37273 6.135 6.26973 5.023 6.64573 4.646L7.35373 5.354C7.06373 5.644 6.22573 6.665 5.44673 8.224L4.55273 7.776Z"
+                          fill="white"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <h3>
+                    Закупим<br />
+                    необходимые<br />
+                    материалы
+                  </h3>
+                  <p>
+                    организуем доставку и сами разгрузим их на вашем объекте
+                  </p>
+                </div>
+                <div class="swiper-slide pod-kluch__item radios bg-white">
+                  <div class="icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.7">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.21 0.8C7.69 0.295 8 0 8 0C8.109 0.363 8.234 0.708 8.371 1.038C9.183 2.984 10.444 4.388 11.568 5.638C12.878 7.096 14 8.345 14 10C14 11.5913 13.3679 13.1174 12.2426 14.2426C11.1174 15.3679 9.5913 16 8 16C6.4087 16 4.88258 15.3679 3.75736 14.2426C2.63214 13.1174 2 11.5913 2 10C2 6.668 5.58 2.517 7.21 0.8ZM7.623 1.821C6.98081 2.51594 6.37051 3.23968 5.794 3.99C5.068 4.94 4.358 5.998 3.834 7.06C3.304 8.133 3 9.138 3 10C3 11.3261 3.52678 12.5979 4.46447 13.5355C5.40215 14.4732 6.67392 15 8 15C9.32608 15 10.5979 14.4732 11.5355 13.5355C12.4732 12.5979 13 11.3261 13 10C13 8.799 12.204 7.843 10.819 6.3L10.789 6.268C9.75 5.11 8.5 3.72 7.623 1.82V1.821Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M4.55273 7.776C5.37273 6.135 6.26973 5.023 6.64573 4.646L7.35373 5.354C7.06373 5.644 6.22573 6.665 5.44673 8.224L4.55273 7.776Z"
+                          fill="white"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <h3>
+                    Организуем<br />
+                    рабочий процесс
+                  </h3>
+                  <p>
+                    благодаря 100% влажности, создающейся с помощью густого
+                    водяного тумана
+                  </p>
+                </div>
+                <div class="swiper-slide pod-kluch__item radios bg-grey">
+                  <div class="icon">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g opacity="0.7">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M7.21 0.8C7.69 0.295 8 0 8 0C8.109 0.363 8.234 0.708 8.371 1.038C9.183 2.984 10.444 4.388 11.568 5.638C12.878 7.096 14 8.345 14 10C14 11.5913 13.3679 13.1174 12.2426 14.2426C11.1174 15.3679 9.5913 16 8 16C6.4087 16 4.88258 15.3679 3.75736 14.2426C2.63214 13.1174 2 11.5913 2 10C2 6.668 5.58 2.517 7.21 0.8ZM7.623 1.821C6.98081 2.51594 6.37051 3.23968 5.794 3.99C5.068 4.94 4.358 5.998 3.834 7.06C3.304 8.133 3 9.138 3 10C3 11.3261 3.52678 12.5979 4.46447 13.5355C5.40215 14.4732 6.67392 15 8 15C9.32608 15 10.5979 14.4732 11.5355 13.5355C12.4732 12.5979 13 11.3261 13 10C13 8.799 12.204 7.843 10.819 6.3L10.789 6.268C9.75 5.11 8.5 3.72 7.623 1.82V1.821Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M4.55273 7.776C5.37273 6.135 6.26973 5.023 6.64573 4.646L7.35373 5.354C7.06373 5.644 6.22573 6.665 5.44673 8.224L4.55273 7.776Z"
+                          fill="white"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <h3>
+                    Приведем в порядок<br />
+                    территорию
+                  </h3>
+                  <p>
+                    приберем весь строительный<br />
+                    мусор и оставим после себя<br />
+                    чистое помещение
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="block">
+      <div class="block" id="price">
         <div class="container">
           <h2 class="block__title">Предлагаем <b>честные</b> цены</h2>
           <div class="block__descr">
@@ -2495,15 +3174,23 @@
                   <p>Оценивается индивидуально</p>
                 </div>
               </div>
-              <button class="btn btn--green">Получить точный расчет</button>
+              <button
+                class="btn btn--green open-popup"
+                data-title="Получите <b>расчет стоимости</b><br /> строительства вашего"
+                data-descr="с погрешностью менее 5%"
+                data-success="Мы свяжемся с вами в ближайшее время<br />
+              для уточнения деталей"
+              >
+                Получить точный расчет
+              </button>
             </div>
             <div class="pay-shema radios bg-white">
               <div class="pay-shema__titles">
                 <div class="pay-shema__title">Материалы</div>
-                <div class="pay-shema__title">Работа</div>
+                <div class="pay-shema__title show">Работа</div>
               </div>
               <div class="pay-shema__diagramm">
-                <div class="pay-shema__item">
+                <div class="pay-shema__item pay-shema__item--materials">
                   <div class="pay-shema__proc">50%</div>
                   <div
                     class="pay-shema__visual pay-shema__visual--materials"
@@ -2513,7 +3200,7 @@
                     договора
                   </div>
                 </div>
-                <div class="pay-shema__item">
+                <div class="pay-shema__item pay-shema__item--materials">
                   <div class="pay-shema__proc">50%</div>
                   <div
                     class="pay-shema__visual pay-shema__visual--materials"
@@ -2523,7 +3210,7 @@
                     материалов
                   </div>
                 </div>
-                <div class="pay-shema__item">
+                <div class="pay-shema__item pay-shema__item--work show">
                   <div class="pay-shema__proc">50%</div>
                   <div class="pay-shema__visual pay-shema__visual--work"></div>
                   <div class="pay-shema__name">
@@ -2531,7 +3218,7 @@
                     работ
                   </div>
                 </div>
-                <div class="pay-shema__item">
+                <div class="pay-shema__item pay-shema__item--work show">
                   <div class="pay-shema__proc">50%</div>
                   <div class="pay-shema__visual pay-shema__visual--work"></div>
                   <div class="pay-shema__name">
@@ -2550,13 +3237,13 @@
             Закрепляем <b>гарантию</b><br />
             в договоре
           </h2>
-          <div class="block__content grid grid--2">
+          <div class="block__content grid grid--2 garant">
             <div class="radios bg-grey img-block">
               <div class="img-wrapper">
                 <img src="./assets/images/garant.png" alt="" />
               </div>
             </div>
-            <div class="radios block_transparent garant">
+            <div class="radios block_transparent">
               <h3>
                 В случае возникновения неполадок,
                 <b>любые неисправности будут устранены</b> в кратчайшие сроки за
@@ -2622,7 +3309,16 @@
                 о всех условиях<br />
                 нашей работы
               </h3>
-              <button class="btn bg-white">Оставить заявку</button>
+              <button
+                class="btn bg-white open-popup"
+                data-title="Узнайте больше<br />
+об условиях сотрудничества"
+                data-descr="с нашей компанией"
+                data-success="Мы свяжемся с вами в ближайшее время<br />
+и расскажем подробнее об условиях"
+              >
+                Оставить заявку
+              </button>
             </div>
             <div class="img-block--cover radios">
               <div class="img-wrapper">
@@ -2632,7 +3328,7 @@
           </div>
         </div>
       </div>
-      <div class="block">
+      <div class="block" id="review">
         <div class="container">
           <h2 class="block__title">
             Стараемся <b>превзойти </b><br />
@@ -2664,61 +3360,352 @@
             в реальность
           </div>
           <div class="dbl-slider block__content">
-            <div class="dbl-slider__img-wrap">
+            <div class="dbl-slider__img-wrap only-tablet-hidden">
               <div class="dbl-slider__img swiper radios">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <div class="img-wrapper">
-                      <img
-                        class="swiper-lazy"
-                        data-src="./assets/images/logo.png"
-                        data-srcset="./assets/images/15years/1.png"
-                      />
-                      <div class="swiper-lazy-preloader"></div>
+                    <div class="dbl-slider__inside swiper radios">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="img-wrapper">
-                      <img
-                        class="swiper-lazy"
-                        data-src="./assets/images/logo.png"
-                        data-srcset="./assets/images/15years/1.png"
-                      />
-                      <div class="swiper-lazy-preloader"></div>
+                    <div class="dbl-slider__inside swiper radios">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="img-wrapper">
-                      <img
-                        class="swiper-lazy"
-                        data-src="./assets/images/logo.png"
-                        data-srcset="./assets/images/15years/1.png"
-                      />
-                      <div class="swiper-lazy-preloader"></div>
+                    <div class="dbl-slider__inside swiper radios">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="img-wrapper">
-                      <img
-                        class="swiper-lazy"
-                        data-src="./assets/images/logo.png"
-                        data-srcset="./assets/images/15years/1.png"
-                      />
-                      <div class="swiper-lazy-preloader"></div>
+                    <div class="dbl-slider__inside swiper radios">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
                     </div>
                   </div>
                   <div class="swiper-slide">
-                    <div class="img-wrapper">
-                      <img
-                        class="swiper-lazy"
-                        data-src="./assets/images/logo.png"
-                        data-srcset="./assets/images/15years/1.png"
-                      />
-                      <div class="swiper-lazy-preloader"></div>
+                    <div class="dbl-slider__inside swiper radios">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="dbl-slider__inside swiper radios">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-pagination"></div>
               </div>
             </div>
             <div class="dbl-slider__text-wrap radios">
@@ -2763,128 +3750,423 @@
                       Сделали быстро,<br />
                       даже немного раньше срока
                     </h3>
-                    <p>
-                      Сделали быстро,<br />
-                      даже немного раньше срока
-                    </p>
+                    <div>
+                      <p>
+                        Сделали быстро,<br />
+                        даже немного раньше срока
+                      </p>
 
-                    <p>
-                      Хотели сделать сауну в деревянном доме.<br />
-                      При поиске подрядчиков обращали внимание на опыт<br />
-                      компании, соотношение цена-качество и технологии,<br />
-                      по которым работает фирма.
-                    </p>
+                      <p>
+                        Хотели сделать сауну в деревянном доме.<br />
+                        При поиске подрядчиков обращали внимание на опыт<br />
+                        компании, соотношение цена-качество и технологии,<br />
+                        по которым работает фирма.
+                      </p>
 
-                    <p>
-                      Понравился принцип работы: инженер Алексей выехал,<br />
-                      ответил на все вопросы, смог предложить такие<br />
-                      решения, которые другие компании не предлагали.<br />
-                      Быстро составили сметы, завезли материалы и начали<br />
-                      работу. Сотрудники были на связи постоянно,<br />
-                      все моменты согласовывались — мне присылали<br />
-                      ежедневные фотоотчеты.
-                    </p>
+                      <p>
+                        Понравился принцип работы: инженер Алексей выехал,<br />
+                        ответил на все вопросы, смог предложить такие<br />
+                        решения, которые другие компании не предлагали.<br />
+                        Быстро составили сметы, завезли материалы и начали<br />
+                        работу. Сотрудники были на связи постоянно,<br />
+                        все моменты согласовывались — мне присылали<br />
+                        ежедневные фотоотчеты.
+                      </p>
 
-                    <p>
-                      Сделали быстро, даже немного раньше заявленного<br />
-                      срока. Качество превзошло все ожидания. Очень<br />
-                      довольны выбором компании!
-                    </p>
+                      <p>
+                        Сделали быстро, даже немного раньше заявленного<br />
+                        срока. Качество превзошло все ожидания. Очень<br />
+                        довольны выбором компании!
+                      </p>
 
-                    <p>
-                      <b
-                        >Виктория<br />
-                        Заказала сауну в апреле 2018</b
-                      >
-                    </p>
+                      <p>
+                        <b
+                          >Виктория<br />
+                          Заказала сауну в апреле 2018</b
+                        >
+                      </p>
+                    </div>
+                    <button class="quote-show-more">
+                      <span class="open">показать больше</span
+                      ><span class="close">показать меньше</span>
+                    </button>
+                    <div
+                      class="dbl-slider__inside swiper radios only-tablet-visible"
+                    >
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
                   </div>
                   <div class="swiper-slide">
                     <h3>
                       Хаммам с можжевеловой<br />
                       сауной в каркасном домe
                     </h3>
-                    <p>
-                      Задача — сделать небольшую уютную сауну<br />
-                      в строящемся каркасном доме.
-                    </p>
-
-                    <p>
-                      Заказчик хотел довольно простую, но симпатичную<br />
-                      сауну с брутальными хвойными ароматами в своем<br />
-                      строящемся доме.
-                    </p>
-
-                    <p>
-                      Обязательное условие — светлые тона в отделке,<br />
-                      по возмоности широкие элементы в обшивке<br />
-                      сауной в каркасном доме
-                    </p>
+                    <div>
+                      <p>
+                        Задача — сделать небольшую уютную сауну<br />
+                        в строящемся каркасном доме.
+                      </p>
+                      <p>
+                        Заказчик хотел довольно простую, но симпатичную<br />
+                        сауну с брутальными хвойными ароматами в своем<br />
+                        строящемся доме.
+                      </p>
+                      <p>
+                        Обязательное условие — светлые тона в отделке,<br />
+                        по возмоности широкие элементы в обшивке<br />
+                        сауной в каркасном доме
+                      </p>
+                    </div>
+                    <button class="quote-show-more">показать больше</button>
+                    <div
+                      class="dbl-slider__inside swiper radios only-tablet-visible"
+                    >
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
                   </div>
                   <div class="swiper-slide">
                     <h3>
                       Хаммам с можжевеловой<br />
                       сауной в каркасном домe
                     </h3>
-                    <p>
-                      Задача — сделать небольшую уютную сауну<br />
-                      в строящемся каркасном доме.
-                    </p>
-
-                    <p>
-                      Заказчик хотел довольно простую, но симпатичную<br />
-                      сауну с брутальными хвойными ароматами в своем<br />
-                      строящемся доме.
-                    </p>
-
-                    <p>
-                      Обязательное условие — светлые тона в отделке,<br />
-                      по возмоности широкие элементы в обшивке<br />
-                      сауной в каркасном доме
-                    </p>
+                    <div>
+                      <p>
+                        Задача — сделать небольшую уютную сауну<br />
+                        в строящемся каркасном доме.
+                      </p>
+                      <p>
+                        Заказчик хотел довольно простую, но симпатичную<br />
+                        сауну с брутальными хвойными ароматами в своем<br />
+                        строящемся доме.
+                      </p>
+                      <p>
+                        Обязательное условие — светлые тона в отделке,<br />
+                        по возмоности широкие элементы в обшивке<br />
+                        сауной в каркасном доме
+                      </p>
+                    </div>
+                    <button class="quote-show-more">показать больше</button>
+                    <div
+                      class="dbl-slider__inside swiper radios only-tablet-visible"
+                    >
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
                   </div>
                   <div class="swiper-slide">
                     <h3>
                       Хаммам с можжевеловой<br />
                       сауной в каркасном домe
                     </h3>
-                    <p>
-                      Задача — сделать небольшую уютную сауну<br />
-                      в строящемся каркасном доме.
-                    </p>
-
-                    <p>
-                      Заказчик хотел довольно простую, но симпатичную<br />
-                      сауну с брутальными хвойными ароматами в своем<br />
-                      строящемся доме.
-                    </p>
-
-                    <p>
-                      Обязательное условие — светлые тона в отделке,<br />
-                      по возмоности широкие элементы в обшивке<br />
-                      сауной в каркасном доме
-                    </p>
+                    <div>
+                      <p>
+                        Задача — сделать небольшую уютную сауну<br />
+                        в строящемся каркасном доме.
+                      </p>
+                      <p>
+                        Заказчик хотел довольно простую, но симпатичную<br />
+                        сауну с брутальными хвойными ароматами в своем<br />
+                        строящемся доме.
+                      </p>
+                      <p>
+                        Обязательное условие — светлые тона в отделке,<br />
+                        по возмоности широкие элементы в обшивке<br />
+                        сауной в каркасном доме
+                      </p>
+                    </div>
+                    <button class="quote-show-more">показать больше</button>
+                    <div
+                      class="dbl-slider__inside swiper radios only-tablet-visible"
+                    >
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
                   </div>
                   <div class="swiper-slide">
                     <h3>
                       Хаммам с можжевеловой<br />
                       сауной в каркасном домe
                     </h3>
-                    <p>
-                      Задача — сделать небольшую уютную сауну<br />
-                      в строящемся каркасном доме.
-                    </p>
-
-                    <p>
-                      Заказчик хотел довольно простую, но симпатичную<br />
-                      сауну с брутальными хвойными ароматами в своем<br />
-                      строящемся доме.
-                    </p>
-
-                    <p>
-                      Обязательное условие — светлые тона в отделке,<br />
-                      по возмоности широкие элементы в обшивке<br />
-                      сауной в каркасном доме
-                    </p>
+                    <div>
+                      <p>
+                        Задача — сделать небольшую уютную сауну<br />
+                        в строящемся каркасном доме.
+                      </p>
+                      <p>
+                        Заказчик хотел довольно простую, но симпатичную<br />
+                        сауну с брутальными хвойными ароматами в своем<br />
+                        строящемся доме.
+                      </p>
+                      <p>
+                        Обязательное условие — светлые тона в отделке,<br />
+                        по возмоности широкие элементы в обшивке<br />
+                        сауной в каркасном доме
+                      </p>
+                    </div>
+                    <button class="quote-show-more">показать больше</button>
+                    <div
+                      class="dbl-slider__inside swiper radios only-tablet-visible"
+                    >
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="img-wrapper">
+                            <img
+                              class="swiper-lazy"
+                              data-src="./assets/images/logo.png"
+                              data-srcset="./assets/images/materials.png"
+                            />
+                            <div class="swiper-lazy-preloader"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2904,10 +4186,19 @@
                 <h4>Построим оба проекта «под ключ»</h4>
                 <p>Оставьте заявку, чтобы обсудить условия</p>
                 <div class="buttons">
-                  <button class="btn bg-white">Оставить заявку</button>
-                  <button class="btn bg-white block_transparent">
-                    Посмотреть работы
+                  <button
+                    class="btn bg-white open-popup"
+                    data-title="Узнайте больше о строительстве<br />
+                сауны, парной и хаммама"
+                    data-descr="Цены. Сроки. Этапы работы. Условия"
+                    data-success="Мы свяжемся с вами в ближайшее время,<br />
+                  и подробно обо всем расскажем"
+                  >
+                    Оставить заявку
                   </button>
+                  <a class="btn bg-white block_transparent">
+                    Посмотреть работы
+                  </a>
                 </div>
               </div>
             </div>
@@ -2945,125 +4236,245 @@
             </div>
             специалистов
           </div>
-          <div class="block__content people grid">
-            <div class="people__item">
-              <div class="img-block--cover radios">
-                <div class="img-wrapper">
-                  <img src="./assets/images/people/ivan.png" alt="" />
+          <div class="block__content people">
+            <div class="grid only-desctop">
+              <div class="people__item">
+                <div class="img-block--cover radios">
+                  <div class="img-wrapper">
+                    <img src="./assets/images/people/ivan.png" alt="" />
+                  </div>
                 </div>
+                <h3>Иван</h3>
+                <h4>Технический директор</h4>
+                <p>
+                  Руководит компанией. Делает сложные финансовые расчеты,
+                  распреде­ляет бригады по объектам, контролирует монтаж.
+                  Разрабатывает новые технические решения
+                </p>
               </div>
-              <h3>Иван</h3>
-              <h4>Технический директор</h4>
-              <p>
-                Руководит компанией. Делает сложные финансовые расчеты,
-                распреде­ляет бригады по объектам, контролирует монтаж.
-                Разрабатывает новые технические решения
-              </p>
+              <div class="people__item">
+                <div class="img-block--cover radios">
+                  <div class="img-wrapper">
+                    <img src="./assets/images/people/denis.png" alt="" />
+                  </div>
+                </div>
+                <h3>Денис</h3>
+                <h4>Координатор проектов</h4>
+                <p>
+                  Центр общения. Принимает заявки и выявляет потребности
+                  клиентов, со­ставляет предварительные сметы, распределяет и
+                  контролирует выезды, следит за сроками
+                </p>
+              </div>
+              <div class="people__item">
+                <div class="img-block--cover radios">
+                  <div class="img-wrapper">
+                    <img src="./assets/images/people/aleksandr.png" alt="" />
+                  </div>
+                </div>
+                <h3>Алексей</h3>
+                <h4>Инженер</h4>
+                <p>
+                  Редко сидит на месте: ездит на объек­ты, завозит материал,
+                  контролирует монтажников, чертит эскизы, составля­ет сметы
+                </p>
+              </div>
+              <div class="people__item">
+                <div class="img-block--cover radios">
+                  <div class="img-wrapper">
+                    <img src="./assets/images/people/galina.png" alt="" />
+                  </div>
+                </div>
+                <h3>Галина</h3>
+                <h4>Проектировщик</h4>
+                <p>
+                  Мастер карандаша и ватмана. По эскизам инженера готовит
+                  подробные проекты: планировки, развертки стен, разрезы,
+                  техзадания, узлы
+                </p>
+              </div>
+              <div class="people__item">
+                <div class="img-block--cover radios">
+                  <div class="img-wrapper">
+                    <img src="./assets/images/people/olga.png" alt="" />
+                  </div>
+                </div>
+                <h3>Ольга</h3>
+                <h4>Исполнительный директор</h4>
+                <p>
+                  Считает деньги, платит налоги и ведет отчетность. Планирует
+                  затраты на материалы и зарплаты, готовит дого­воры,
+                  контролирует расходы
+                </p>
+              </div>
+              <div class="people__item">
+                <div class="img-block--cover radios">
+                  <div class="img-wrapper">
+                    <img src="./assets/images/people/sergey.png" alt="" />
+                  </div>
+                </div>
+                <h3>Сергей</h3>
+                <h4>Специалист по монтажу</h4>
+                <p>
+                  Кладет плитку, выполняет черновую отделку. Сильная сторона —
+                  умение работать с камнем: выкладывать инте­рьерные стены и
+                  панно, облицовывать печи
+                </p>
+              </div>
+              <div class="people__item">
+                <div class="img-block--cover radios">
+                  <div class="img-wrapper">
+                    <img
+                      src="./assets/images/people/aleksey-montage.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <h3>Алексей</h3>
+                <h4>Специалист по монтажу</h4>
+                <p>
+                  Универсальный мастер. Одинаково качественно работает и с
+                  камнем, и с деревом. Неторопливо и грамотно выполняет задачу с
+                  минимумом исправлений
+                </p>
+              </div>
+              <div class="people__item">
+                <div class="img-block--cover radios">
+                  <div class="img-wrapper">
+                    <img src="./assets/images/people/aleksandr.png" alt="" />
+                  </div>
+                </div>
+                <h3>Александр</h3>
+                <h4>Специалист по монтажу</h4>
+                <p>
+                  Знает всё о древесине: разбирается в ее видах и свойствах,
+                  тонкостях работы. Еще один конек — навыки делать панно из
+                  гималайской соли
+                </p>
+              </div>
             </div>
-            <div class="people__item">
-              <div class="img-block--cover radios">
-                <div class="img-wrapper">
-                  <img src="./assets/images/people/denis.png" alt="" />
+            <div class="mob-slider swiper only-mobile">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide people__item">
+                  <div class="img-block--cover radios">
+                    <div class="img-wrapper">
+                      <img src="./assets/images/people/ivan.png" alt="" />
+                    </div>
+                  </div>
+                  <h3>Иван</h3>
+                  <h4>Технический директор</h4>
+                  <p>
+                    Руководит компанией. Делает сложные финансовые расчеты,
+                    распреде­ляет бригады по объектам, контролирует монтаж.
+                    Разрабатывает новые технические решения
+                  </p>
+                </div>
+                <div class="swiper-slide people__item">
+                  <div class="img-block--cover radios">
+                    <div class="img-wrapper">
+                      <img src="./assets/images/people/denis.png" alt="" />
+                    </div>
+                  </div>
+                  <h3>Денис</h3>
+                  <h4>Координатор проектов</h4>
+                  <p>
+                    Центр общения. Принимает заявки и выявляет потребности
+                    клиентов, со­ставляет предварительные сметы, распределяет и
+                    контролирует выезды, следит за сроками
+                  </p>
+                </div>
+                <div class="swiper-slide people__item">
+                  <div class="img-block--cover radios">
+                    <div class="img-wrapper">
+                      <img src="./assets/images/people/aleksandr.png" alt="" />
+                    </div>
+                  </div>
+                  <h3>Алексей</h3>
+                  <h4>Инженер</h4>
+                  <p>
+                    Редко сидит на месте: ездит на объек­ты, завозит материал,
+                    контролирует монтажников, чертит эскизы, составля­ет сметы
+                  </p>
+                </div>
+                <div class="swiper-slide people__item">
+                  <div class="img-block--cover radios">
+                    <div class="img-wrapper">
+                      <img src="./assets/images/people/galina.png" alt="" />
+                    </div>
+                  </div>
+                  <h3>Галина</h3>
+                  <h4>Проектировщик</h4>
+                  <p>
+                    Мастер карандаша и ватмана. По эскизам инженера готовит
+                    подробные проекты: планировки, развертки стен, разрезы,
+                    техзадания, узлы
+                  </p>
+                </div>
+                <div class="swiper-slide people__item">
+                  <div class="img-block--cover radios">
+                    <div class="img-wrapper">
+                      <img src="./assets/images/people/olga.png" alt="" />
+                    </div>
+                  </div>
+                  <h3>Ольга</h3>
+                  <h4>Исполнительный директор</h4>
+                  <p>
+                    Считает деньги, платит налоги и ведет отчетность. Планирует
+                    затраты на материалы и зарплаты, готовит дого­воры,
+                    контролирует расходы
+                  </p>
+                </div>
+                <div class="swiper-slide people__item">
+                  <div class="img-block--cover radios">
+                    <div class="img-wrapper">
+                      <img src="./assets/images/people/sergey.png" alt="" />
+                    </div>
+                  </div>
+                  <h3>Сергей</h3>
+                  <h4>Специалист по монтажу</h4>
+                  <p>
+                    Кладет плитку, выполняет черновую отделку. Сильная сторона —
+                    умение работать с камнем: выкладывать инте­рьерные стены и
+                    панно, облицовывать печи
+                  </p>
+                </div>
+                <div class="swiper-slide people__item">
+                  <div class="img-block--cover radios">
+                    <div class="img-wrapper">
+                      <img
+                        src="./assets/images/people/aleksey-montage.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <h3>Алексей</h3>
+                  <h4>Специалист по монтажу</h4>
+                  <p>
+                    Универсальный мастер. Одинаково качественно работает и с
+                    камнем, и с деревом. Неторопливо и грамотно выполняет задачу
+                    с минимумом исправлений
+                  </p>
+                </div>
+                <div class="swiper-slide people__item">
+                  <div class="img-block--cover radios">
+                    <div class="img-wrapper">
+                      <img src="./assets/images/people/aleksandr.png" alt="" />
+                    </div>
+                  </div>
+                  <h3>Александр</h3>
+                  <h4>Специалист по монтажу</h4>
+                  <p>
+                    Знает всё о древесине: разбирается в ее видах и свойствах,
+                    тонкостях работы. Еще один конек — навыки делать панно из
+                    гималайской соли
+                  </p>
                 </div>
               </div>
-              <h3>Денис</h3>
-              <h4>Координатор проектов</h4>
-              <p>
-                Центр общения. Принимает заявки и выявляет потребности клиентов,
-                со­ставляет предварительные сметы, распределяет и контролирует
-                выезды, следит за сроками
-              </p>
-            </div>
-            <div class="people__item">
-              <div class="img-block--cover radios">
-                <div class="img-wrapper">
-                  <img src="./assets/images/people/aleksandr.png" alt="" />
-                </div>
-              </div>
-              <h3>Алексей</h3>
-              <h4>Инженер</h4>
-              <p>
-                Редко сидит на месте: ездит на объек­ты, завозит материал,
-                контролирует монтажников, чертит эскизы, составля­ет сметы
-              </p>
-            </div>
-            <div class="people__item">
-              <div class="img-block--cover radios">
-                <div class="img-wrapper">
-                  <img src="./assets/images/people/galina.png" alt="" />
-                </div>
-              </div>
-              <h3>Галина</h3>
-              <h4>Проектировщик</h4>
-              <p>
-                Мастер карандаша и ватмана. По эскизам инженера готовит
-                подробные проекты: планировки, развертки стен, разрезы,
-                техзадания, узлы
-              </p>
-            </div>
-            <div class="people__item">
-              <div class="img-block--cover radios">
-                <div class="img-wrapper">
-                  <img src="./assets/images/people/olga.png" alt="" />
-                </div>
-              </div>
-              <h3>Ольга</h3>
-              <h4>Исполнительный директор</h4>
-              <p>
-                Считает деньги, платит налоги и ведет отчетность. Планирует
-                затраты на материалы и зарплаты, готовит дого­воры, контролирует
-                расходы
-              </p>
-            </div>
-            <div class="people__item">
-              <div class="img-block--cover radios">
-                <div class="img-wrapper">
-                  <img src="./assets/images/people/sergey.png" alt="" />
-                </div>
-              </div>
-              <h3>Сергей</h3>
-              <h4>Специалист по монтажу</h4>
-              <p>
-                Кладет плитку, выполняет черновую отделку. Сильная сторона —
-                умение работать с камнем: выкладывать инте­рьерные стены и
-                панно, облицовывать печи
-              </p>
-            </div>
-            <div class="people__item">
-              <div class="img-block--cover radios">
-                <div class="img-wrapper">
-                  <img
-                    src="./assets/images/people/aleksey-montage.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <h3>Алексей</h3>
-              <h4>Специалист по монтажу</h4>
-              <p>
-                Универсальный мастер. Одинаково качественно работает и с камнем,
-                и с деревом. Неторопливо и грамотно выполняет задачу с минимумом
-                исправлений
-              </p>
-            </div>
-            <div class="people__item">
-              <div class="img-block--cover radios">
-                <div class="img-wrapper">
-                  <img src="./assets/images/people/aleksandr.png" alt="" />
-                </div>
-              </div>
-              <h3>Александр</h3>
-              <h4>Специалист по монтажу</h4>
-              <p>
-                Знает всё о древесине: разбирается в ее видах и свойствах,
-                тонкостях работы. Еще один конек — навыки делать панно из
-                гималайской соли
-              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="block">
+      <div class="block" id="contacts">
         <div class="container">
           <h2 class="block__title">Приходите в гости <b>в наш офис</b></h2>
           <div class="block__descr">в Москве или Зеленограде</div>
@@ -3091,7 +4502,7 @@
             <div
               class="radios"
               id="map"
-              data-adres="[{'city':'Москва','coord':[55.74456659115346,37.59029051930568],'adres':'3-й Хорошевский проезд,<br> дом 1, стр.1, офис 331'},{'city':'Москва','coord':[55.9756874082173,37.24917940302562],'adres':'3-й Хорошевский проезд,<br> дом 1, стр.1, офис 331'}]"
+              data-adres="[{'city':'Москва','coord':[55.74456659115346,37.59029051930568],'adres':'3-й Хорошевский проезд,<br> дом 1, стр.1, офис 331'},{'city':'Другой','coord':[55.9756874082173,37.24917940302562],'adres':'3-й Хорошевский проезд,<br> дом 1, стр.1, офис 331'}]"
             ></div>
           </div>
         </div>
@@ -3103,7 +4514,7 @@
             Оставьте заявку и получите точную стоимость строительства<br />
             вашего хаммама с погрешностью менее 5%
           </div>
-          <div class="block__content grid grid--2">
+          <div class="block__content grid grid--2 disscus">
             <div class="img-block radios bg-grey">
               <div class="img-wrapper">
                 <img src="./assets/images/smeta.png" alt="" />
@@ -3126,6 +4537,9 @@
                       placeholder="Введите контактный телефон"
                       pattern="^(\s*)?(\+)?([- _():=+]?\d[- _()+]?){1,50}(\s*)?$"
                     />
+                    <div class="error-mes">
+                      <span>Поле обязательно для заполнения</span>
+                    </div>
                     <button class="btn btn--green radios" type="submit">
                       Получить смету
                     </button>
@@ -3189,6 +4603,50 @@
           </div>
         </div>
       </div>
+      <div class="soc-icons-block">
+        <a class="tg" href="#">
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25C49 38.2548 38.2548 49 25 49Z"
+              fill="#0088CC"
+              stroke="white"
+              stroke-width="2"
+            />
+            <path
+              d="M12.6561 24.5442C19.367 21.6204 23.842 19.6928 26.081 18.7615C32.474 16.1025 33.8024 15.6406 34.6682 15.6251C34.8587 15.622 35.2845 15.6692 35.5603 15.893C35.7932 16.0819 35.8572 16.3372 35.8879 16.5164C35.9186 16.6955 35.9567 17.1037 35.9264 17.4226C35.5799 21.0626 34.0809 29.8961 33.3183 33.973C32.9956 35.6981 32.3602 36.2765 31.7451 36.3331C30.4082 36.4561 29.3931 35.4496 28.0983 34.6009C26.0723 33.2728 24.9276 32.446 22.961 31.15C20.6882 29.6523 22.1615 28.8291 23.4568 27.4837C23.7958 27.1317 29.6859 21.7742 29.7999 21.2881C29.8142 21.2274 29.8274 21.0008 29.6928 20.8812C29.5582 20.7615 29.3595 20.8024 29.2162 20.835C29.0129 20.8811 25.7763 23.0204 19.5061 27.253C18.5874 27.8838 17.7552 28.1912 17.0096 28.1751C16.1877 28.1573 14.6066 27.7104 13.4312 27.3283C11.9896 26.8597 10.8438 26.6119 10.9436 25.816C10.9955 25.4015 11.5664 24.9776 12.6561 24.5442Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+        <a class="wa" href="#">
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M25 49C11.7452 49 1 38.2548 1 25C1 11.7452 11.7452 1 25 1C38.2548 1 49 11.7452 49 25C49 38.2548 38.2548 49 25 49Z"
+              fill="#25D366"
+              stroke="white"
+              stroke-width="2"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M33.75 16.0938C31.4063 13.75 28.2812 12.5 25 12.5C18.125 12.5 12.5 18.125 12.5 25C12.5 27.1875 13.125 29.375 14.2188 31.25L12.5 37.5L19.0625 35.7812C20.9375 36.7188 22.9688 37.3438 25 37.3438C31.875 37.3438 37.5 31.7188 37.5 24.8437C37.5 21.5625 36.0938 18.4375 33.75 16.0938ZM25 35.3125C23.125 35.3125 21.25 34.8438 19.6875 33.9063L19.375 33.75L15.4687 34.8437L16.5625 31.0938L16.25 30.625C15.1562 28.9062 14.6875 27.0313 14.6875 25.1563C14.6875 19.5313 19.375 14.8438 25 14.8438C27.8125 14.8438 30.3125 15.9375 32.3438 17.8125C34.375 19.8437 35.3125 22.3438 35.3125 25.1563C35.3125 30.625 30.7812 35.3125 25 35.3125ZM30.625 27.5C30.3125 27.3438 28.75 26.5625 28.4375 26.5625C28.125 26.4062 27.9687 26.4063 27.8125 26.7188C27.6562 27.0313 27.0313 27.6562 26.875 27.9687C26.7188 28.125 26.5625 28.125 26.25 28.125C25.9375 27.9688 25 27.6562 23.75 26.5625C22.8125 25.7812 22.1875 24.6875 22.0313 24.375C21.875 24.0625 22.0313 23.9062 22.1875 23.75C22.3438 23.5938 22.5 23.4375 22.6562 23.2812C22.8125 23.125 22.8125 22.9688 22.9688 22.8125C23.125 22.6563 22.9688 22.5 22.9688 22.3438C22.9688 22.1875 22.3438 20.625 22.0313 20C21.875 19.5313 21.5625 19.5312 21.4063 19.5312C21.25 19.5312 21.0937 19.5312 20.7812 19.5312C20.625 19.5312 20.3125 19.5312 20 19.8437C19.6875 20.1562 18.9063 20.9375 18.9063 22.5C18.9063 24.0625 20 25.4688 20.1562 25.7812C20.3125 25.9375 22.3437 29.2188 25.4687 30.4688C28.125 31.5625 28.5938 31.25 29.2188 31.25C29.8438 31.25 31.0938 30.4688 31.25 29.8438C31.5625 29.0625 31.5625 28.4375 31.4063 28.4375C31.25 27.6563 30.9375 27.6563 30.625 27.5Z"
+              fill="white"
+            />
+          </svg>
+        </a>
+      </div>
     </main>
     <footer class="footer container">
       <div class="footer__main">
@@ -3223,7 +4681,16 @@
         <div class="footer__time">
           <div class="footer__name">Отвечаем и перезваниваем ежедневно</div>
           <div class="footer__bold">09:00-21:00 <span>(мск)</span></div>
-          <button class="btn btn--green">Обратный звонок</button>
+          <button
+            class="btn btn--green open-popup"
+            data-title="Укажите свои контакты"
+            data-descr="Мы перезвоним вам и ответим на все<br />
+              ваши вопросы"
+            data-success="Мы свяжемся с вами в ближайшее время<br />
+              и ответим на все ваши вопросы"
+          >
+            Обратный звонок
+          </button>
         </div>
       </div>
       <div class="footer__links">
@@ -3273,6 +4740,9 @@
                   placeholder="Введите контактный телефон"
                   pattern="^(\s*)?(\+)?([- _():=+]?\d[- _()+]?){1,50}(\s*)?$"
                 />
+                <div class="error-mes">
+                  <span>Поле обязательно для заполнения</span>
+                </div>
                 <button class="btn btn--green radios" type="submit">
                   Получить смету
                 </button>

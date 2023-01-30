@@ -12,3 +12,6 @@ import "./popup.ts";
 import "./form";
 import "./mob-meny.ts";
 import "./mob-slider.ts";
+import "./soc-block.ts";
+import "./materials.ts";
+import "./quote-show-more.ts";

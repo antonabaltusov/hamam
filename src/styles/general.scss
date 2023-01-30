@@ -7,6 +7,7 @@ html {
   font-family: "Onest";
   color: white;
   background-color: $dark;
+  scroll-behavior: smooth;
 }
 h1,
 h2,
@@ -74,6 +75,7 @@ a.btn {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .btn {
   height: 55px;
@@ -81,6 +83,8 @@ a.btn {
     height: 44px;
     font-size: 12px;
     line-height: 15px;
+    border-radius: 10px;
+    padding: 0 10px;
   }
   border-radius: 15px;
   color: white;
@@ -144,13 +148,13 @@ b {
 .block {
   &:first-child {
     padding-top: 100px;
-    @include mobile {
+    @include tablet {
       padding-top: 50px;
     }
   }
   &:not(:first-child) {
     padding-top: 200px;
-    @include mobile {
+    @include tablet {
       padding-top: 100px;
     }
   }
@@ -195,6 +199,7 @@ b {
       margin-top: 1.25em;
       @include mobile {
         font-size: 10px;
+        margin-top: 1em;
       }
     }
   }
@@ -451,11 +456,23 @@ b {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include tablet {
+      padding: 0;
+      border: none;
+      margin-bottom: 15px;
+    }
     & h4 {
       font-weight: 400;
       font-size: 20px;
       line-height: 150%;
       margin-top: 1em;
+      @include mobile {
+        font-size: 14px;
+        margin-top: 5px;
+        & br {
+          display: none;
+        }
+      }
     }
     & p {
       font-weight: 300;
@@ -464,33 +481,73 @@ b {
       color: #ffffff;
       opacity: 0.7;
       margin-top: 1.25em;
+      @include mobile {
+        font-size: 10px;
+      }
     }
     & .link {
       margin-top: 50px;
       font-size: 16px;
       line-height: 1.25em;
+      @include mobile {
+        font-size: 10px;
+        margin-top: 15px;
+      }
       & .icon {
         margin: 0 10px 0 0;
+        @include mobile {
+          margin-right: 6px;
+        }
       }
+    }
+  }
+  & .swiper-slide {
+    @include tablet {
+      width: 81.25vw;
+      max-width: 500px;
+      @include block-transparent;
+      padding: 15px;
+      border-radius: 10px;
     }
   }
 }
 .materials {
   &__nuv {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    position: relative;
     margin: 0 0 49px;
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      background-color: $grey;
-      transform: translateY(-50%);
+    @include tablet {
+      width: 100vw;
+      padding: 0 20px;
+      transform: translateX(-20px);
+      overflow: auto;
+      margin-bottom: 10px;
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+    }
+    @include mobile {
+      margin-bottom: 15px;
+    }
+    & ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      position: relative;
+      gap: 20px;
+      @include tablet {
+        width: max-content;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $grey;
+        transform: translateY(-50%);
+      }
     }
     & li {
       padding-bottom: 15px;
@@ -500,6 +557,10 @@ b {
       font-size: 16px;
       line-height: 1.25em;
       color: transparent;
+      white-space: nowrap;
+      @include mobile {
+        font-size: 12px;
+      }
       & span {
         position: absolute;
         white-space: nowrap;
@@ -508,23 +569,55 @@ b {
         transform: translateX(-50%);
         color: white;
       }
-      &.active,
-      &:hover {
+      &.active {
         & span {
           font-weight: 500;
         }
         border-color: $green;
         cursor: pointer;
       }
+      @media (min-width: 770px) {
+        &:hover {
+          & span {
+            font-weight: 500;
+          }
+          border-color: $green;
+          cursor: pointer;
+        }
+      }
       &.active {
         cursor: default;
       }
+      @include tablet {
+        // &:hover {
+        //   & span {
+        //     font-weight: inherit;
+        //   }
+        //   border-color: inherit;
+        // }
+      }
+    }
+  }
+  &__slider {
+    @include tablet {
+      flex-direction: column-reverse;
+    }
+    & .dbl-slider__text-wrap {
+      height: auto;
+      min-height: 0;
+    }
+    & .dbl-slider__inside {
+      margin-top: 15px;
     }
   }
 }
 .decor {
   &__item {
     text-align: center;
+    @include tablet {
+      max-width: 243px;
+      text-align: left;
+    }
     & .btn {
       width: 100%;
       margin-top: 24px;
@@ -532,6 +625,9 @@ b {
     & .img-block--cover {
       width: 100%;
       height: 241px;
+      @include tablet {
+        height: 264px;
+      }
       &::before {
         display: none;
       }
@@ -549,14 +645,23 @@ b {
     & h3 {
       font-size: 20px;
       line-height: 1.25;
+      @include tablet {
+        font-size: 16px;
+      }
     }
     & p {
       font-weight: 300;
       font-size: 16px;
       line-height: 1.4;
+      @include tablet {
+        font-size: 12px;
+      }
     }
     & > h3 {
       margin-top: 20px;
+      @include tablet {
+        margin-top: 15px;
+      }
     }
     & > p {
       width: 100%;
@@ -566,38 +671,82 @@ b {
   }
 }
 .automatic {
+  @include mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    @include block-transparent;
+    border-radius: 10px;
+    padding: 15px;
+  }
   & .img-block .img-wrapper {
     position: absolute;
     top: 48px;
     left: 89px;
     right: 89px;
     bottom: 48px;
+    @include tablet {
+      inset: 37px;
+    }
   }
   & .block_transparent {
     & h3 {
       font-weight: 400;
+      @include mobile {
+        font-weight: 500;
+      }
     }
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 15px 12.585% 15px 7.653%;
+    @include tablet {
+      padding: 15px;
+    }
+    @include mobile {
+      padding: 0;
+      border: none;
+      & p {
+        margin-top: 10px;
+      }
+    }
     & .btn {
       padding: 0 48px;
     }
   }
 }
 .call-inzh {
+  @include mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    @include block-transparent;
+    border-radius: 10px;
+    padding: 15px;
+  }
   & .block_transparent {
     & h3 {
       font-weight: 400;
+      @include mobile {
+        font-weight: 500;
+      }
       & + p {
         line-height: 1.6;
       }
     }
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 15px 12% 15px 7.653%;
+    @include tablet {
+      padding: 15px;
+    }
+    @include mobile {
+      padding: 0;
+      border: none;
+      & p {
+        margin-top: 10px;
+      }
+    }
     & .btn {
       padding: 0 32px;
     }
@@ -605,6 +754,21 @@ b {
 }
 .pod-kluch {
   grid-template-columns: 64.25% 1fr;
+  @include mobile {
+    & .mob-slider {
+      width: 100%;
+      & .swiper-wrapper {
+        align-items: stretch;
+      }
+    }
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: column-reverse;
+    & .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
   & .img-block--cover::before {
     padding-bottom: 100.6%;
   }
@@ -614,31 +778,59 @@ b {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    @include tablet {
+      padding: 15px 10px 32px 15px;
+    }
+    @include mobile {
+      width: 65vw;
+      height: 100%;
+    }
     & .icon {
       position: absolute;
       top: 25px;
       right: 25px;
       height: 48px;
       width: 48px;
+      @include mobile {
+        position: static;
+        margin: 0 0 15px;
+        height: 36px;
+        width: 36px;
+      }
     }
     & h3 {
       font-size: 20px;
       line-height: 1.25em;
       padding-right: 50px;
+      @include mobile {
+        font-size: 16px;
+      }
     }
     & p {
       width: 100%;
       max-width: 306px;
+      @include tablet {
+        & br {
+          display: none;
+        }
+      }
     }
   }
 }
 .pay {
   grid-template-columns: 33.16% 1fr;
+  @include tablet {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   &__info {
     justify-content: center;
     align-items: center;
     display: flex;
     padding: 52px 20px;
+    @include mobile {
+      padding: 15px;
+    }
     & h3 {
       font-size: 20px;
       line-height: 1.25em;
@@ -658,16 +850,56 @@ b {
     display: flex;
     gap: 5.9%;
     align-items: center;
+    @include tablet {
+      padding: 55px 50px 75px;
+    }
+    @include mobile {
+      flex-direction: column;
+      padding: 0;
+      background-color: transparent;
+    }
     &__titles {
       height: 111px;
+      @include mobile {
+        color: white;
+        display: flex;
+        flex-direction: row-reverse;
+        height: auto;
+        margin-bottom: 15px;
+        width: 100%;
+        border-bottom: 1px solid $grey;
+      }
     }
     &__title {
       font-weight: 500;
       font-size: 20px;
-      line-height: 25px;
+      line-height: 1.25em;
       transform: translateY(-50%);
       &:not(:first-child) {
         margin-top: 31px;
+        @include mobile {
+          margin-top: 0;
+        }
+      }
+      @include mobile {
+        width: 50%;
+        transform: none;
+        font-size: 12px;
+        font-weight: 300;
+        padding-bottom: 10px;
+        position: relative;
+        &.show {
+          font-weight: 500;
+          &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: -1px;
+            width: 100%;
+            height: 1px;
+            background-color: $green;
+          }
+        }
       }
     }
     &__diagramm {
@@ -676,15 +908,49 @@ b {
       gap: 5.3%;
       flex: 1;
       align-items: flex-end;
+      @include mobile {
+        border-radius: 10px;
+        background-color: white;
+        width: 100%;
+        padding: 45px 15px 76px;
+        border: none;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          height: 1px;
+          bottom: 76px;
+          left: 15px;
+          width: calc(100% - 30px);
+          background-color: rgba($color: $grey, $alpha: 0.3);
+        }
+      }
     }
     &__visual {
-      border-top: 4px solid $green;
+      // border-top: 4px solid $green;
       position: relative;
       &--materials {
         height: 111px;
+        @include mobile {
+          height: 72px;
+        }
       }
       &--work {
         height: 55px;
+        @include mobile {
+          height: 72px;
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: -4px;
+        left: 1;
+        right: 0;
+        height: 4px;
+        width: calc(100% - 1px);
+        background-color: $green;
+        border-radius: 2px;
       }
       &::before {
         content: "";
@@ -703,6 +969,11 @@ b {
       font-size: 14px;
       line-height: math.div(18, 14);
       color: $dark;
+      @include mobile {
+        &:not(.show) {
+          display: none;
+        }
+      }
     }
     &__name {
       padding-top: 1.7857em;
@@ -718,19 +989,44 @@ b {
       padding-bottom: 16px;
       width: 100%;
       text-align: center;
+      @include mobile {
+        font-weight: 700;
+        font-size: 16px;
+        padding-bottom: 10px;
+      }
     }
   }
 }
 .garant {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 6.8%;
+  @include mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    @include block-transparent;
+    border-radius: 10px;
+    padding: 15px;
+    & .img-wrapper {
+      inset: 15px;
+    }
+  }
+  & .block_transparent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6.8%;
+    @include mobile {
+      padding: 0;
+      border: none;
+    }
+  }
   & h3 {
     font-size: 400;
   }
   & p {
     opacity: 0.7;
+    @include mobile {
+      font-size: 12px;
+    }
   }
   & .link {
     font-weight: 400;
@@ -738,16 +1034,36 @@ b {
     line-height: 1.25em;
     margin-top: 40px;
     width: 100%;
+    margin-left: 0;
+    @include mobile {
+      margin-top: 15px;
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      @in;
+    }
   }
 }
 .srok {
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
   &__info {
     padding: 11.9%;
+    @include mobile {
+      padding: 15px;
+    }
     & .btn {
       margin-top: 34px;
       padding: 0 59.5px;
       &:hover {
         color: #ffffff;
+      }
+      @include mobile {
+        padding: 0 10px;
+        width: 100%;
+        margin-top: 10px;
       }
     }
   }
@@ -755,13 +1071,57 @@ b {
     height: 100%;
     &::before {
       display: none;
+      @include mobile {
+        display: block;
+      }
     }
   }
 }
 .dbl-slider__text {
   &.quote {
+    & .quote-show-more {
+      display: none;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      color: white;
+      opacity: 0.4;
+      font-weight: 500;
+      line-height: 140%;
+      align-items: center;
+      margin: 15px 0;
+      & .close {
+        display: none;
+      }
+      &::after {
+        content: "";
+        width: 16px;
+        height: 20px;
+        display: inline-block;
+        margin-left: 5px;
+        background-image: url(../assets/images/chevron-compact-down.svg);
+        background-size: contain;
+        background-position: 100% 10%;
+        background-repeat: no-repeat;
+      }
+      @include tablet {
+        display: flex;
+      }
+    }
     & .swiper-slide {
       padding: 0 50px 0 25px;
+      @include tablet {
+        padding: 15px;
+      }
+      &.show-more {
+        & p {
+          @include tablet {
+            &:not(:first-child, :nth-child(2)) {
+              display: block;
+            }
+          }
+        }
+      }
     }
     & h3 {
       margin-bottom: 40px;
@@ -771,6 +1131,34 @@ b {
         position: absolute;
         top: 0;
         right: calc(100% + 10px);
+        @include tablet {
+          display: none;
+        }
+      }
+    }
+    & .swiper-slide {
+      &.show-more {
+        & .quote-show-more {
+          & .close {
+            display: block;
+          }
+          & .open {
+            display: none;
+          }
+          &::after {
+            transform: scaleY(-1);
+            margin-bottom: 3px;
+          }
+        }
+      }
+      &:not(.show-more) {
+        & p {
+          @include tablet {
+            &:not(:first-child, :nth-child(2)) {
+              display: none;
+            }
+          }
+        }
       }
     }
     & p {
@@ -786,6 +1174,9 @@ b {
     height: 100%;
     &::before {
       display: none;
+      @include mobile {
+        display: block;
+      }
     }
   }
   &__info {
@@ -793,26 +1184,46 @@ b {
     display: flex;
     align-items: center;
     justify-content: center;
+    @include mobile {
+      padding: 15px;
+    }
     & h4 {
       font-size: 20px;
       line-height: 150%;
       margin-top: 0.5em;
+      @include mobile {
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 5px;
+      }
     }
     & p {
       line-height: 1.25em;
       margin-top: 10px;
+      @include mobile {
+        margin-top: 5px;
+      }
     }
     & .buttons {
       align-items: center;
+      @include mobile {
+        gap: 5px;
+      }
       & .btn {
         &:not(.block_transparent) {
           padding: 0 59.5px;
+          @include mobile {
+            padding: 0 10px;
+          }
           &:hover {
             color: white;
           }
         }
         &:not(:last-child) {
           margin-right: 40px;
+          @include mobile {
+            margin-right: 0;
+          }
         }
       }
     }
@@ -821,6 +1232,10 @@ b {
       color: white;
       padding: 0;
       height: fit-content;
+      @include mobile {
+        border-color: white;
+        height: 44px;
+      }
       &:hover {
         background: none;
         opacity: 0.5;
@@ -829,41 +1244,105 @@ b {
   }
 }
 .people {
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 48px;
-  // margin-top: 100px;
+  & .grid {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 48px;
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
   &__item {
     & .img-block--cover::before {
       padding-bottom: 100%;
     }
     text-align: center;
     line-height: 1.4em;
+    @include mobile {
+      width: 65vw;
+      text-align: left;
+    }
     & h3 {
       font-size: 20px;
       margin-top: 1em;
+      @include mobile {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 15px;
+      }
     }
     & h4 {
       font-weight: 400;
+      @include mobile {
+        font-size: 14px;
+        line-height: 18px;
+        opacity: 0.4;
+        margin-top: 5px;
+      }
     }
     & p {
       opacity: 0.7;
       margin-top: 15px;
+      @include mobile {
+        font-size: 12px;
+        margin-top: 10px;
+        opacity: 1;
+      }
     }
   }
 }
 .welcome {
+  @include mobile {
+    & .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    & .ymaps-2-1-79-balloon-panel {
+      display: none;
+    }
+    & .map-block__info {
+      margin-top: 15px;
+      padding: 15px;
+      & h3 {
+        font-size: 18px;
+        line-height: 140%;
+      }
+      & p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        margin-top: 15px;
+        & small {
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 140%;
+          opacity: 1;
+        }
+      }
+    }
+  }
   &__info {
     padding: 16.15% 15.88% 15.9%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    @include tablet {
+      padding: 15px;
+    }
     & h3 {
       font-size: 20px;
+      @include mobile {
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
   }
   & #map {
     margin-top: 24px;
+    @include mobile {
+      margin-top: 15px;
+    }
   }
 }
 .footer {
@@ -1141,7 +1620,7 @@ b {
     border: none;
     position: absolute;
     right: 0;
-    bottom: calc(100% + 13px);
+    bottom: calc(100% + 10px);
     padding: 0;
     &:hover {
       cursor: pointer;
@@ -1156,10 +1635,16 @@ b {
   height: 100%;
   align-items: center;
   justify-content: center;
+  @include mobile {
+    padding: 0 20px;
+  }
   &-main {
     height: fit-content;
     width: fit-content;
     position: relative;
+    @include mobile {
+      width: 100%;
+    }
   }
   &-overlay {
     background-color: $dark;
@@ -1168,8 +1653,14 @@ b {
   }
   & .form-wrap {
     padding: 72px 127px;
+    @include mobile {
+      padding: 30px 15px;
+    }
     &.success {
       padding: 148px 134px;
+      @include mobile {
+        padding: 30px 15px;
+      }
     }
   }
 }
@@ -1204,6 +1695,46 @@ b {
   overflow: visible;
 }
 .how-mach {
+  @include mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.soc-icons-block {
+  position: fixed;
+  left: auto;
+  right: 40px;
+  bottom: 40px;
+  width: fit-content;
+  display: flex;
+  gap: 20px;
+  z-index: 5;
+  @include mobile {
+    gap: 0;
+    right: 20px;
+    bottom: 20px;
+    & svg {
+      height: 40px;
+      width: 40px;
+    }
+    & a {
+      transition: all 0.3s ease-in-out;
+      outline: none;
+      &.tg {
+        transform: translateX(50%);
+      }
+    }
+    &.active {
+      & a {
+        &.tg {
+          transform: translateX(-14px);
+        }
+      }
+    }
+  }
+}
+.disscus {
   @include mobile {
     display: flex;
     flex-direction: column-reverse;

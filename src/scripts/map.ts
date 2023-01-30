@@ -18,9 +18,10 @@ const mapOffice = document.querySelector(".welcome");
 const mobileBoolean = document.documentElement.clientWidth < 400;
 const maxWidthBalloon = mobileBoolean ? 300 : 300;
 if (mapOffice) {
+  const zoom = mobileBoolean ? 9 : 10;
   const maxWidthBalloon = mobileBoolean ? 300 : 500;
   const centerCoordinate = mobileBoolean
-    ? [55.86695880147245, 37.22411684199047]
+    ? [55.85493027937251, 37.53832224804689]
     : [55.86695880147245, 37.22411684199047];
   const myGeoObjects = [] as any;
   const map = mapOffice.querySelector("#map");
@@ -35,26 +36,26 @@ if (mapOffice) {
       zoom,
       controls: [],
     });
-
+    const wrapCustomBaloon = document.createElement("div");
     adresses.forEach((item, index) => {
-      // @ts-ignore
-      const MyBalloonContentLayout = ymaps.templateLayoutFactory.createClass(
-        `<div class="map-block__info">
-          <h3><b>${item.city}</b></h3>
-          <p>${item.adres}</p>
-          <p>
-            <a href="tel:+74957661281">+7 (495) 766 1281</a>
-            <a href="tel:+79857661281">+7 (985) 766 1281</a>
-          </p>
-          <p>info@sg-sauna.ru</p>
-          <p>
-            <small>
-              Отвечаем и перезваниваем<br>
-              каждый день с 8:00 до 21:00 (Мск)
-            </small>
-          </p>
-        </div>`
-      );
+      const templateBaloon = `<div class="map-block__info">
+      <h3><b>${item.city}</b></h3>
+      <p>${item.adres}</p>
+      <p>
+        <a href="tel:+74957661281">+7 (495) 766 1281</a>
+        <a href="tel:+79857661281">+7 (985) 766 1281</a>
+      </p>
+      <p>info@sg-sauna.ru</p>
+      <p>
+        <small>
+          Отвечаем и перезваниваем<br>
+          каждый день с 8:00 до 21:00 (Мск)
+        </small>
+      </p>
+    </div>`;
+      const MyBalloonContentLayout =
+        // @ts-ignore
+        ymaps.templateLayoutFactory.createClass(templateBaloon);
       // @ts-ignore
       myGeoObjects[index] = new ymaps.Placemark(
         item.coord,
@@ -66,13 +67,23 @@ if (mapOffice) {
           iconImageHref: icon,
           iconImageSize: [30, 30],
           balloonShadow: true,
-          balloonContentLayout: MyBalloonContentLayout,
+          balloonContentLayout: null,
           balloonMaxWidth: maxWidthBalloon,
           hideIconOnBalloonOpen: false,
           balloonOffset: [-400, 300],
           balloonPanelMaxMapArea: mobileBoolean ? Infinity : null,
         }
       );
+      if (mobileBoolean) {
+        map.insertAdjacentElement("beforebegin", wrapCustomBaloon);
+        if (index === 0) {
+          wrapCustomBaloon.insertAdjacentHTML("afterbegin", templateBaloon);
+        }
+        myGeoObjects[index].events.add("click", () => {
+          console.log(11);
+          wrapCustomBaloon.innerHTML = templateBaloon;
+        });
+      }
       myGeoObjects[index].events.add("balloonopen", () => {
         myGeoObjects[index].options.set({
           iconImageHref: iconActive,

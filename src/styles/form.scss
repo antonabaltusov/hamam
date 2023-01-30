@@ -5,6 +5,11 @@
   max-width: 334px;
   margin: 0 auto;
   margin-top: 30px;
+  @include mobile {
+    &-main {
+      width: 100%;
+    }
+  }
   &-success {
     display: none;
     flex-direction: column;
@@ -15,19 +20,32 @@
       font-weight: 500;
       font-size: 30px;
       line-height: 38px;
+      @include mobile {
+        font-size: 18px;
+        line-height: 23px;
+      }
     }
     &__answer {
       font-weight: 400;
       font-size: 16px;
       line-height: 140%;
       margin-top: 1.25em;
+      @include mobile {
+        font-size: 12px;
+      }
     }
   }
   &-soc {
     margin-top: 40px;
+    @include mobile {
+      margin-top: 15px;
+    }
     &__buttons {
       display: flex;
       margin-top: 20px;
+      @include mobile {
+        margin-top: 9px;
+      }
       & .btn {
         opacity: 0.4;
         &:hover {
@@ -36,9 +54,17 @@
         }
         &:not(:last-child) {
           margin-right: 10px;
+          @include mobile {
+            margin-right: 12px;
+          }
         }
         & svg {
           margin-right: 13px;
+          @include mobile {
+            height: 13px;
+            width: 13px;
+            margin-right: 6px;
+          }
         }
         display: flex;
         align-items: center;
@@ -48,6 +74,10 @@
         font-size: 17px;
         line-height: 22px;
         color: $dark;
+        @include mobile {
+          font-size: 12px;
+          line-height: 15px;
+        }
       }
     }
   }
@@ -58,6 +88,13 @@
       height: 55px;
       font-size: 16px;
       line-height: 1.25em;
+      @include mobile {
+        height: 44px;
+        font-size: 12px;
+        &::placeholder {
+          text-align: center;
+        }
+      }
     }
     & .error-mes {
       text-align: left;
@@ -91,6 +128,9 @@
     & .checkbox {
       position: relative;
       margin-top: 22px;
+      @include mobile {
+        margin-top: 15px;
+      }
       & input {
         opacity: 0;
         position: absolute;
@@ -129,6 +169,11 @@
         line-height: 15px;
         color: #777777;
         position: relative;
+        @include mobile {
+          padding-left: 22px;
+          font-size: 10px;
+          line-height: 13px;
+        }
         & a {
           text-decoration: underline;
         }
@@ -145,6 +190,10 @@
           border-radius: 4px;
           height: 18px;
           width: 18px;
+          @include mobile {
+            width: 14px;
+            height: 14px;
+          }
         }
       }
     }
@@ -162,8 +211,14 @@
     @include tablet {
       padding: 36px 15px;
     }
+    @include mobile {
+      font-size: 12px;
+    }
     & .radios {
       border-radius: 15px;
+      @include mobile {
+        border-radius: 10px;
+      }
     }
     &.success {
       & .form-success {

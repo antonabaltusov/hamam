@@ -4,4 +4,12 @@ if (document.documentElement.clientWidth < 400) {
   menuButton.addEventListener("click", () => {
     menu.classList.toggle("mob-menu-active");
   });
+  menu
+    .querySelector(".mob-menu")
+    .querySelectorAll("a, button")
+    .forEach((el) => {
+      el.addEventListener("click", () => {
+        menu.classList.remove("mob-menu-active");
+      });
+    });
 }
