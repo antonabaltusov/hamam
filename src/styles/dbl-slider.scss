@@ -81,8 +81,17 @@
         margin-bottom: 15px;
       }
     }
-    & p {
-      font-weight: 300;
+    & ul {
+      padding: 0;
+      & li {
+        &:not(:last-child) {
+          margin-bottom: 8px;
+        }
+      }
+    }
+    & p,
+    ul {
+      font-weight: 200;
       line-height: math.div(20, 16);
       &:not(:last-child) {
         margin-bottom: 20px;

@@ -48,6 +48,7 @@
       }
       & .btn {
         opacity: 0.4;
+        flex: 1;
         &:hover {
           opacity: 1;
           background-color: transparent;
@@ -109,7 +110,7 @@
     }
     & .input {
       border: 1px solid rgba($color: $dark, $alpha: 0.4);
-      font-weight: 300;
+      font-weight: 200;
       color: $grey;
       margin-bottom: 10px;
       padding: 0 20px;
@@ -164,7 +165,7 @@
       }
       & label {
         padding-left: 27px;
-        font-weight: 300;
+        font-weight: 200;
         font-size: 12px;
         line-height: 15px;
         color: #777777;
@@ -204,7 +205,7 @@
     justify-content: center;
     padding: 50px;
     text-align: center;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 16px;
     line-height: 1.4em;
     color: $dark;

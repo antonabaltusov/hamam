@@ -47,16 +47,17 @@
   }
 }
 .map-block__info {
+  font-family: "Onest";
   width: 100%;
   height: 100%;
   margin: 0;
   background-color: $grey;
   color: white;
   border-radius: 20px;
-  padding: 34px 96px 34px 34px;
+  padding: 34px 70px 34px 34px;
   &--objects {
-    padding: 25px 25px 10px;
-    width: 250px;
+    padding: 10px 10px 5px;
+    width: 125px;
     @include mobile {
       height: 95px;
       width: 100%;
@@ -68,8 +69,8 @@
       text-align: center;
       width: 100%;
       display: block;
-      margin-top: 10px;
-      font-size: 16px;
+      margin-top: 5px;
+      font-size: 14px;
       @include mobile {
         margin: 0;
       }
@@ -96,16 +97,19 @@
     line-height: 33px;
   }
   & p {
-    line-height: 300;
+    font-weight: 300;
     font-size: 20px;
     line-height: 1.4em;
     & a {
       display: block;
     }
     & small {
-      font-weight: 300;
-      line-height: 1.2em;
+      font-weight: 200;
+      font-size: 16px;
+      line-height: 22px;
       opacity: 0.7;
+      width: 100%;
+      display: block;
     }
   }
 }

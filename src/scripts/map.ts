@@ -67,7 +67,7 @@ if (mapOffice) {
           iconImageHref: icon,
           iconImageSize: [30, 30],
           balloonShadow: true,
-          balloonContentLayout: null,
+          balloonContentLayout: MyBalloonContentLayout,
           balloonMaxWidth: maxWidthBalloon,
           hideIconOnBalloonOpen: false,
           balloonOffset: [-400, 300],
