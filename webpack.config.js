@@ -51,6 +51,9 @@ module.exports = ({ develop }) => ({
       {
         test: /\.(?:ico|png|jpg|jpeg|svg|ttf|woff)$/i,
         type: "asset/resource",
+        generator: {
+          filename: "assets/[name][ext][query]",
+        },
       },
       {
         test: /\.html$/i,
