@@ -49,10 +49,17 @@ module.exports = ({ develop }) => ({
         exclude: /node_modules/,
       },
       {
-        test: /\.(?:ico|png|jpg|jpeg|svg|ttf|woff)$/i,
+        test: /\.(?:ico|png|jpg|jpeg|svg|)$/i,
         type: "asset/resource",
         generator: {
-          filename: "assets/[name][ext][query]",
+          filename: "assets/images/[name][ext][query]",
+        },
+      },
+      {
+        test: /\.(?:ttf|woff)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "assets/fonts/[name][ext][query]",
         },
       },
       {
