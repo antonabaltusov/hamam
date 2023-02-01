@@ -1553,6 +1553,7 @@ b {
       order: 3;
       width: 100%;
       text-align: left;
+      align-items: flex-start;
     }
     & .footer__bold {
       margin-top: 8px;
@@ -1569,6 +1570,8 @@ b {
       padding: 0 67px;
       @include mobile {
         margin-top: 30px;
+        padding: 0;
+        width: 100%;
       }
     }
   }
