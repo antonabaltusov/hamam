@@ -5,7 +5,7 @@ export const baseSliderOptions = {
   slidesPerView: "auto",
   spaceBetween: 15,
   preloadImages: false,
-  autoHeight: true,
+  autoHeight: false,
   enabled: true,
   lazy: {
     loadPrevNext: true,

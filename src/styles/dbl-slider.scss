@@ -53,6 +53,9 @@
     }
     & .dbl-slider__inside {
       height: 289px;
+      @include mobile {
+        height: 225px;
+      }
       & .img-wrapper {
         height: 100%;
       }
