@@ -153,6 +153,7 @@ b {
   }
 }
 .block {
+  overflow: hidden;
   &#portfolio {
     padding-top: 100px;
     @include tablet {
