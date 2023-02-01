@@ -111,8 +111,16 @@ a.btn {
 }
 .radios {
   border-radius: 20px;
+
   @include tablet {
     border-radius: 10px;
+  }
+  & .ymaps-2-1-79-map {
+    border-radius: 20px;
+    overflow: hidden;
+    @include tablet {
+      border-radius: 10px;
+    }
   }
 }
 a {
