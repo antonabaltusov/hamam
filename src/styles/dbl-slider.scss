@@ -6,6 +6,9 @@
     & .btn {
       padding: 0 35px;
       border-radius: 15px;
+      @include mobile {
+        border-radius: 10px;
+      }
       &--green {
         padding: 0 55px;
       }

@@ -14,7 +14,7 @@ function resize() {
       m.setAttribute(c, v + "1024," + u);
     } else {
       if (w < 500) {
-        m.setAttribute(c, v + "375," + u);
+        m.setAttribute(c, v + "320," + u);
       } else {
         m.setAttribute(c, v + "768," + u);
       }
